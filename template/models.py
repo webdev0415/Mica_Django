@@ -80,7 +80,7 @@ class Symptom(models.Model):
 class Category(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	category_name = models.CharField(max_length=300, null = True, blank = True)
-	symptoms = models.ForeignKey(Symptoms, on_delete=models.CASCADE)
+	symptoms = models.ForeignKey(Symptom, on_delete=models.CASCADE)
 	def __str__(self):
 		return self.id
 class Section(models.Model):

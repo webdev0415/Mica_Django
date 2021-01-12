@@ -15,7 +15,7 @@ class SymptomSerializer(serializers.ModelSerializer):
 		model = Symptom
 		fields = '__all__'
 class CategorySerializer(serializers.ModelSerializer):
-	symptoms = SymptomsSerializer()
+	symptoms = SymptomSerializer()
 	class Meta:
 		model = Category
 		fields = '__all__'
