@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_swagger',
+
+    'template',
+    'generic',
+    'treatment',
 ]
 
 MIDDLEWARE = [
@@ -85,10 +89,10 @@ WSGI_APPLICATION = 'mica_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
+        'NAME': 'dun',
+        'USER': 'postgres',
+        'PASSWORD': 'BillGates94415',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
