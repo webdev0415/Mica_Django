@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets 
 from .serializers import BodyPartSerializer
-from .models import BodyParts
+from .models import BodyPart
 # Create your views here.
-class BodyPartsView(viewsets.ModelViewSet):
+class BodyPartView(viewsets.ModelViewSet):
 	serializer_class = BodyPartSerializer
-	queryset = BodyParts.objects.all()
+	queryset = BodyPart.objects.all()

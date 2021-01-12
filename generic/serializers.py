@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import BodyParts
+from .models import BodyPart
 
 class BodyPartSerializer(serializers.ModelSerializer):
 	class Meta:
-		model = BodyParts
+		model = BodyPart
 		fields = '__all__'

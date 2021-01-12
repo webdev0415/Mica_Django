@@ -6,17 +6,17 @@ from django.contrib.postgres.fields import ArrayField
 class SymptomsTmpl(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	bias = models.BooleanField()
-	rangeValues = ArrayField(
+	range_values = ArrayField(
 		models.DecimalField(max_digits=5, decimal_places=2),
 		)
 	descriptors = models.CharField(max_length=300, null = True, blank = True)
-	descriptorFile = models.CharField(max_length=300, null = True, blank = True)
-	questionText = models.CharField(max_length=300, null = True, blank = True)
-	scaleInfoText = models.CharField(max_length=300, null = True, blank = True)
-	scaleTimeLimit = models.IntegerField()
-	scaleTimeLimitStart = models.IntegerField()
-	timeUnitDefault = models.IntegerField()
-	dataStoreTypes = ArrayField(
+	descriptor_file = models.CharField(max_length=300, null = True, blank = True)
+	question_text = models.CharField(max_length=300, null = True, blank = True)
+	scale_info_text = models.CharField(max_length=300, null = True, blank = True)
+	scale_time_limit = models.IntegerField()
+	scale_time_limit_start = models.IntegerField()
+	time_unit_default = models.IntegerField()
+	datastore_types = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
 	criticality = models.IntegerField()
@@ -25,56 +25,56 @@ class SymptomsTmpl(models.Model):
 	question = models.CharField(max_length=300, null = True, blank = True)
 	es_question = models.CharField(max_length=300, null = True, blank = True)
 	antithesis = models.FloatField()
-	displaySymptom = models.BooleanField()
-	medNecessary = models.BooleanField()
-	minDiagCriteria = models.BooleanField()
-	displayDrApp = models.BooleanField()
-	genderGroup = models.CharField(max_length=300, null = True, blank = True)
-	timeType = models.TimeField(auto_now=False, auto_now_add=False)
-	minRange = models.FloatField()
-	maxRange = models.FloatField()
+	display_symptom = models.BooleanField()
+	med_necessary = models.BooleanField()
+	min_diag_criteria = models.BooleanField()
+	display_dr_app = models.BooleanField()
+	gender_group = models.CharField(max_length=300, null = True, blank = True)
+	time_type = models.TimeField(auto_now=False, auto_now_add=False)
+	min_range = models.FloatField()
+	max_range = models.FloatField()
 	def __str__(self):
 		return self.id
 
-class Symptoms(models.Model):
+class Symptom(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-	multipleValues = models.CharField(max_length=300, null = True, blank = True)
+	multiple_values = models.CharField(max_length=300, null = True, blank = True)
 	criticality = models.IntegerField()
 	treatable = models.BooleanField()
 	prior = models.DecimalField(max_digits=5, decimal_places=2)
 	question = models.CharField(max_length=300, null = True, blank = True)
 	es_question = models.CharField(max_length=300, null = True, blank = True)
 	antithesis = models.FloatField()
-	subGroups = ArrayField(
+	sub_groups = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
-	bodyParts = ArrayField(
+	bodyparts = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
-	painSwellingID = models.IntegerField()
-	displayOrder = models.IntegerField(default=0)
-	icdRCodes = ArrayField(
+	pain_swelling_id = models.IntegerField()
+	display_order = models.IntegerField(default=0)
+	icd_r_odes = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
-	displaySymptom = models.BooleanField()
-	kioskName = models.CharField(max_length=300, null = True, blank = True)
-	formalName = models.CharField(max_length=300, null = True, blank = True)
-	medNecessary = models.BooleanField()
-	minDiagCriteria = models.BooleanField()
-	displayDrApp = models.BooleanField()
-	genderGroup = models.CharField(max_length=300, null = True, blank = True)
+	display_ymptom = models.BooleanField()
+	kiosk_name = models.CharField(max_length=300, null = True, blank = True)
+	formal_name = models.CharField(max_length=300, null = True, blank = True)
+	med_necessary = models.BooleanField()
+	min_diag_criteria = models.BooleanField()
+	display_dr_app = models.BooleanField()
+	gender_group = models.CharField(max_length=300, null = True, blank = True)
 	cardinality = models.BooleanField()
-	logicalGroupNames = ArrayField(
+	logical_group_names = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
-	deGroups = ArrayField(
+	de_groups = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
-	symptomType = models.CharField(max_length=300, null = True, blank = True)
-	timeType = models.TimeField(auto_now=False, auto_now_add=False)
-	minRange = models.FloatField()
-	maxRange = models.FloatField()
-	isRange = models.BooleanField()
+	symptom_type = models.CharField(max_length=300, null = True, blank = True)
+	time_type = models.TimeField(auto_now=False, auto_now_add=False)
+	min_range = models.FloatField()
+	max_range = models.FloatField()
+	is_range = models.BooleanField()
 	created_at = models.DateTimeField(auto_now_add=True, editable=False)
 	updated_at = models.DateTimeField(auto_now=True)
 class Category(models.Model):
@@ -97,7 +97,7 @@ class ValueStore(models.Model):
 	displayListValue = models.BooleanField()
 	kiosk_name = models.CharField(max_length=300, null = True, blank = True)
 	es_kiosk_name = models.CharField(max_length=300, null = True, blank = True)
-	displayOrder = models.IntegerField()
+	display_order = models.IntegerField()
 	def __str__(self):
 		return self.id
 class DataKeyStore(models.Model):
@@ -105,11 +105,11 @@ class DataKeyStore(models.Model):
 	title = models.CharField(max_length=300, null = True, blank = True)
 	es_title = models.CharField(max_length=300, null = True, blank = True)
 	values = models.ForeignKey(ValueStore, on_delete=models.CASCADE)
-class SymptomGroups(models.Model):
+class SymptomGroup(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	section = models.ForeignKey(Section, on_delete=models.CASCADE)
-	dataStoreRefTypes = models.ForeignKey(DataKeyStore, on_delete=models.CASCADE)
+	datastore_ref_types = models.ForeignKey(DataKeyStore, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True, editable=False)
 	updated_at = models.DateTimeField(auto_now=True)
 	def __str__(self):
