@@ -3,6 +3,18 @@ import datetime
 import uuid
 from django.contrib.postgres.fields import ArrayField
 # Create your models here.
+class SnomedCodes(models.Model):
+	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+	code = models.CharField(max_length=300, null = True, blank = True)
+	name = models.CharField(max_length=300, null = True, blank = True)
+	concept_id = ArrayField(
+		models.CharField(max_length=300, null = True, blank = True),
+		)
+	expression = models.CharField(max_length=300, null = True, blank = True)
+	list_valuecode = models.CharField(max_length=300, null = True, blank = True)
+	list_value = models.CharField(max_length=300, null = True, blank = True)
+	def __str__(self):
+		return self.name
 class SymptomsTmpl(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	bias = models.BooleanField()
