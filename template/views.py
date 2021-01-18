@@ -1,17 +1,24 @@
 from django.shortcuts import render
 from rest_framework import viewsets 
-from .serializers import SymptomSerializer, CategorySerializer, SectionSerializer, SymptomGroupSerializer
-from .models import Symptom, Category, Section, SymptomGroup
+from .serializers import SnomedCodeSerializer, LogicalSymptomGroupSerializer, SymptomTemplateSerializer, SymptomCategorySerializer, SymptomGroupSerializer
+from .models import SnomedCode, LogicalSymptopGroup, SymptomTemplate, SymptomCategory, SymptomGroup
 # Create your views here.
-class SymptomView(viewsets.ModelViewSet):
-	serializer_class = SymptomSerializer
-	queryset = Symptom.objects.all()
-class CategoryView(viewsets.ModelViewSet):
-	serializer_class = CategorySerializer
-	queryset = Category.objects.all()
-class SectionView(viewsets.ModelViewSet):
-	serializer_class = SectionSerializer
-	queryset = Section.objects.all()
+class SnomedCodeView(viewsets.ModelViewSet):
+	serializer_class = SnomedCodeSerializer
+	queryset = SnomedCode.objects.all()
+
+class LogicalSymptomGroupView(viewsets.ModelViewSet):
+	serializer_class = LogicalSymptomGroupSerializer
+	queryset = LogicalSymptopGroup.objects.all()
+
+class SymptomTemplateView(viewsets.ModelViewSet):
+	serializer_class = SymptomTemplateSerializer
+	queryset = SymptomTemplate.objects.all()
+
+class SymptomCategoryView(viewsets.ModelViewSet):
+	serializer_class = SymptomCategorySerializer
+	queryset = SymptomCategory.objects.all()
+	
 class SymptomGroupView(viewsets.ModelViewSet):
 	serializer_class = SymptomGroupSerializer
 	queryset = SymptomGroup.objects.all()

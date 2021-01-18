@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from .views import SymptomView, CategoryView, SectionView, SymptomGroupView
+from .views import SnomedCodeView, LogicalSymptomGroupView, SymptomTemplateView, SymptomCategoryView, SymptomGroupView
 
 router = routers.DefaultRouter()
 router.register(r'symptomgroups', SymptomGroupView, 'symptomgroups')

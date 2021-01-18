@@ -6,6 +6,10 @@ from django.contrib.postgres.fields import ArrayField
 class BodyPart(models.Model):
 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	group_name = models.CharField(max_length=300, null = True, blank = True)
+	parent_id = models.IntegerField()
+	bodypart_id = models.CharField(max_length=300, null = True, blank = True)
+	es_name = models.CharField(max_length=300, null = True, blank = True)
+	name = models.CharField(max_length=300, null = True, blank = True)
 	position = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
@@ -15,6 +19,11 @@ class BodyPart(models.Model):
 	bodyparts_codes = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True),
 		)
-	parent_id = models.IntegerField()
+	position = ArrayField(
+		models.CharField(max_length=300, null = True, blank = True),
+		)
+	sub_parts = ArrayField(
+		models.CharField(max_length=300, null = True, blank = True),
+		)
 	def __str__(self):
 		return self.id
