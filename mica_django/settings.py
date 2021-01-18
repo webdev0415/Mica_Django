@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'template',
     'generic',
     'treatment',
+    'illness',
 ]
 
 MIDDLEWARE = [
