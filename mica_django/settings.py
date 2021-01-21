@@ -42,9 +42,6 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
 
     'template',
-    'generic',
-    'treatment',
-    'illness',
 ]
 
 MIDDLEWARE = [
@@ -87,13 +84,23 @@ WSGI_APPLICATION = 'mica_django.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'dun',
+#         'USER': 'postgres',
+#         'PASSWORD': 'BillGates94415',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dun',
-        'USER': 'postgres',
-        'PASSWORD': 'BillGates94415',
-        'HOST': 'localhost',
+        'NAME': 'oe2',
+        'USER': 'root',
+        'PASSWORD': 'aQfeW4D3',
+        'HOST': 'st-writer-rds.advinow-dev.int',
         'PORT': '5432',
     }
 }

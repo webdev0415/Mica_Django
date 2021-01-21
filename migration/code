@@ -1,0 +1,40 @@
+{
+        ArrData.map((item, idx)=>{
+          count = count + 1
+          return (
+            <span key={idx}>{`('${count}', 
+            '${item["n"].properties.criticality}', 
+            '${item["n"].properties.treatable}',
+            '${item["n"].properties.multipleValues}',
+            '${item["n"].properties.code}',
+            '${item["n"].properties.timeType}',
+            '${item["n"].properties.questionText}',
+            '${item["n"].properties.ICDRCode}',
+            '${item["n"].properties.es_questionText}',
+            '${item["n"].properties.es_questionText_bk}',
+            '${item["n"].properties.name}',
+            '${item["n"].properties.es_name}',
+            '${item["n"].properties.symptomType}',
+            '${item["n"].properties.px_no_normalized}',
+            '${item["n"].properties.prior}',
+            '${item["n"].properties.definition}',
+            '${item["n"].properties.painSwellingID}',
+            '${item["n"].properties.displayOrder}',
+            '${item["n"].properties.bias}',
+            '${item["n"].properties.descriptorFile}',
+            '${item["n"].properties.scaleTimeLimitText}',
+            '${item["n"].properties.timeUnitDefault}',
+            '${item["n"].properties.displaySymptom}',
+            '${item["n"].properties.displayDrApp}',
+            '${item["n"].properties.active}',
+            '${item["n"].properties.genderGroup}',
+            '${item["n"].properties.cardinality}',
+            '${item["n"].properties.antithesis}',
+            '${item["n"].properties.timeRangeStart}',
+            '${item["n"].properties.timeRangeStop}',
+            '{${item["n"].properties.subGroups}}',
+            '${item["n"].properties.dataStoreTemplates}',
+            `}<br /></span>
+          )
+        })
+      }
