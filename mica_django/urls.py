@@ -21,4 +21,6 @@ urlpatterns = [
     # path('treatment/', include('treatment.urls')),
     # path('generic/', include('generic.urls')),
     path('template/', include('template.urls')),
+    path('treatment/', include('treatment.urls')),
+    path('generic/', include('generic.urls')),
 ]

@@ -38,3 +38,39 @@
           )
         })
       }
+
+      import React from "react";
+import "./styles.css";
+import {ArrData} from "./arr"
+export default function App() {
+  let count = 0
+  let staticarr = `{1,2,3}`
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      {
+      ArrData.map((item, idx)=>{
+        count = count + 1
+        let subgrouparr, datastorearr
+        if (item["n"].properties.subGroups && item["n"].properties.subGroups.length > 0) {
+          subgrouparr = item["n"].properties.subGroups.map(item => `"${item}"`)
+        }
+        if (item["n"].properties.dataStoreTemplates && item["n"].properties.dataStoreTemplates.length > 0) {
+          datastorearr = item["n"].properties.dataStoreTemplates.map(item=>`"${item}"`)
+        }
+        return (
+          <span key={idx}>{`('${count}', 
+          '${item["n"].properties.name}', 
+          ${item["n"].properties.symptomCount},
+          '${item["n"].properties.code}',
+          '${item["n"].properties.groupID}',
+          '${staticarr}'),
+          `}<br /></span>
+        )
+      })
+    }
+    </div>
+    
+  );
+}

@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
 
     'template',
+    'treatment',
+    'generic',
 ]
 
 MIDDLEWARE = [

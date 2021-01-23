@@ -7,5 +7,5 @@ router = routers.DefaultRouter()
 router.register(r'all', BodyPartView, 'all')
 
 urlpatterns = [
-    path('bodyparts', include(router.urls)),
+    path('bodyparts/', include(router.urls)),
 ]
