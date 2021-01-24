@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from rest_framework import viewsets 
-from .serializers import IllnessUserDataSerializer, IllnessSerializer
-from .model import IllnessUserData, Illness
+from .serializers import CategorySerializer, IllnessSerializer
+from .models import Category, IllnessData
 # Create your views here.
-class IllnessUserDataView(viewsets.ModelViewSet):
-	serializer_class = IllnessUserDataSerializer
-	queryset = IllnessUserData.objects.all()
+class CategoryView(viewsets.ModelViewSet):
+	serializer_class = CategorySerializer
+	queryset = Category.objects.all()
 class IllnessView(viewsets.ModelViewSet):
 	serializer_class = IllnessSerializer
-	queryset = Illness.objects.all()
+	queryset = IllnessData.objects.all()

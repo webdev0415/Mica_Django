@@ -4,37 +4,80 @@ import uuid
 from django.contrib.postgres.fields import ArrayField
 from template.models import SymptomGroup, Symptom
 # Create your models here.
-class IllnessUserData(models.Model):
-	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-	active = models.BooleanField()
+# class IllnessUserData(models.Model):
+# 	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+# 	active = models.BooleanField()
+# 	code = models.CharField(max_length=300, null = True, blank = True)
+# 	criticality = models.IntegerField()
+# 	dfstatus = models.CharField(max_length=300, null = True, blank = True)
+# 	es_name = models.CharField(max_length=300, null = True, blank = True)
+# 	groups_complete = ArrayField(
+# 		models.CharField(max_length=300, null = True, blank = True)
+# 		)
+# 	id_icd10_code = models.CharField(max_length=300, null = True, blank = True)
+# 	name = models.CharField(max_length=300, null = True, blank = True)
+# 	rejection_reason = models.CharField(max_length=300, null = True, blank = True)
+# 	source = models.CharField(max_length=300, null = True, blank = True)
+# 	state = models.CharField(max_length=300, null = True, blank = True)
+# 	prevalence = models.IntegerField()
+# 	prior = models.IntegerField()
+# 	user_id = models.IntegerField()
+# 	version = models.IntegerField()
+# 	weight = models.IntegerField()
+# 	symptom_group = models.ForeignKey(SymptomGroup, on_delete=models.CASCADE)
+# 	symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
+# 	created_at = models.DateTimeField(auto_now_add=True, editable=False)
+# 	updated_at = models.DateTimeField(auto_now=True)
+# 	def __str__(self):
+# 		return self.name
+class Category(models.Model):
 	code = models.CharField(max_length=300, null = True, blank = True)
-	criticality = models.IntegerField()
+
+class Illness(models.Model):
+	icd10_code = models.CharField(max_length=300, null = True, blank = True)
+	cluster = models.IntegerField(null = True)
+	criticality = models.IntegerField(null = True)
+	active = models.BooleanField(null = True)
 	dfstatus = models.CharField(max_length=300, null = True, blank = True)
-	es_name = models.CharField(max_length=300, null = True, blank = True)
+	source = models.CharField(max_length=300, null = True, blank = True)
 	groups_complete = ArrayField(
 		models.CharField(max_length=300, null = True, blank = True)
 		)
-	id_icd10_code = models.CharField(max_length=300, null = True, blank = True)
+	version = models.IntegerField(null = True)
+	prevalence = models.IntegerField(null = True)
+	prior = models.FloatField(null = True)
 	name = models.CharField(max_length=300, null = True, blank = True)
-	rejection_reason = models.CharField(max_length=300, null = True, blank = True)
-	source = models.CharField(max_length=300, null = True, blank = True)
+	mergedVersions = ArrayField(
+		models.IntegerField(null = True), null = True, blank = True
+		)
 	state = models.CharField(max_length=300, null = True, blank = True)
-	prevalence = models.IntegerField()
-	prior = models.IntegerField()
-	user_id = models.IntegerField()
-	version = models.IntegerField()
-	weight = models.IntegerField()
-	symptom_group = models.ForeignKey(SymptomGroup, on_delete=models.CASCADE)
-	symptom = models.ForeignKey(Symptom, on_delete=models.CASCADE)
-	created_at = models.DateTimeField(auto_now_add=True, editable=False)
-	updated_at = models.DateTimeField(auto_now=True)
+	created_at = models.DateTimeField(auto_now_add=True, editable=False, null = True)
+	updated_at = models.DateTimeField(auto_now=True, null = True)
+	categories = ArrayField(
+		models.IntegerField()
+		)
 	def __str__(self):
 		return self.name
-class Illness(models.Model):
-	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-	code = models.CharField(max_length=300, null = True, blank = True)
-	es_name = models.CharField(max_length=300, null = True, blank = True)
+class IllnessData(models.Model):
+	icd10_code = models.CharField(max_length=300, null = True, blank = True)
+	cluster = models.IntegerField(null = True)
+	criticality = models.IntegerField(null = True)
+	active = models.BooleanField(null = True)
+	dfstatus = models.CharField(max_length=300, null = True, blank = True)
+	source = models.CharField(max_length=300, null = True, blank = True)
+	groups_complete = ArrayField(
+		models.CharField(max_length=300, null = True, blank = True)
+		)
+	version = models.IntegerField(null = True)
+	prevalence = models.IntegerField(null = True)
+	prior = models.FloatField(null = True)
 	name = models.CharField(max_length=300, null = True, blank = True)
-	user_data = models.ForeignKey(IllnessUserData, on_delete=models.CASCADE)
+	mergedversions = models.CharField(max_length=300, null = True, blank = True)
+	state = models.CharField(max_length=300, null = True, blank = True)
+	created_at = models.DateTimeField(auto_now_add=True, editable=False, null = True)
+	updated_at = models.DateTimeField(auto_now=True, null = True)
+	categories = ArrayField(
+		models.IntegerField()
+		)
 	def __str__(self):
 		return self.name

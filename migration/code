@@ -74,3 +74,49 @@ export default function App() {
     
   );
 }
+import "./styles.css";
+import {ArrData} from './arr'
+
+export default function App() {
+  let count = 0
+  let staticarr = `{1,2,3}`
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      {
+      ArrData.map((item, idx)=>{
+        count = count + 1
+        let groupcompleteparr, mergedvisionarr
+        if (item["n"].properties.groupsComplete && item["n"].properties.groupsComplete.length > 0) {
+          groupcompleteparr = item["n"].properties.groupsComplete.map(item => `"${item}"`)
+        }
+        if (item["n"].properties.groupsComplete && item["n"].properties.groupsComplete.length > 0) {
+          groupcompleteparr = item["n"].properties.groupsComplete.map(item => `"${item}"`)
+        }
+        return (
+          <span key={idx}>{`('${count}',
+          '${item["n"].properties.icd10Code}',
+          ${item["n"].properties.cluster},
+          ${item["n"].properties.criticality},
+          ${item["n"].properties.active},
+          '${item["n"].properties.dfstatus}',
+          '${item["n"].properties.source}',
+          '{${groupcompleteparr}}',
+          ${item["n"].properties.version},
+          ${item["n"].properties.prevalence},
+          ${item["n"].properties.prior},
+          '${item["n"].properties.name}',
+          '{}',
+          '${item["n"].properties.mergedVersions}',
+          '${item["n"].properties.state}',
+          '${item["n"].properties.createddDate}',
+          '${item["n"].properties.modifiedDate}',
+          '${staticarr}'),
+          `}<br /></span>
+        )
+      })
+    }
+    </div>
+  );
+}
