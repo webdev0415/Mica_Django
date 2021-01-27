@@ -1,17 +1,18 @@
 from rest_framework import serializers
-from .models import Category, IllnessData
-# from template.models import SymptomGroup, Symptom
-# from template.serializers import SymptomSerializer, SymptomGroupSerializer
+from .models import IllnessData
+from template.models import SymptomGroup
+from template.serializers import SymptomGroupSerializer
 
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = '__all__'
+# class CategorySerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Category
+#         fields = '__all__'
 
 class IllnessSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = IllnessData
-        fields = '__all__'
+	symptom_groups = SymptomGroupSerializer(read_only=True, many=True)
+	class Meta:
+		model = IllnessData
+		fields = '__all__'
 # class IllnessUserDataSerializer(serializers.ModelSerializer):
 # 	symptom = SymptomSerializer
 # 	symptom_group = SymptomGroupSerializer

@@ -1,39 +1,88 @@
 from rest_framework import serializers
-from .models import SnomedCode, LogicalSymptopGroup, RcodeDatastore, SymptomTemplate, SymptomCategory, SymptomGroup, Symptom
+# from .models import SnomedCode, LogicalSymptopGroup, RcodeDatastore, SymptomTemplate, SymptomCategory, SymptomGroup, Symptom
+from .models import DataStoreSources, Scale, ModifierType, SymptomDataStore, SymptomTmpl, Symptom, SymptomCategory, ValueStore, DataKeyStore, SymptomGroup
+class DataStoreSourcesSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = DataStoreSources
+		fields = '__all__'
+class ScaleSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = Scale
+		fields = '__all__'
+class ModifierTypeSerializer(serializers.ModelSerializer):
+	scale = ScaleSerializer()
+	class Meta:
+		model = ModifierType
+		fields = '__all__'
 
-class SnomedCodeSerializer(serializers.ModelSerializer):
+class SymptomDataStoreSerializer(serializers.ModelSerializer):
+	modifier_values = ModifierTypeSerializer(read_only=True, many=True)
+	source_info = DataStoreSourcesSerializer(read_only=True, many=True)
 	class Meta:
-		model = SnomedCode
+		model = SymptomDataStore
 		fields = '__all__'
-class LogicalSymptomGroupSerializer(serializers.ModelSerializer):
+class SymptomTmplSerializer(serializers.ModelSerializer):
 	class Meta:
-		model = LogicalSymptopGroup
+		model = SymptomTmpl
 		fields = '__all__'
-class RcodeDatastoreSerializer(serializers.ModelSerializer):
+class SymptomSerializer(serializers.ModelSerializer):
+	symptoms_model = SymptomTmplSerializer()
+	rows = SymptomDataStoreSerializer(read_only=True, many=True)
 	class Meta:
-		model = RcodeDatastore
+		model = Symptom
 		fields = '__all__'
-class SymptomTemplateSerializer(serializers.ModelSerializer):
-	# snomed = SnomedCodeSerializer()
-	# logical = LogicalSymptomGroupSerializer()
-	class Meta:
-		model = SymptomTemplate
-		fields = '__all__'
-	# def create(self, validated_data):
-	# 	snomed_data = validated_data.pop('snomed')
-	# 	logical_data = validated_data.pop('logical')
-
-	# 	symptom_template = SymptomTemplate.objects.create(**validated_data)
-
-	# 	SnomedCode.objects.create(symptop_category=symptom_category, **snomed_data)
-	# 	LogicalSymptopGroup.objects.create(symptop_category=symptom_category, **logical_data)
-		
-	# 	return symptom_template
 class SymptomCategorySerializer(serializers.ModelSerializer):
-	# symptom_template = SymptomTemplateSerializer()
+	symptoms = SymptomSerializer(read_only=True, many=True)
 	class Meta:
 		model = SymptomCategory
 		fields = '__all__'
+class ValueStoreSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = ValueStore
+		fields = '__all__'
+class DataKeyStoreSerializer(serializers.ModelSerializer):
+	values = ValueStoreSerializer(read_only=True, many=True)
+	class Meta:
+		model = DataKeyStore
+		fields = '__all__'
+class SymptomGroupSerializer(serializers.ModelSerializer):
+	categories = SymptomCategorySerializer(read_only=True, many=True)
+	class Meta:
+		model = SymptomGroup
+		fields = ['id', 'categories',]
+# class SnomedCodeSerializer(serializers.ModelSerializer):
+# 	class Meta:
+# 		model = SnomedCode
+# 		fields = '__all__'
+# class LogicalSymptomGroupSerializer(serializers.ModelSerializer):
+# 	class Meta:
+# 		model = LogicalSymptopGroup
+# 		fields = '__all__'
+# class RcodeDatastoreSerializer(serializers.ModelSerializer):
+# 	class Meta:
+# 		model = RcodeDatastore
+# 		fields = '__all__'
+# class SymptomTemplateSerializer(serializers.ModelSerializer):
+# 	# snomed = SnomedCodeSerializer()
+# 	# logical = LogicalSymptomGroupSerializer()
+# 	class Meta:
+# 		model = SymptomTemplate
+# 		fields = '__all__'
+# 	# def create(self, validated_data):
+# 	# 	snomed_data = validated_data.pop('snomed')
+# 	# 	logical_data = validated_data.pop('logical')
+
+# 	# 	symptom_template = SymptomTemplate.objects.create(**validated_data)
+
+# 	# 	SnomedCode.objects.create(symptop_category=symptom_category, **snomed_data)
+# 	# 	LogicalSymptopGroup.objects.create(symptop_category=symptom_category, **logical_data)
+		
+# 	# 	return symptom_template
+# class SymptomCategorySerializer(serializers.ModelSerializer):
+# 	# symptom_template = SymptomTemplateSerializer()
+# 	class Meta:
+# 		model = SymptomCategory
+# 		fields = '__all__'
 	# def create(self, validated_data):
 	# 	symptomtmpl_data = validated_data.pop('symptom_template')
 	# 	symptom_category = SymptomCategory.objects.create(**validated_data)
@@ -99,11 +148,11 @@ class SymptomCategorySerializer(serializers.ModelSerializer):
 
 	# 	return instance
 
-class SymptomGroupSerializer(serializers.ModelSerializer):
+# class SymptomGroupSerializer(serializers.ModelSerializer):
 	# category = SymptomCategorySerializer()
-	class Meta:
-		model = SymptomGroup
-		fields = '__all__'
+	# class Meta:
+	# 	model = SymptomGroup
+	# 	fields = '__all__'
 	# def create(self, validated_data):
 	# 	category_data = validated_data.pop('category')
 	# 	symptop_group = SymptomGroup.objects.create(**validated_data)

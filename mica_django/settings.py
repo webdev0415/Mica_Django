@@ -39,11 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
+    # 'rest_framework.authtoken',
     'rest_framework_swagger',
 
     'template',
-    'treatment',
-    'generic',
+    # 'treatment',
+    # 'generic',
     'illness',
 ]
 
@@ -74,7 +75,15 @@ TEMPLATES = [
         },
     },
 ]
-
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.AllowAny'
+#     ],
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+#         'rest_framework.authentication.BasicAuthentication',
+#     ],
+# }
 WSGI_APPLICATION = 'mica_django.wsgi.application'
 
 
@@ -87,26 +96,26 @@ WSGI_APPLICATION = 'mica_django.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dun',
-#         'USER': 'postgres',
-#         'PASSWORD': 'BillGates94415',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'oe2',
-        'USER': 'root',
-        'PASSWORD': 'aQfeW4D3',
-        'HOST': 'st-writer-rds.advinow-dev.int',
+        'NAME': 'advi',
+        'USER': 'postgres',
+        'PASSWORD': 'BillGates94415',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'oe2',
+#         'USER': 'root',
+#         'PASSWORD': 'aQfeW4D3',
+#         'HOST': 'st-writer-rds.advinow-dev.int',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
