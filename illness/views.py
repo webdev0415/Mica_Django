@@ -29,25 +29,18 @@ class IllnessDataViewSet(viewsets.ModelViewSet):
 	queryset = IllnessData.objects.all()	
 	serializer_class = IllnessSerializer
 	lookup_field = "icd10_code"
-	# lookup_url_kwarg = "icd10_code"
+	lookup_url_kwarg = "icd10_code"
 	filter_backends = [DjangoFilterBackend, SearchFilter]
 	filter_fields = [field.name for field in IllnessData._meta.fields]
-	search_fields = ["icd10_code", "verison", "state"]
+	search_fields = [ "verison", "state"]
+	lookup_value_regex = '[\w\.]+'
+
 
 class IllnessUpdateView(generics.RetrieveUpdateAPIView):
 	lookup_url_kwarg = "icd10_code"
 	lookup_field = "icd10_code"
 	serializer_class = IllnessSerializer
-	
 	def get_queryset(self):
 		icd10_code = self.kwargs['icd10_code']
 		queryset = IllnessData.objects.filter(icd10_code=icd10_code)
 		return queryset
-	# def get_queryset(self):
-	# 	print("->", self.request)
-
-	# def get_queryset(self):
-	# 	icd10_code = self.request.query_params.get('icd10_code')
-	# 	print("====================>", self.request.query_params)
-	# 	queryset = IllnessData.objects.filter(icd10_code=icd10_code)
-	# 	return queryset
