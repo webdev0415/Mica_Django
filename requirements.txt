@@ -8,6 +8,7 @@ django-cors-headers==3.6.0
 django-rest-framework==0.1.0
 django-rest-swagger==2.2.0
 djangorestframework==3.12.2
+django-heroku==0.3.1
 idna==2.10
 itypes==1.2.0
 Jinja2==2.11.2
