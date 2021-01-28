@@ -6,10 +6,15 @@ import psycopg2
 #                                          user='root',
 #                                          password='aQfeW4D3')
 try:
-    connection = psycopg2.connect(host='localhost',
-                                         database='advi',
-                                         user='postgres',
-                                         password='BillGates94415')
+    connection = psycopg2.connect(host='ec2-75-101-232-85.compute-1.amazonaws.com',
+                                         database='d2k0b436k14etr',
+                                         user='ojllqbwycqqwoy',
+                                         password='f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb')
+# try:
+#     connection = psycopg2.connect(host='localhost',
+#                                          database='advi',
+#                                          user='postgres',
+#                                          password='BillGates94415')
 
 
     postgreSql_insert_query = """INSERT INTO template_symptomdatastore (id, bias, multiplier, multiplier_code, likelihood, likely_diseases, rule_out, must, min_diag_criteria, med_necessary) 
