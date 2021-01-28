@@ -2,11 +2,13 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+from mica_django.helpers.settings_helper import *
+
 
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mica_django.settings_prod')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', get_env_variable("APP_SETTINGS", 'mica_django.settings_dev'))
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
