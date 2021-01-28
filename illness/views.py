@@ -51,4 +51,5 @@ class IllnessDataViewSet(viewsets.ModelViewSet):
 			qs = qs.filter(state=state)
 		
 		serializer = self.get_serializer(qs, many=True)
-		return Response(data=serializer.data)
+		data = {"userData": serializer.data}
+		return Response(data=data)
