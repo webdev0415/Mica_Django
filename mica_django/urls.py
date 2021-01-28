@@ -27,7 +27,7 @@ router = routers.DefaultRouter()
 # router.register(r'illness', IllnessDataViewSet)
 router.register(r'illness', IllnessDataViewSet, basename='illness')
 urlpatterns = [
-    re_path('', include((router.urls, "api"), namespace="api")),
+    re_path('2070Services/mica/api/', include((router.urls, "api"), namespace="api")),
     path('admin/', admin.site.urls),
     # path('treatment/', include('treatment.urls')),
     # path('generic/', include('generic.urls')),
