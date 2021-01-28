@@ -167,7 +167,7 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 # PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 # STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')  #. os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #. os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = []
 STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
