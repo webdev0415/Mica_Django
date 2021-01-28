@@ -17,10 +17,10 @@ DATABASES['default'] = dj_database_url.parse(
 
 MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
-STATICFILES_DIR = (
-    os.path.join(BASE_DIR, 'staticfiles'),
-)
+# STATICFILES_DIR = (
+#     os.path.join(BASE_DIR, 'staticfiles'),
+# )
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
