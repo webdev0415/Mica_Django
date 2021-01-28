@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['advinow.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -166,9 +167,7 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 # PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 # STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_ROOT = BASE_DIR / 'staticfiles'  #. os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')  #. os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+STATICFILES_DIRS = []
 STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
