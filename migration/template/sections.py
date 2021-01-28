@@ -6,10 +6,15 @@ import psycopg2
 #                                          user='root',
 #                                          password='aQfeW4D3')
 try:
-    connection = psycopg2.connect(host='localhost',
-                                         database='advi',
-                                         user='postgres',
-                                         password='BillGates94415')
+    connection = psycopg2.connect(host='ec2-54-224-124-241.compute-1.amazonaws.com',
+                                         database='d6m3jhsgo1lsed',
+                                         user='qkxkflfqjvnlzr',
+                                         password='433644d041ee0701bd60b800251da4ad9dcb07696ebb736e7837212538151370')
+# try:
+#     connection = psycopg2.connect(host='localhost',
+#                                          database='advi',
+#                                          user='postgres',
+#                                          password='BillGates94415')
 
     postgreSql_insert_query = """INSERT INTO template_section (id, name, section_id) 
                            VALUES 
