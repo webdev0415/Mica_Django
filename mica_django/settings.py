@@ -25,7 +25,7 @@ SECRET_KEY = 'az+wv*ipy@gjfo=jpxn1dz&c@^9x-n-9m&yb579trh(7*im_!s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['advinow.herokuapp.com']
 
 
 # Application definition
@@ -170,5 +170,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
-STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
