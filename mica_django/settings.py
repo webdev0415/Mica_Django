@@ -14,8 +14,8 @@ from pathlib import Path
 import django_heroku
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-# BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -167,7 +167,7 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 # PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 # STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #. os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')  #. os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = []
 STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
