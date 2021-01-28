@@ -4,8 +4,10 @@ from .serializers import IllnessSerializer
 from .models import IllnessData
 from rest_framework import generics
 from rest_framework.response import Response
+
 from rest_framework.filters import SearchFilter
 from url_filter.integrations.drf import DjangoFilterBackend
+
 
 class IllnessListView(generics.ListAPIView):
 	serializer_class = IllnessSerializer
@@ -18,17 +20,9 @@ class IllnessListView(generics.ListAPIView):
 class IllnessCreateView(generics.CreateAPIView):
     serializer_class = IllnessSerializer
 
-class IllnessUpdateView(generics.RetrieveUpdateAPIView):
-	lookup_url_kwarg = "icd10_code"
-	lookup_field = "icd10_code"
-	serializer_class = IllnessSerializer
-	
-	def get_queryset(self):
-		icd10_code = self.kwargs['icd10_code']
-		queryset = IllnessData.objects.filter(icd10_code=icd10_code)
-		return queryset
+
 class IllnessDataViewSet(viewsets.ModelViewSet):
-	queryset = IllnessData.objects.all()
+	# queryset = IllnessData.objects.all()	
 	serializer_class = IllnessSerializer
 	lookup_field = "icd10_code"
 	lookup_url_kwarg = "icd10_code"
@@ -37,6 +31,7 @@ class IllnessDataViewSet(viewsets.ModelViewSet):
 	filter_fields = [field.name for field in IllnessData._meta.fields]
 	search_fields = [ "icd10_code", "verison", "state"]
 	lookup_value_regex = '[\w\.]+'
+
 	def get_queryset(self):
 		if 'icd10_code' in self.kwargs:
 			return IllnessData.objects.filter(icd10_code=self.kwargs['icd10_code'])
@@ -54,17 +49,6 @@ class IllnessDataViewSet(viewsets.ModelViewSet):
 			qs = qs.filter(version=version)
 		elif state and not version:
 			qs = qs.filter(state=state)
-
+		
 		serializer = self.get_serializer(qs, many=True)
 		return Response(data=serializer.data)
-	# lookup_field = "icd10_code"
-	# lookup_url_kwarg = "icd10_code"
-	# def get_queryset(self):
-	# 	icd10_code = self.kwargs['icd10_code']
-	# 	queryset = IllnessData.objects.filter(icd10_code=icd10_code)
-	# 	return queryset
-	# lookup_url_kwarg = "icd10_code"
-	# filter_backends = [DjangoFilterBackend, SearchFilter]
-	# filter_fields = [field.name for field in IllnessData._meta.fields]
-	# search_fields = [ "verison", "state"]
-	# lookup_value_regex = '[\w\.]+'

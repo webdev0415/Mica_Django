@@ -1,1 +1,1 @@
-web: gunicorn mica_django.wsgi --log-file -
+web: gunicorn mica_django.wsgi --preload --log-file -
