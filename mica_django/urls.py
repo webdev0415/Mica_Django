@@ -19,7 +19,7 @@ from illness.views import IllnessDataViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'illness', IllnessDataViewSet)
+router.register(r'illness', IllnessDataViewSet, basename='illness')
 
 
 urlpatterns = [

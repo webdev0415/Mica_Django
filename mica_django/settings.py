@@ -109,27 +109,27 @@ WSGI_APPLICATION = 'mica_django.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mica',
-        'USER': 'postgres',
-        'PASSWORD': 'elednikA/97',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'oe2',
-#         'USER': 'root',
-#         'PASSWORD': 'aQfeW4D3',
-#         'HOST': 'st-writer-rds.advinow-dev.int',
+#         'NAME': 'mica',
+#         'USER': 'postgres',
+#         'PASSWORD': 'elednikA/97',
+#         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2k0b436k14etr',
+        'USER': 'ojllqbwycqqwoy',
+        'PASSWORD': 'f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb',
+        'HOST': 'ec2-75-101-232-85.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
