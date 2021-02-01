@@ -4,52 +4,62 @@ from .models import DataStoreSources, Scale, ModifierType, SymptomDataStore, Sym
 class DataStoreSourcesSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = DataStoreSources
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class ScaleSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Scale
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class ModifierTypeSerializer(serializers.ModelSerializer):
 	scale = ScaleSerializer()
 	class Meta:
 		model = ModifierType
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 
 class SymptomDataStoreSerializer(serializers.ModelSerializer):
 	modifier_values = ModifierTypeSerializer(read_only=True, many=True)
 	source_info = DataStoreSourcesSerializer(read_only=True, many=True)
 	class Meta:
 		model = SymptomDataStore
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class SymptomTmplSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = SymptomTmpl
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class SymptomSerializer(serializers.ModelSerializer):
 	symptoms_model = SymptomTmplSerializer()
 	rows = SymptomDataStoreSerializer(read_only=True, many=True)
 	class Meta:
 		model = Symptom
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class SymptomCategorySerializer(serializers.ModelSerializer):
 	symptoms = SymptomSerializer(read_only=True, many=True)
 	class Meta:
 		model = SymptomCategory
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class ValueStoreSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = ValueStore
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class DataKeyStoreSerializer(serializers.ModelSerializer):
 	values = ValueStoreSerializer(read_only=True, many=True)
 	class Meta:
 		model = DataKeyStore
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 class SymptomGroupSerializer(serializers.ModelSerializer):
 	categories = SymptomCategorySerializer(read_only=True, many=True)
 	class Meta:
 		model = SymptomGroup
-		fields = ['id', 'categories',]
+		exclude = ['id']
+		# fields = ['id', 'categories',]
 # class SnomedCodeSerializer(serializers.ModelSerializer):
 # 	class Meta:
 # 		model = SnomedCode
@@ -179,10 +189,10 @@ class SymptomGroupSerializer(serializers.ModelSerializer):
 	# 	category.save()
 
 	# 	return instance
-class SymptomSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = Symptom
-		fields = '__all__'
+# class SymptomSerializer(serializers.ModelSerializer):
+# 	class Meta:
+# 		model = Symptom
+# 		fields = '__all__'
 # class ValueStoreSerializer(serializers.ModelSerializer):
 # 	class Meta:
 # 		model = ValueStore

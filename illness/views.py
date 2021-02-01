@@ -9,19 +9,19 @@ from rest_framework.filters import SearchFilter
 from url_filter.integrations.drf import DjangoFilterBackend
 
 
-class IllnessListView(generics.ListAPIView):
-	serializer_class = IllnessSerializer
-	def get_queryset(self):
+# class IllnessListView(generics.ListAPIView):
+# 	serializer_class = IllnessSerializer
+# 	def get_queryset(self):
 		
-		icd10_code = self.kwargs['icd10_code']
-		queryset = IllnessData.objects.filter(icd10_code=icd10_code).distinct()
-		return queryset
+# 		icd10_code = self.kwargs['icd10_code']
+# 		queryset = IllnessData.objects.filter(icd10_code=icd10_code).distinct()
+# 		return queryset
 
-class IllnessCreateView(generics.CreateAPIView):
-    serializer_class = IllnessSerializer
+# class IllnessCreateView(generics.CreateAPIView):
+#     serializer_class = IllnessSerializer
 
 
-class IllnessDataViewSet(viewsets.ModelViewSet):
+class IllnessDataView(viewsets.ModelViewSet):
 	# queryset = IllnessData.objects.all()	
 	serializer_class = IllnessSerializer
 	lookup_field = "icd10_code"

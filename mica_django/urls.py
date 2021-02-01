@@ -16,19 +16,20 @@ Including another URLconf
 from django.contrib import admin
 
 from django.urls import path, include,re_path
-from illness.views import IllnessDataViewSet
-from rest_framework import routers
+# from illness.views import IllnessDataView
+# from rest_framework import routers
 
 
+# router = routers.DefaultRouter(trailing_slash=False)
+# router.register(r'illness', IllnessDataViewSet, basename='illness')
 
-router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'illness', IllnessDataViewSet, basename='illness')
 urlpatterns = [
-    re_path('2070Services/mica/api/', include((router.urls, "api"), namespace="api")),
+    # re_path('2070Services/mica/api/', include((router.urls, "api"), namespace="api")),
+    re_path('2070Services/mica/api/', include('illness.urls')),
     path('admin/', admin.site.urls),
     # path('treatment/', include('treatment.urls')),
     # path('generic/', include('generic.urls')),
-    path('template/', include('template.urls')),
+    path('2070Services/mica/api/template/', include('template.urls')),
     # path('treatment/', include('treatment.urls')),
     # path('generic/', include('generic.urls')),
     # path('illness/', include('illness.urls')),

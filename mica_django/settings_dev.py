@@ -8,7 +8,7 @@ SECRET_KEY = 'az+wv*ipy@gjfo=jpxn1dz&c@^9x-n-9m&yb579trh(7*im_!s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
@@ -20,6 +20,16 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'oe2',
+#         'USER': 'root',
+#         'PASSWORD': 'aQfeW4D3',
+#         'HOST': 'st-writer-rds.advinow-dev.int',
+#         'PORT': '5432',
+#     }
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

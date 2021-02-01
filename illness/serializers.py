@@ -10,9 +10,11 @@ from template.serializers import SymptomGroupSerializer
 
 class IllnessSerializer(serializers.ModelSerializer):
 	symptom_groups = SymptomGroupSerializer(read_only=True, many=True)
+
 	class Meta:
 		model = IllnessData
-		fields = '__all__'
+		exclude = ['id']
+		# fields = '__all__'
 # class IllnessUserDataSerializer(serializers.ModelSerializer):
 # 	symptom = SymptomSerializer
 # 	symptom_group = SymptomGroupSerializer
