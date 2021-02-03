@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .serializers import SymptomGroupSerializer, SymptomCategorySerializer
-from .models import SymptomGroup, SymptomCategory
+from .serializers import SymptomGroupSerializer, SymptomCategorySerializer, DataKeyStoreSerializer
+from .models import SymptomGroup, SymptomCategory, DataKeyStore
 # from .serializers import SnomedCodeSerializer, LogicalSymptomGroupSerializer, SymptomTemplateSerializer, SymptomCategorySerializer, SymptomGroupSerializer
 # from .models import SnomedCode, LogicalSymptopGroup, SymptomTemplate, SymptomCategory, SymptomGroup
 # Create your views here.
@@ -12,10 +12,19 @@ from .models import SymptomGroup, SymptomCategory
 class SymptomCategoryView(viewsets.ModelViewSet):
 	queryset = SymptomCategory.objects.all()
 	serializer_class = SymptomCategorySerializer
+
+class DataKeyStoreView(viewsets.ModelViewSet):
+	queryset = DataKeyStore.objects.all()
+	serializer_class = DataKeyStoreSerializer
 	
 class SymptomGroupView(viewsets.ModelViewSet):
-	queryset = SymptomGroup.objects.all()
 	serializer_class = SymptomGroupSerializer
+	queryset = SymptomGroup.objects.all()
+	def list(self, request, *args, **kwargs):
+		qs = self.queryset
+		serializer = self.get_serializer(qs, many=True)
+		data = {"symptomGroups": serializer.data}
+		return Response(data=data)
 	
 # class LogicalSymptomGroupView(viewsets.ModelViewSet):
 # 	serializer_class = LogicalSymptomGroupSerializer

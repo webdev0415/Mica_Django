@@ -183,18 +183,21 @@ class SymptomCategory(models.Model):
 
 class ValueStore(models.Model):
 	default_value = models.BooleanField(null = True, blank = True)
-	value = models.CharField(max_length=300, null = True, blank = True)
+	code = models.CharField(max_length=300, null = True, blank = True)
 	m_antithesis = models.FloatField(null=True, blank=True)
 	m_icd10_rcode = models.CharField(max_length=300, null = True, blank = True)
 	count = models.IntegerField(null=True, blank=True)
 	display_list_value = models.BooleanField(null = True, blank = True)
-	kiosk_name = models.CharField(max_length=300, null = True, blank = True)
-	es_kiosk_name = models.CharField(max_length=300, null = True, blank = True)
+	name = models.CharField(max_length=300, null = True, blank = True)
+	es_name = models.CharField(max_length=300, null = True, blank = True)
 	display_order = models.IntegerField(null=True, blank=True)
+	old_name = models.CharField(max_length=300, null = True, blank = True)
 
 class DataKeyStore(models.Model):
+	name = models.CharField(max_length=300, null = True, blank = True)
 	title = models.CharField(max_length=300, null = True, blank = True)
 	es_title = models.CharField(max_length=300, null = True, blank = True)
+	code = models.CharField(max_length=300, null = True, blank = True)
 	values = models.ManyToManyField(ValueStore, related_name='datakeystore_valuestore', blank=True)
 
 class Section(models.Model):

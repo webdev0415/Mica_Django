@@ -1,0 +1,4110 @@
+﻿[
+  {
+    "n": {
+"identity": 232,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Cheeks & Chin",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART25",
+"bodypartCode": "BODYPART02",
+"es_name": "Mejillas y barbilla"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 234,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Wrist",
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART26",
+"es_name": "Muñeca izquierda",
+"bodypartCode": "BODYPART12"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 235,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Leg",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART27",
+"es_name": "Pierna izquierda",
+"bodypartCode": "BODYPART13"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 256,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART28",
+"cascadeUp": true,
+"name": "Left Knee",
+"bodypartCode": "BODYPART14",
+"es_name": "Rodilla izquierda",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 257,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART29",
+"cascadeUp": true,
+"name": "Left Elbow",
+"bodypartCode": "BODYPART15",
+"es_name": "Codo izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 258,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART30",
+"cascadeUp": true,
+"name": "Left Lower Arm",
+"bodypartCode": "BODYPART16",
+"es_name": "Brazo izquierdo inferior",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 259,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART31",
+"cascadeUp": true,
+"name": "Left Upper Arm",
+"bodypartCode": "BODYPART17",
+"es_name": "Brazo superior izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 260,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART32",
+"cascadeUp": true,
+"name": "Left Lower Leg",
+"bodypartCode": "BODYPART18",
+"es_name": "Pata inferior izquierda",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 261,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART33",
+"cascadeUp": true,
+"name": "Left Upper Leg",
+"bodypartCode": "BODYPART19",
+"es_name": "Pata superior izquierda",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 262,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Arm",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART34",
+"es_name": "Brazo izquierdo",
+"bodypartCode": "BODYPART22"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 263,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART35",
+"cascadeUp": true,
+"name": "Left Ankle",
+"bodypartCode": "BODYPART45",
+"es_name": "Tobillo izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 264,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Eye",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART36",
+"bodypartCode": "BODYPART07",
+"es_name": "Ojo izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 265,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Ear",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART37",
+"es_name": "Oreja izquierda",
+"bodypartCode": "BODYPART08"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 267,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Temporal",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART38",
+"es_name": "Derecho temporal",
+"bodypartCode": "BODYPART60"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 270,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Temporal",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART39",
+"es_name": "Temporal izquierdo",
+"bodypartCode": "BODYPART60"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 271,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART40",
+"cascadeUp": true,
+"name": "Back Head",
+"bodypartCode": "BODYPART02",
+"es_name": "Cabeza trasera",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 272,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Neck",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART41",
+"es_name": "Cuello",
+"bodypartCode": "BODYPART31"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 279,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Upper Lips",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART48",
+"es_name": "Labios superiores",
+"bodypartCode": "BODYPART27"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 280,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lower Lips",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART49",
+"es_name": "Labios inferiores",
+"bodypartCode": "BODYPART27"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 281,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Upper Gums & Teeth",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART50",
+"bodypartCode": "BODYPART29",
+"es_name": "Encías y dientes superiores"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 282,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lower Gums & Teeth",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART51",
+"bodypartCode": "BODYPART29",
+"es_name": "Encías y dientes inferiores"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 283,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Tongue",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART52",
+"bodypartCode": "BODYPART26",
+"es_name": "Lengua"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 284,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Roof Of Mouth",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART53",
+"es_name": "Techo de la boca",
+"bodypartCode": "BODYPART34"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 289,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Back of Throat",
+"parent": "PAIN_BODYPART06",
+"code": "PAIN_BODYPART58",
+"es_name": "Parte posterior de la garganta",
+"bodypartCode": "BODYPART35"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 290,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Whole Body",
+"code": "SW_BODYPART01",
+"es_name": "Todo el cuerpo",
+"bodypartCode": "BODYPART01"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 291,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Head",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART02",
+"bodypartCode": "BODYPART02",
+"es_name": "Cabeza"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 292,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Nose",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART03",
+"bodypartCode": "BODYPART03",
+"es_name": "Nariz"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 293,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Throat",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART04",
+"bodypartCode": "BODYPART04",
+"es_name": "Garganta"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 294,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Chest",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART05",
+"bodypartCode": "BODYPART05",
+"es_name": "Pecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 296,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Mouth",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART06",
+"bodypartCode": "BODYPART06",
+"es_name": "Boca"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 297,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Eye",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART07",
+"bodypartCode": "BODYPART07",
+"es_name": "Ojo derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 298,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Ear",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART08",
+"bodypartCode": "BODYPART08",
+"es_name": "Oreja derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 300,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART09",
+"cascadeUp": true,
+"name": "Forehead",
+"bodypartCode": "BODYPART09",
+"es_name": "Frente",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 301,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Pelvis",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART10",
+"bodypartCode": "BODYPART10",
+"es_name": "Pelvis"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 302,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Abdomen",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART11",
+"bodypartCode": "BODYPART11",
+"es_name": "Abdomen"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 303,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Wrist",
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART12",
+"es_name": "Muñeca derecha",
+"bodypartCode": "BODYPART12"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 304,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Leg",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART13",
+"bodypartCode": "BODYPART13",
+"es_name": "Pierna derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 305,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART14",
+"cascadeUp": true,
+"name": "Right Knee",
+"bodypartCode": "BODYPART14",
+"es_name": "Rodilla derecha",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 306,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART15",
+"cascadeUp": true,
+"name": "Right Elbow",
+"bodypartCode": "BODYPART15",
+"es_name": "Codo derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 307,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART16",
+"cascadeUp": true,
+"name": "Right Lower Arm",
+"bodypartCode": "BODYPART16",
+"es_name": "Brazo inferior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 308,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART17",
+"cascadeUp": true,
+"name": "Right Upper Arm",
+"bodypartCode": "BODYPART17",
+"es_name": "Brazo superior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 310,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART18",
+"cascadeUp": true,
+"name": "Right Lower Leg",
+"bodypartCode": "BODYPART18",
+"es_name": "Pata inferior derecha",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 312,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART19",
+"cascadeUp": true,
+"name": "Right Upper Leg",
+"bodypartCode": "BODYPART19",
+"es_name": "Pata superior derecha",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 313,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Upper Back",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART20",
+"bodypartCode": "BODYPART20",
+"es_name": "Superior de la espalda"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 314,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Butt",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART21",
+"bodypartCode": "BODYPART21",
+"es_name": "Extremo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 315,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Arm",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART22",
+"bodypartCode": "BODYPART22",
+"es_name": "Brazo derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 316,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Ankle",
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART23",
+"es_name": "Tobillo derecho",
+"bodypartCode": "BODYPART45"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 317,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART24",
+"cascadeUp": true,
+"name": "Scalp",
+"bodypartCode": "BODYPART57",
+"es_name": "Cuero cabelludo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 318,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Cheeks & Chin",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART25",
+"bodypartCode": "BODYPART02",
+"es_name": "Mejillas y barbilla"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 319,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Wrist",
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART26",
+"es_name": "Muñeca izquierda",
+"bodypartCode": "BODYPART12"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 320,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Leg",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART27",
+"bodypartCode": "BODYPART13",
+"es_name": "Pierna izquierda"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 321,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART28",
+"cascadeUp": true,
+"name": "Left Knee",
+"bodypartCode": "BODYPART14",
+"es_name": "Rodilla izquierda",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 323,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART29",
+"cascadeUp": true,
+"name": "Left Elbow",
+"bodypartCode": "BODYPART15",
+"es_name": "Codo izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 325,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART30",
+"cascadeUp": true,
+"name": "Left Lower Arm",
+"bodypartCode": "BODYPART16",
+"es_name": "Brazo izquierdo inferior",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 326,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART31",
+"cascadeUp": true,
+"name": "Left Upper Arm",
+"bodypartCode": "BODYPART17",
+"es_name": "Brazo superior izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 327,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART32",
+"cascadeUp": true,
+"name": "Left Lower Leg",
+"bodypartCode": "BODYPART18",
+"es_name": "Pata inferior izquierda",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 328,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART33",
+"cascadeUp": true,
+"name": "Left Upper Leg",
+"bodypartCode": "BODYPART19",
+"es_name": "Pata superior izquierda",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 329,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Arm",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART34",
+"bodypartCode": "BODYPART22",
+"es_name": "Brazo izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 330,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART35",
+"cascadeUp": true,
+"name": "Left Ankle",
+"bodypartCode": "BODYPART45",
+"es_name": "Tobillo izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 331,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Eye",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART36",
+"bodypartCode": "BODYPART07",
+"es_name": "Ojo izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 332,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Ear",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART37",
+"bodypartCode": "BODYPART08",
+"es_name": "Oreja izquierda"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 333,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Temporal",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART38",
+"bodypartCode": "BODYPART60",
+"es_name": "Right Temporal"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 334,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Temporal",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART39",
+"bodypartCode": "BODYPART60",
+"es_name": "Temporal izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 335,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART40",
+"cascadeUp": true,
+"name": "Back Head",
+"bodypartCode": "BODYPART02",
+"es_name": "Cabeza trasera",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 336,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Neck",
+"parent": "SW_BODYPART02",
+"code": "SW_BODYPART41",
+"bodypartCode": "BODYPART31",
+"es_name": "Cuello"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 343,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Upper Lips",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART48",
+"bodypartCode": "BODYPART27",
+"es_name": "Labios superiores"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 344,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lower Lips",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART49",
+"bodypartCode": "BODYPART27",
+"es_name": "Labios inferiores"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 345,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Upper Gums & Teeth",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART50",
+"bodypartCode": "BODYPART29",
+"es_name": "Encías y dientes superiores"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 346,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lower Gums & Teeth",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART51",
+"bodypartCode": "BODYPART29",
+"es_name": "Encías y dientes inferiores"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 347,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Tongue",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART52",
+"bodypartCode": "BODYPART26",
+"es_name": "Lengua"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 348,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Roof Of Mouth",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART53",
+"bodypartCode": "BODYPART34",
+"es_name": "Techo de la boca"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 353,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Back of Throat",
+"parent": "SW_BODYPART06",
+"code": "SW_BODYPART58",
+"es_name": "Parte posterior de la garganta",
+"bodypartCode": "BODYPART35"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8326,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Core Symptoms",
+"code": "SYMPTCG01",
+"es_name": "Síntomas principales",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8327,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Family History",
+"code": "SYMPTCG02",
+"es_name": "Historia familiar",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8328,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Personal History",
+"code": "SYMPTCG03",
+"es_name": "Historia personal",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8329,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Surgical History",
+"code": "SYMPTCG04",
+"es_name": "Historia Quirúrgica",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8330,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Dietary",
+"code": "SYMPTCG05",
+"es_name": "Dietético",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8331,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Environment",
+"code": "SYMPTCG06",
+"es_name": "Ambiente",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8332,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Occupational Risk",
+"code": "SYMPTCG07",
+"es_name": "Riesgo Laboral",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8333,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Sleeping Patterns",
+"code": "SYMPTCG09",
+"es_name": "Patrones de sueño",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8334,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Other Factors",
+"code": "SYMPTCG10",
+"es_name": "Otros factores",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8335,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Cognitive / Nervous System",
+"code": "SYMPTCG11",
+"es_name": "Sistema cognitivo / nervioso",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8336,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Emotions",
+"code": "SYMPTCG12",
+"es_name": "Emociones",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8337,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Psychological",
+"code": "SYMPTCG13",
+"es_name": "Psicológico",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8338,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Core Symptoms",
+"code": "SYMPTCG14",
+"es_name": "Síntomas principales",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8339,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Sexual",
+"code": "SYMPTCG15",
+"es_name": "Sexual",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8340,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"code": "BODYPART01",
+"orderID": 1,
+"es_bodyLocations": [
+          "Todo el cuerpo"
+        ],
+"name": "Whole Body",
+"es_name": "Todo el cuerpo",
+"bodyLocations": [
+          "Whole Body"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8341,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART02",
+"orderID": 2,
+"es_bodyLocations": [
+          "Cabeza"
+        ],
+"name": "Head",
+"es_name": "Cabeza",
+"bodyLocations": [
+          "Head"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8342,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART03",
+"orderID": 3,
+"es_bodyLocations": [
+          "Nariz"
+        ],
+"name": "Nose",
+"es_name": "Nariz",
+"bodyLocations": [
+          "Nose"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8343,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART04",
+"orderID": 4,
+"es_bodyLocations": [
+          "Garganta"
+        ],
+"name": "Throat",
+"es_name": "Garganta",
+"bodyLocations": [
+          "Throat"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8345,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART06",
+"orderID": 6,
+"es_bodyLocations": [
+          "Boca"
+        ],
+"name": "Mouth",
+"es_name": "Boca",
+"bodyLocations": [
+          "Mouth"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8346,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART07",
+"orderID": 7,
+"es_bodyLocations": [
+          "Ojo derecho",
+          "Ojo izquierdo"
+        ],
+"name": "Eyes",
+"es_name": "Ojos",
+"bodyLocations": [
+          "Right Eye",
+          "Left Eye"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8347,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART08",
+"orderID": 8,
+"es_bodyLocations": [
+          "Oído derecho",
+          "Oído izquierdo"
+        ],
+"name": "Ears",
+"es_name": "Orejas",
+"bodyLocations": [
+          "Right Ear",
+          "Left Ear"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8348,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART09",
+"orderID": 9,
+"es_bodyLocations": [
+          "Frente"
+        ],
+"name": "Forehead",
+"es_name": "Frente",
+"bodyLocations": [
+          "Forehead"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8349,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART10",
+"orderID": 10,
+"es_bodyLocations": [
+          "Pelvis"
+        ],
+"name": "Pelvis",
+"es_name": "Pelvis",
+"bodyLocations": [
+          "Pelvis"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8350,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART11",
+"orderID": 11,
+"es_bodyLocations": [
+          "Abdomen"
+        ],
+"name": "Abdomen",
+"es_name": "Abdomen",
+"bodyLocations": [
+          "Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8351,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART12",
+"orderID": 12,
+"es_bodyLocations": [
+          "Muñeca izquierda",
+          "Muñeca derecha"
+        ],
+"name": "Wrists",
+"es_name": "Muñecas",
+"bodyLocations": [
+          "Left Wrist",
+          "Right Wrist"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8352,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART13",
+"orderID": 13,
+"es_bodyLocations": [
+          "Pata izquierda",
+          "Pierna derecha"
+        ],
+"name": "Legs",
+"es_name": "Piernas",
+"bodyLocations": [
+          "Left Leg",
+          "Right Leg"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8353,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART14",
+"orderID": 14,
+"es_bodyLocations": [
+          "Rodilla izquierda",
+          "Rodilla derecha"
+        ],
+"name": "Knee",
+"es_name": "Rodilla",
+"bodyLocations": [
+          "Left Knee",
+          "Right Knee"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8354,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART15",
+"orderID": 15,
+"es_bodyLocations": [
+          "Codo izquierdo",
+          "Codo derecho"
+        ],
+"name": "Elbow",
+"es_name": "Codo",
+"bodyLocations": [
+          "Left Elbow",
+          "Right Elbow"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8355,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART16",
+"orderID": 16,
+"es_bodyLocations": [
+          "Brazo izquierdo inferior",
+          "Brazo inferior derecho"
+        ],
+"name": "Lower Arm",
+"es_name": "Antebrazo",
+"bodyLocations": [
+          "Left Lower Arm",
+          "Right Lower Arm"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8356,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART17",
+"orderID": 17,
+"es_bodyLocations": [
+          "Brazo superior izquierdo",
+          "Brazo superior derecho"
+        ],
+"name": "Upper Arm",
+"es_name": "Parte superior del brazo",
+"bodyLocations": [
+          "Left Upper Arm",
+          "Right Upper Arm"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8357,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART18",
+"orderID": 18,
+"es_bodyLocations": [
+          "Pata inferior izquierda",
+          "Pata inferior derecha"
+        ],
+"name": "Lower Leg",
+"es_name": "Pierna inferior",
+"bodyLocations": [
+          "Left Lower Leg",
+          "Right Lower Leg"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8358,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART19",
+"orderID": 19,
+"es_bodyLocations": [
+          "Pata superior izquierda",
+          "Pata superior derecha"
+        ],
+"name": "Upper Leg",
+"es_name": "Muslo",
+"bodyLocations": [
+          "Left Upper Leg",
+          "Right Upper Leg"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8359,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART20",
+"orderID": 20,
+"es_bodyLocations": [
+          "Superior de la espalda"
+        ],
+"name": "Upper Back",
+"es_name": "Superior de la espalda",
+"bodyLocations": [
+          "Upper Back"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8360,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART21",
+"orderID": 21,
+"es_bodyLocations": [
+          "Extremo"
+        ],
+"name": "Butt",
+"es_name": "Extremo",
+"bodyLocations": [
+          "Butt"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8361,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART22",
+"orderID": 22,
+"es_bodyLocations": [
+          "Brazo derecho",
+          "Brazo izquierdo"
+        ],
+"name": "Arms",
+"es_name": "Brazos",
+"bodyLocations": [
+          "Right Arm",
+          "Left Arm"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8362,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART23",
+"orderID": 23,
+"es_bodyLocations": [
+          "Pie derecho",
+          "Pie izquierdo"
+        ],
+"name": "Feet",
+"es_name": "Pies",
+"bodyLocations": [
+          "Right Foot",
+          "Left Foot"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8363,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART06",
+"code": "BODYPART26",
+"orderID": 24,
+"es_bodyLocations": [
+          "Lengua"
+        ],
+"name": "Tongue",
+"es_name": "Lengua",
+"bodyLocations": [
+          "Tongue"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8364,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART06",
+"code": "BODYPART27",
+"orderID": 25,
+"es_bodyLocations": [
+          "Labios superiores",
+          "Labios inferiores"
+        ],
+"name": "Lips",
+"es_name": "Labios",
+"bodyLocations": [
+          "Upper Lips",
+          "Lower Lips"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8365,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART06",
+"code": "BODYPART29",
+"orderID": 26,
+"es_bodyLocations": [
+          "Encías y dientes inferiores",
+          "Encías superiores y dientes"
+        ],
+"name": "Gums & Teeth",
+"es_name": "Gomas y dientes",
+"bodyLocations": [
+          "Lower Gums & Teeth",
+          "Upper Gums & Teeth"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8366,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART31",
+"orderID": 27,
+"es_bodyLocations": [
+          "Cuello"
+        ],
+"name": "Neck",
+"es_name": "Cuello",
+"bodyLocations": [
+          "Neck"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8368,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART06",
+"code": "BODYPART34",
+"orderID": 29,
+"es_bodyLocations": [
+          "Techo de la boca"
+        ],
+"name": "Roof Of Mouth",
+"es_name": "Techo de la boca",
+"bodyLocations": [
+          "Roof Of Mouth"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8369,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART06",
+"code": "BODYPART35",
+"orderID": 30,
+"es_bodyLocations": [
+          "Parte posterior de la garganta"
+        ],
+"name": "Back of Throat",
+"es_name": "Parte posterior de la garganta",
+"bodyLocations": [
+          "Back Of Throat"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8370,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Whole Body",
+"code": "PAIN_BODYPART01",
+"bodypartCode": "BODYPART01",
+"es_name": "Todo el cuerpo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8371,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Head",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART02",
+"es_name": "Cabeza",
+"bodypartCode": "BODYPART02"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8372,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Nose",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART03",
+"es_name": "Nariz",
+"bodypartCode": "BODYPART03"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8373,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Throat",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART04",
+"bodypartCode": "BODYPART04",
+"es_name": "Garganta"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8374,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Chest",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART05",
+"bodypartCode": "BODYPART05",
+"es_name": "Pecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8375,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Mouth",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART06",
+"bodypartCode": "BODYPART06",
+"es_name": "Boca"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8376,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Eye",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART07",
+"bodypartCode": "BODYPART07",
+"es_name": "Ojo derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8377,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Ear",
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART08",
+"bodypartCode": "BODYPART08",
+"es_name": "Oreja derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8378,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART09",
+"cascadeUp": true,
+"name": "Forehead",
+"bodypartCode": "BODYPART09",
+"es_name": "Frente",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8379,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Pelvis",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART10",
+"bodypartCode": "BODYPART10",
+"es_name": "Pelvis"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8380,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Abdomen",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART11",
+"bodypartCode": "BODYPART11",
+"es_name": "Abdomen"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8381,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Wrist",
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART12",
+"es_name": "Muñeca derecha",
+"bodypartCode": "BODYPART12"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8382,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Leg",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART13",
+"bodypartCode": "BODYPART13",
+"es_name": "Pierna derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8383,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART14",
+"cascadeUp": true,
+"name": "Right Knee",
+"bodypartCode": "BODYPART14",
+"es_name": "Rodilla derecha",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8384,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART15",
+"cascadeUp": true,
+"name": "Right Elbow",
+"bodypartCode": "BODYPART15",
+"es_name": "Codo derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8385,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART16",
+"cascadeUp": true,
+"name": "Right Lower Arm",
+"bodypartCode": "BODYPART16",
+"es_name": "Brazo inferior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8386,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART17",
+"cascadeUp": true,
+"name": "Right Upper Arm",
+"bodypartCode": "BODYPART17",
+"es_name": "Brazo superior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8387,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART18",
+"cascadeUp": true,
+"name": "Right Lower Leg",
+"bodypartCode": "BODYPART18",
+"es_name": "Pata inferior derecha",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8388,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART19",
+"cascadeUp": true,
+"name": "Right Upper Leg",
+"bodypartCode": "BODYPART19",
+"es_name": "Pata superior derecha",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8389,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Upper Back",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART20",
+"es_name": "Superior de la espalda",
+"bodypartCode": "BODYPART20"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8390,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Butt",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART21",
+"es_name": "Extremo",
+"bodypartCode": "BODYPART21"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8391,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Arm",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART22",
+"bodypartCode": "BODYPART22",
+"es_name": "Brazo derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8392,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART23",
+"cascadeUp": true,
+"name": "Right Ankle",
+"bodypartCode": "BODYPART45",
+"es_name": "Tobillo derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8393,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART02",
+"code": "PAIN_BODYPART24",
+"cascadeUp": true,
+"name": "Scalp",
+"bodypartCode": "BODYPART57",
+"es_name": "Cuero cabelludo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354477,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART59",
+"cascadeUp": true,
+"name": "Upper Left Abdomen",
+"bodypartCode": "BODYPART49",
+"es_name": "Abdomen superior izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354478,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART60",
+"cascadeUp": true,
+"name": "Upper Center Abdomen",
+"bodypartCode": "BODYPART48",
+"es_name": "Abdomen central superior",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354479,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART61",
+"cascadeUp": true,
+"name": "Upper Right Abdomen",
+"bodypartCode": "BODYPART47",
+"es_name": "Abdomen superior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354480,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART62",
+"cascadeUp": true,
+"name": "Middle Left Abdomen",
+"bodypartCode": "BODYPART52",
+"es_name": "Abdomen medio izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354481,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART63",
+"cascadeUp": true,
+"name": "Middle Center Abdomen",
+"bodypartCode": "BODYPART51",
+"es_name": "Centro Medio Abdomen",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354482,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART64",
+"cascadeUp": true,
+"name": "Middle Right Abdomen",
+"bodypartCode": "BODYPART50",
+"es_name": "Abdomen medio derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354500,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART65",
+"cascadeUp": true,
+"name": "Lower Left Abdomen",
+"bodypartCode": "BODYPART55",
+"es_name": "Abdomen inferior izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354503,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART66",
+"cascadeUp": true,
+"name": "Lower Center Abdomen",
+"bodypartCode": "BODYPART54",
+"es_name": "Abdomen central inferior",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354524,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "PAIN_BODYPART11",
+"code": "PAIN_BODYPART67",
+"cascadeUp": true,
+"name": "Lower Right Abdomen",
+"bodypartCode": "BODYPART53",
+"es_name": "Abdomen inferior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354528,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART59",
+"cascadeUp": true,
+"name": "Upper Left Abdomen",
+"bodypartCode": "BODYPART49",
+"es_name": "Abdomen superior izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354550,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART60",
+"cascadeUp": true,
+"name": "Upper Center Abdomen",
+"bodypartCode": "BODYPART48",
+"es_name": "Abdomen central superior",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354565,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART61",
+"cascadeUp": true,
+"name": "Upper Right Abdomen",
+"bodypartCode": "BODYPART47",
+"es_name": "Abdomen superior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354572,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART62",
+"cascadeUp": true,
+"name": "Middle Left Abdomen",
+"bodypartCode": "BODYPART52",
+"es_name": "Abdomen medio izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354661,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART63",
+"cascadeUp": true,
+"name": "Middle Center Abdomen",
+"bodypartCode": "BODYPART51",
+"es_name": "Centro Medio Abdomen",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354662,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART64",
+"cascadeUp": true,
+"name": "Middle Right Abdomen",
+"bodypartCode": "BODYPART50",
+"es_name": "Abdomen medio derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354683,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART65",
+"cascadeUp": true,
+"name": "Lower Left Abdomen",
+"bodypartCode": "BODYPART55",
+"es_name": "Abdomen inferior izquierdo",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354685,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART66",
+"cascadeUp": true,
+"name": "Lower Center Abdomen",
+"bodypartCode": "BODYPART54",
+"es_name": "Abdomen central inferior",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 354692,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "SW_BODYPART11",
+"code": "SW_BODYPART67",
+"cascadeUp": true,
+"name": "Lower Right Abdomen",
+"bodypartCode": "BODYPART53",
+"es_name": "Abdomen inferior derecho",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 598784,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART45",
+"orderID": 40,
+"es_bodyLocations": [
+          "Tobillo izquierdo",
+          "Tobillo derecho"
+        ],
+"name": "Ankles",
+"es_name": "Tobillos",
+"bodyLocations": [
+          "Left Ankle",
+          "Right Ankle"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 598800,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART46",
+"orderID": 41,
+"es_bodyLocations": [
+          "Dedos del pie derecho",
+          "Dedos del pie izquierdo"
+        ],
+"name": "Toes",
+"es_name": "Dedos de los pies",
+"bodyLocations": [
+          "Right Toes",
+          "Left Toes"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 795484,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Hand",
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART72",
+"bodypartCode": "BODYPART36",
+"es_name": "Mano derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 795537,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Thumb",
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART73",
+"bodypartCode": "BODYPART37",
+"es_name": "Pulgar derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 795740,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Fingers",
+"parent": "PAIN_BODYPART22",
+"code": "PAIN_BODYPART74",
+"bodypartCode": "BODYPART38",
+"es_name": "Dedos derechos"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796093,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Hand",
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART75",
+"bodypartCode": "BODYPART36",
+"es_name": "Mano izquierda"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796160,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Thumb",
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART76",
+"es_name": "Pulgar izquierdo",
+"bodypartCode": "BODYPART37"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796176,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Fingers",
+"parent": "PAIN_BODYPART34",
+"code": "PAIN_BODYPART77",
+"es_name": "Dedos izquierdos",
+"bodypartCode": "BODYPART38"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796258,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Hand",
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART72",
+"bodypartCode": "BODYPART36",
+"es_name": "Mano derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796259,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Thumb",
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART73",
+"bodypartCode": "BODYPART37",
+"es_name": "Pulgar derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796260,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Fingers",
+"parent": "SW_BODYPART22",
+"code": "SW_BODYPART74",
+"bodypartCode": "BODYPART38",
+"es_name": "Dedos derechos"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796261,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Hand",
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART75",
+"bodypartCode": "BODYPART36",
+"es_name": "Mano izquierda"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796262,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Thumb",
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART76",
+"bodypartCode": "BODYPART37",
+"es_name": "Pulgar izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796263,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Fingers",
+"parent": "SW_BODYPART34",
+"code": "SW_BODYPART77",
+"bodypartCode": "BODYPART38",
+"es_name": "Dedos izquierdos"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796264,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART36",
+"orderID": 31,
+"es_bodyLocations": [
+          "Mano izquierda",
+          "Mano derecha"
+        ],
+"name": "Hands",
+"es_name": "Manos",
+"bodyLocations": [
+          "Left Hand",
+          "Right Hand"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796265,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART37",
+"orderID": 32,
+"es_bodyLocations": [
+          "Pulgar izquierdo",
+          "Pulgar derecho"
+        ],
+"name": "Thumbs",
+"es_name": "Pulgares",
+"bodyLocations": [
+          "Left Thumb",
+          "Right Thumb"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 796266,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART38",
+"orderID": 33,
+"es_bodyLocations": [
+          "Dedos izquierdos",
+          "Dedos derechos"
+        ],
+"name": "Fingers",
+"es_name": "Dedos",
+"bodyLocations": [
+          "Left Fingers",
+          "Right Fingers"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 853383,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART41",
+"orderID": 36,
+"es_bodyLocations": [
+          "Espalda baja"
+        ],
+"name": "Lower Back",
+"es_name": "Espalda baja",
+"bodyLocations": [
+          "Lower Back"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 853489,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lower Back",
+"parent": "PAIN_BODYPART01",
+"code": "PAIN_BODYPART78",
+"bodypartCode": "BODYPART41",
+"es_name": "Espalda baja"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 853490,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lower Back",
+"parent": "SW_BODYPART01",
+"code": "SW_BODYPART78",
+"bodypartCode": "BODYPART41",
+"es_name": "Espalda baja"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 892551,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART05",
+"code": "BODYPART42",
+"orderID": 37,
+"es_bodyLocations": [
+          "Axila derecha",
+          "Axila izquierda"
+        ],
+"name": "Armpits",
+"es_name": "Axilas",
+"bodyLocations": [
+          "Right Armpit",
+          "Left Armpit"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 892552,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART05",
+"code": "BODYPART43",
+"orderID": 38,
+"es_bodyLocations": [
+          "Pezón derecho",
+          "Pezón izquierdo"
+        ],
+"name": "Nipples",
+"es_name": "Pezones",
+"bodyLocations": [
+          "Nipples"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 892553,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART05",
+"code": "BODYPART44",
+"orderID": 39,
+"es_bodyLocations": [
+          "Mama superior izquierda derecha",
+          "Mama derecha superior derecha",
+          "Mama inferior derecha izquierda",
+          "Mama inferior derecha derecha",
+          "Mama izquierda superior izquierda",
+          "Mama superior izquierda izquierda",
+          "Mama inferior izquierda izquierda",
+          "Mama inferior izquierda izquierda"
+        ],
+"name": "Breasts",
+"es_name": "Pechos",
+"bodyLocations": [
+          "Breasts"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 892554,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Armpit",
+"parent": "PAIN_BODYPART05",
+"code": "PAIN_BODYPART79",
+"bodypartCode": "BODYPART42",
+"es_name": "Axila derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 892555,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Armpit",
+"parent": "PAIN_BODYPART05",
+"code": "PAIN_BODYPART80",
+"es_name": "Axila izquierda",
+"bodypartCode": "BODYPART42"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 967140,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Armpit",
+"parent": "SW_BODYPART05",
+"code": "SW_BODYPART79",
+"bodypartCode": "BODYPART42",
+"es_name": "Axila derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 967154,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Armpit",
+"parent": "SW_BODYPART05",
+"code": "SW_BODYPART80",
+"bodypartCode": "BODYPART42",
+"es_name": "Axila izquierda"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103257,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Foot",
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART91",
+"bodypartCode": "BODYPART23",
+"es_name": "Pie derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103258,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Toes",
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART92",
+"bodypartCode": "BODYPART46",
+"es_name": "Derechas"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103259,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Foot",
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART93",
+"bodypartCode": "BODYPART23",
+"es_name": "Pie izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103260,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Toes",
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART94",
+"es_name": "Dedos del pie izquierdo",
+"bodypartCode": "BODYPART46"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103261,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Foot",
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART91",
+"bodypartCode": "BODYPART23",
+"es_name": "Pie derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103262,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Toes",
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART92",
+"bodypartCode": "BODYPART46",
+"es_name": "Derechas"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103263,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Foot",
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART93",
+"bodypartCode": "BODYPART23",
+"es_name": "Pie izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1103264,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Toes",
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART94",
+"bodypartCode": "BODYPART46",
+"es_name": "Dedos del pie izquierdo"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665871,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART47",
+"orderID": 42,
+"es_bodyLocations": [
+          "Abdomen superior derecho"
+        ],
+"name": "Upper Right Abdomen",
+"es_name": "Abdomen superior derecho",
+"bodyLocations": [
+          "Upper Right Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665872,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART48",
+"orderID": 43,
+"es_bodyLocations": [
+          "Abdomen central superior"
+        ],
+"name": "Upper Center Abdomen",
+"es_name": "Abdomen central superior",
+"bodyLocations": [
+          "Upper Center Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665873,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART49",
+"orderID": 44,
+"es_bodyLocations": [
+          "Abdomen superior izquierdo"
+        ],
+"name": "Upper Left Abdomen",
+"es_name": "Abdomen superior izquierdo",
+"bodyLocations": [
+          "Upper Left Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665875,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART50",
+"orderID": 45,
+"es_bodyLocations": [
+          "Abdomen medio derecho"
+        ],
+"name": "Middle Right Abdomen",
+"es_name": "Abdomen medio derecho",
+"bodyLocations": [
+          "Middle Right Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665880,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART51",
+"orderID": 46,
+"es_bodyLocations": [
+          "Centro Medio Abdomen"
+        ],
+"name": "Middle Center Abdomen",
+"es_name": "Centro Medio Abdomen",
+"bodyLocations": [
+          "Middle Center Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665882,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART52",
+"orderID": 47,
+"es_bodyLocations": [
+          "Abdomen medio izquierdo"
+        ],
+"name": "Middle Left Abdomen",
+"es_name": "Abdomen medio izquierdo",
+"bodyLocations": [
+          "Middle Left Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665885,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART53",
+"orderID": 48,
+"es_bodyLocations": [
+          "Abdomen inferior derecho"
+        ],
+"name": "Lower Right Abdomen",
+"es_name": "Abdomen inferior derecho",
+"bodyLocations": [
+          "Lower Right Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665888,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART54",
+"orderID": 49,
+"es_bodyLocations": [
+          "Abdomen central inferior"
+        ],
+"name": "Lower Center Abdomen",
+"es_name": "Abdomen central inferior",
+"bodyLocations": [
+          "Lower Center Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665889,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART11",
+"code": "BODYPART55",
+"orderID": 50,
+"es_bodyLocations": [
+          "Abdomen inferior izquierdo"
+        ],
+"name": "Lower Left Abdomen",
+"es_name": "Abdomen inferior izquierdo",
+"bodyLocations": [
+          "Lower Left Abdomen"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665890,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART56",
+"orderID": 51,
+"es_bodyLocations": [
+          "Cabeza trasera"
+        ],
+"name": "Back Head",
+"es_name": "Cabeza trasera",
+"bodyLocations": [
+          "Back Head"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 1665894,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART57",
+"orderID": 52,
+"es_bodyLocations": [
+          "Cuero cabelludo"
+        ],
+"name": "Scalp",
+"es_name": "Cuero cabelludo",
+"bodyLocations": [
+          "Scalp"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 2594455,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Metabolic Panel",
+"code": "SYMPTCG16",
+"es_name": "Panel metabólico",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 2594459,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Urinalysis",
+"code": "SYMPTCG17",
+"es_name": "Análisis de orina",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 2594460,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Lipids",
+"code": "SYMPTCG18",
+"es_name": "Lípidos",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 2594461,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "CBC",
+"code": "SYMPTCG19",
+"es_name": "CBC",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 2594462,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Other",
+"code": "SYMPTCG20",
+"es_name": "Otro",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 4328118,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "CSF",
+"code": "SYMPTCG21",
+"es_name": "CSF",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 4370173,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART22",
+"code": "BODYPART58",
+"orderID": 53,
+"es_bodyLocations": [
+          "Hombro derecho",
+          " hombro izquierdo"
+        ],
+"name": "Shoulders",
+"es_name": "Espalda",
+"bodyLocations": [
+          "Right Shoulder",
+          "Left Shoulder"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6116108,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Fetal/Neonatal Observations",
+"code": "SYMPTCG22",
+"es_name": "Observaciones fetales",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6454570,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Imaging",
+"code": "SYMPTCG23",
+"es_name": "Imágenes",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705534,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Shoulder",
+"parent": "PAIN_BODYPART17",
+"code": "PAIN_BODYPART95",
+"bodypartCode": "BODYPART58",
+"es_name": ""
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705535,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Shoulder",
+"parent": "PAIN_BODYPART31",
+"code": "PAIN_BODYPART96",
+"bodypartCode": "BODYPART58",
+"es_name": ""
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705536,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Hip",
+"parent": "PAIN_BODYPART13",
+"code": "PAIN_BODYPART97",
+"bodypartCode": "BODYPART59",
+"es_name": ""
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705537,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Hip",
+"parent": "PAIN_BODYPART27",
+"code": "PAIN_BODYPART98",
+"bodypartCode": "BODYPART59",
+"es_name": ""
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705538,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Shoulder",
+"parent": "SW_BODYPART17",
+"code": "SW_BODYPART95",
+"bodypartCode": "BODYPART58",
+"es_name": "Hombro derecho"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705539,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Shoulder",
+"parent": "SW_BODYPART31",
+"code": "SW_BODYPART96",
+"es_name": "Hombro izquierdo",
+"bodypartCode": "BODYPART58"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705540,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Right Hip",
+"parent": "SW_BODYPART13",
+"code": "SW_BODYPART97",
+"bodypartCode": "BODYPART59",
+"es_name": "Cadera derecha"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705541,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Left Hip",
+"parent": "SW_BODYPART27",
+"code": "SW_BODYPART98",
+"es_name": "Cadera izquierda",
+"bodypartCode": "BODYPART59"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6705554,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART13",
+"code": "BODYPART59",
+"orderID": 54,
+"es_bodyLocations": [
+          "Cadera derecha",
+          " cadera izquierda"
+        ],
+"name": "Hip",
+"es_name": "Caderas",
+"bodyLocations": [
+          "Right Hip",
+          "Left Hip"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 6728095,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Physical Exam",
+"code": "SYMPTCG24",
+"es_name": "Examen físico",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7985628,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Stool",
+"code": "SYMPTCG25",
+"es_name": "Taburete",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8053159,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Screenings",
+"code": "SYMPTCG26",
+"es_name": "Psicológico",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8375851,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "PTSD",
+"code": "SYMPTCG27",
+"es_name": "PTSD",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8894895,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Core Symptoms",
+"code": "SYMPTCG28",
+"es_name": "Síntomas principales",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8894896,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Pathology",
+"code": "SYMPTCG29",
+"es_name": "Patología",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 8894897,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART02",
+"code": "BODYPART60",
+"orderID": 55,
+"es_bodyLocations": [
+          "Right Temporal",
+          "Left Temporal"
+        ],
+"name": "Temporals",
+"es_name": "Temporals",
+"bodyLocations": [
+          "Right Temporal",
+          "Left Temporal"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 9089552,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Microbiology",
+"code": "SYMPTCG30",
+"es_name": "Microbiología",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 9435448,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Tumor Markers",
+"code": "SYMPTCG31",
+"es_name": "Marcadores tumorales"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 10958589,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Arterial Blood Gas",
+"code": "SYMPTCG32",
+"es_name": "Gasometría Arterial"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 13301222,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Core Symptoms",
+"code": "SYMPTCG33",
+"es_name": "Síntomas principales",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 15917873,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Eyelids",
+"parent": "SW_BODYPART07",
+"code": "SW_BODYPART101",
+"bodypartCode": "BODYPART61"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 18891614,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"parent": "BODYPART01",
+"code": "BODYPART05",
+"orderID": 5,
+"es_bodyLocations": [
+          "Pecho"
+        ],
+"name": "Chest",
+"es_name": "Cofre",
+"bodyLocations": [
+          "Chest"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 21517528,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Eyelids",
+"parent": "BODYPART07",
+"code": "BODYPART61",
+"orderID": 34,
+"bodyLocations": [
+          "Eyelids"
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 22552665,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Breasts",
+"parent": "PAIN_BODYPART05",
+"code": "PAIN_BODYPART99",
+"bodypartCode": "BODYPART44",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 22552666,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Nipples",
+"parent": "PAIN_BODYPART05",
+"code": "PAIN_BODYPART100",
+"bodypartCode": "BODYPART43",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 22552667,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Eyelids",
+"parent": "PAIN_BODYPART07",
+"code": "PAIN_BODYPART101",
+"bodypartCode": "BODYPART61"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 22552668,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Breasts",
+"parent": "SW_BODYPART05",
+"code": "SW_BODYPART99",
+"bodypartCode": "BODYPART44",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 22831864,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Nipples",
+"parent": "SW_BODYPART05",
+"code": "SW_BODYPART100",
+"bodypartCode": "BODYPART43",
+"cascadeDown": true
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 24013242,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Assessment/Evaluation",
+"code": "SYMPTCG34",
+"es_name": "Valoración / Evaluación",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 24035695,
+"labels": [
+        "SymptomCategory"
+      ],
+"properties": {
+"name": "Core Symptoms",
+"code": "SYMPTCG35",
+"es_name": "Síntomas principales",
+"es_bodyLocations": [
+          ""
+        ]
+      }
+    }
+  }
+]

@@ -1,6 +1,5 @@
 from rest_framework import serializers
-# from .models import SnomedCode, LogicalSymptopGroup, RcodeDatastore, SymptomTemplate, SymptomCategory, SymptomGroup, Symptom
-from .models import DataStoreSources, Scale, ModifierType, SymptomDataStore, SymptomTmpl, Symptom, SymptomCategory, ValueStore, DataKeyStore, SymptomGroup
+from .models import DataStoreSources, Scale, ModifierType, SymptomDataStore, SymptomTmpl, Symptom, SymptomCategory, ValueStore, DataKeyStore, SymptomGroup, Section
 from collections import OrderedDict
 class DataStoreSourcesSerializer(serializers.ModelSerializer):
 	def to_representation(self, instance):
@@ -17,7 +16,6 @@ class ScaleSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Scale
 		exclude = ['id']
-		# fields = '__all__'
 class ModifierTypeSerializer(serializers.ModelSerializer):
 	scale = ScaleSerializer()
 	def to_representation(self, instance):
@@ -26,7 +24,6 @@ class ModifierTypeSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = ModifierType
 		exclude = ['id']
-		# fields = '__all__'
 
 class SymptomDataStoreSerializer(serializers.ModelSerializer):
 	modifier_values = ModifierTypeSerializer(read_only=True, many=True)
@@ -37,7 +34,6 @@ class SymptomDataStoreSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = SymptomDataStore
 		exclude = ['id']
-		# fields = '__all__'
 class SymptomTmplSerializer(serializers.ModelSerializer):
 	symptomID = serializers.SerializerMethodField()
 	rangeValue = serializers.SerializerMethodField()
@@ -52,7 +48,6 @@ class SymptomTmplSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = SymptomTmpl
 		exclude = ['id', 'symptom_id', 'range_values']
-		# fields = '__all__'
 class SymptomSerializer(serializers.ModelSerializer):
 	symptoms_model = SymptomTmplSerializer()
 	rows = SymptomDataStoreSerializer(read_only=True, many=True)
@@ -62,7 +57,6 @@ class SymptomSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Symptom
 		exclude = ['id']
-		# fields = '__all__'
 class SymptomCategorySerializer(serializers.ModelSerializer):
 	symptoms = SymptomSerializer(read_only=True, many=True)
 	def to_representation(self, instance):
@@ -71,7 +65,6 @@ class SymptomCategorySerializer(serializers.ModelSerializer):
 	class Meta:
 		model = SymptomCategory
 		exclude = ['id']
-		# fields = '__all__'
 class ValueStoreSerializer(serializers.ModelSerializer):
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
@@ -79,22 +72,31 @@ class ValueStoreSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = ValueStore
 		exclude = ['id']
-		# fields = '__all__'
 class DataKeyStoreSerializer(serializers.ModelSerializer):
 	values = ValueStoreSerializer(read_only=True, many=True)
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
+		result = dict([(key, result[key]) for key in result if result[key] is not None])
+		return {f"{instance.name}" :result}
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
 	class Meta:
 		model = DataKeyStore
+		exclude = ['id', 'name']
+class SectionSerializer(serializers.ModelSerializer):
+	categories = SymptomCategorySerializer(read_only=True, many=True)
+	def to_representation(self, instance):
+		result = super().to_representation(instance)
+		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
+	class Meta:
+		model = Section
 		exclude = ['id']
-		# fields = '__all__'
 class SymptomGroupSerializer(serializers.ModelSerializer):
 	categories = SymptomCategorySerializer(read_only=True, many=True)
+	sections = SectionSerializer(read_only=True, many=True)
+	datastore_ref_types = DataKeyStoreSerializer(read_only=True, many=True)
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
 	class Meta:
 		model = SymptomGroup
 		exclude = ['id']
-		# fields = ['id', 'categories',]

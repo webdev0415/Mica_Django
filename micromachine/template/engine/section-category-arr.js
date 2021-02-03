@@ -1,0 +1,9993 @@
+export const SectionArr = [
+[1, "pain", "SC001"],
+[2, "swelling", "SC002"],
+]
+export const SCArr = [
+[ 1, "Cheeks & Chin", "PAIN_BODYPART25" ],
+[ 2, "Left Wrist", "PAIN_BODYPART26" ],
+[ 3, "Left Leg", "PAIN_BODYPART27" ],
+[ 4, "Left Knee", "PAIN_BODYPART28" ],
+[ 5, "Left Elbow", "PAIN_BODYPART29" ],
+[ 6, "Left Lower Arm", "PAIN_BODYPART30" ],
+[ 7, "Left Upper Arm", "PAIN_BODYPART31" ],
+[ 8, "Left Lower Leg", "PAIN_BODYPART32" ],
+[ 9, "Left Upper Leg", "PAIN_BODYPART33" ],
+[ 10, "Left Arm", "PAIN_BODYPART34" ],
+[ 11, "Left Ankle", "PAIN_BODYPART35" ],
+[ 12, "Left Eye", "PAIN_BODYPART36" ],
+[ 13, "Left Ear", "PAIN_BODYPART37" ],
+[ 14, "Right Temporal", "PAIN_BODYPART38" ],
+[ 15, "Left Temporal", "PAIN_BODYPART39" ],
+[ 16, "Back Head", "PAIN_BODYPART40" ],
+[ 17, "Neck", "PAIN_BODYPART41" ],
+[ 18, "Upper Lips", "PAIN_BODYPART48" ],
+[ 19, "Lower Lips", "PAIN_BODYPART49" ],
+[ 20, "Upper Gums & Teeth", "PAIN_BODYPART50" ],
+[ 21, "Lower Gums & Teeth", "PAIN_BODYPART51" ],
+[ 22, "Tongue", "PAIN_BODYPART52" ],
+[ 23, "Roof Of Mouth", "PAIN_BODYPART53" ],
+[ 24, "Back of Throat", "PAIN_BODYPART58" ],
+[ 25, "Whole Body", "SW_BODYPART01" ],
+[ 26, "Head", "SW_BODYPART02" ],
+[ 27, "Nose", "SW_BODYPART03" ],
+[ 28, "Throat", "SW_BODYPART04" ],
+[ 29, "Chest", "SW_BODYPART05" ],
+[ 30, "Mouth", "SW_BODYPART06" ],
+[ 31, "Right Eye", "SW_BODYPART07" ],
+[ 32, "Right Ear", "SW_BODYPART08" ],
+[ 33, "Forehead", "SW_BODYPART09" ],
+[ 34, "Pelvis", "SW_BODYPART10" ],
+[ 35, "Abdomen", "SW_BODYPART11" ],
+[ 36, "Right Wrist", "SW_BODYPART12" ],
+[ 37, "Right Leg", "SW_BODYPART13" ],
+[ 38, "Right Knee", "SW_BODYPART14" ],
+[ 39, "Right Elbow", "SW_BODYPART15" ],
+[ 40, "Right Lower Arm", "SW_BODYPART16" ],
+[ 41, "Right Upper Arm", "SW_BODYPART17" ],
+[ 42, "Right Lower Leg", "SW_BODYPART18" ],
+[ 43, "Right Upper Leg", "SW_BODYPART19" ],
+[ 44, "Upper Back", "SW_BODYPART20" ],
+[ 45, "Butt", "SW_BODYPART21" ],
+[ 46, "Right Arm", "SW_BODYPART22" ],
+[ 47, "Right Ankle", "SW_BODYPART23" ],
+[ 48, "Scalp", "SW_BODYPART24" ],
+[ 49, "Cheeks & Chin", "SW_BODYPART25" ],
+[ 50, "Left Wrist", "SW_BODYPART26" ],
+[ 51, "Left Leg", "SW_BODYPART27" ],
+[ 52, "Left Knee", "SW_BODYPART28" ],
+[ 53, "Left Elbow", "SW_BODYPART29" ],
+[ 54, "Left Lower Arm", "SW_BODYPART30" ],
+[ 55, "Left Upper Arm", "SW_BODYPART31" ],
+[ 56, "Left Lower Leg", "SW_BODYPART32" ],
+[ 57, "Left Upper Leg", "SW_BODYPART33" ],
+[ 58, "Left Arm", "SW_BODYPART34" ],
+[ 59, "Left Ankle", "SW_BODYPART35" ],
+[ 60, "Left Eye", "SW_BODYPART36" ],
+[ 61, "Left Ear", "SW_BODYPART37" ],
+[ 62, "Right Temporal", "SW_BODYPART38" ],
+[ 63, "Left Temporal", "SW_BODYPART39" ],
+[ 64, "Back Head", "SW_BODYPART40" ],
+[ 65, "Neck", "SW_BODYPART41" ],
+[ 66, "Upper Lips", "SW_BODYPART48" ],
+[ 67, "Lower Lips", "SW_BODYPART49" ],
+[ 68, "Upper Gums & Teeth", "SW_BODYPART50" ],
+[ 69, "Lower Gums & Teeth", "SW_BODYPART51" ],
+[ 70, "Tongue", "SW_BODYPART52" ],
+[ 71, "Roof Of Mouth", "SW_BODYPART53" ],
+[ 72, "Back of Throat", "SW_BODYPART58" ],
+[ 73, "Core Symptoms", "SYMPTCG01" ],
+[ 74, "Family History", "SYMPTCG02" ],
+[ 75, "Personal History", "SYMPTCG03" ],
+[ 76, "Surgical History", "SYMPTCG04" ],
+[ 77, "Dietary", "SYMPTCG05" ],
+[ 78, "Environment", "SYMPTCG06" ],
+[ 79, "Occupational Risk", "SYMPTCG07" ],
+[ 80, "Sleeping Patterns", "SYMPTCG09" ],
+[ 81, "Other Factors", "SYMPTCG10" ],
+[ 82, "Cognitive / Nervous System", "SYMPTCG11" ],
+[ 83, "Emotions", "SYMPTCG12" ],
+[ 84, "Psychological", "SYMPTCG13" ],
+[ 85, "Core Symptoms", "SYMPTCG14" ],
+[ 86, "Sexual", "SYMPTCG15" ],
+[ 87, "Whole Body", "BODYPART01" ],
+[ 88, "Head", "BODYPART02" ],
+[ 89, "Nose", "BODYPART03" ],
+[ 90, "Throat", "BODYPART04" ],
+[ 91, "Mouth", "BODYPART06" ],
+[ 92, "Eyes", "BODYPART07" ],
+[ 93, "Ears", "BODYPART08" ],
+[ 94, "Forehead", "BODYPART09" ],
+[ 95, "Pelvis", "BODYPART10" ],
+[ 96, "Abdomen", "BODYPART11" ],
+[ 97, "Wrists", "BODYPART12" ],
+[ 98, "Legs", "BODYPART13" ],
+[ 99, "Knee", "BODYPART14" ],
+[ 100, "Elbow", "BODYPART15" ],
+[ 101, "Lower Arm", "BODYPART16" ],
+[ 102, "Upper Arm", "BODYPART17" ],
+[ 103, "Lower Leg", "BODYPART18" ],
+[ 104, "Upper Leg", "BODYPART19" ],
+[ 105, "Upper Back", "BODYPART20" ],
+[ 106, "Butt", "BODYPART21" ],
+[ 107, "Arms", "BODYPART22" ],
+[ 108, "Feet", "BODYPART23" ],
+[ 109, "Tongue", "BODYPART26" ],
+[ 110, "Lips", "BODYPART27" ],
+[ 111, "Gums & Teeth", "BODYPART29" ],
+[ 112, "Neck", "BODYPART31" ],
+[ 113, "Roof Of Mouth", "BODYPART34" ],
+[ 114, "Back of Throat", "BODYPART35" ],
+[ 115, "Whole Body", "PAIN_BODYPART01" ],
+[ 116, "Head", "PAIN_BODYPART02" ],
+[ 117, "Nose", "PAIN_BODYPART03" ],
+[ 118, "Throat", "PAIN_BODYPART04" ],
+[ 119, "Chest", "PAIN_BODYPART05" ],
+[ 120, "Mouth", "PAIN_BODYPART06" ],
+[ 121, "Right Eye", "PAIN_BODYPART07" ],
+[ 122, "Right Ear", "PAIN_BODYPART08" ],
+[ 123, "Forehead", "PAIN_BODYPART09" ],
+[ 124, "Pelvis", "PAIN_BODYPART10" ],
+[ 125, "Abdomen", "PAIN_BODYPART11" ],
+[ 126, "Right Wrist", "PAIN_BODYPART12" ],
+[ 127, "Right Leg", "PAIN_BODYPART13" ],
+[ 128, "Right Knee", "PAIN_BODYPART14" ],
+[ 129, "Right Elbow", "PAIN_BODYPART15" ],
+[ 130, "Right Lower Arm", "PAIN_BODYPART16" ],
+[ 131, "Right Upper Arm", "PAIN_BODYPART17" ],
+[ 132, "Right Lower Leg", "PAIN_BODYPART18" ],
+[ 133, "Right Upper Leg", "PAIN_BODYPART19" ],
+[ 134, "Upper Back", "PAIN_BODYPART20" ],
+[ 135, "Butt", "PAIN_BODYPART21" ],
+[ 136, "Right Arm", "PAIN_BODYPART22" ],
+[ 137, "Right Ankle", "PAIN_BODYPART23" ],
+[ 138, "Scalp", "PAIN_BODYPART24" ],
+[ 139, "Upper Left Abdomen", "PAIN_BODYPART59" ],
+[ 140, "Upper Center Abdomen", "PAIN_BODYPART60" ],
+[ 141, "Upper Right Abdomen", "PAIN_BODYPART61" ],
+[ 142, "Middle Left Abdomen", "PAIN_BODYPART62" ],
+[ 143, "Middle Center Abdomen", "PAIN_BODYPART63" ],
+[ 144, "Middle Right Abdomen", "PAIN_BODYPART64" ],
+[ 145, "Lower Left Abdomen", "PAIN_BODYPART65" ],
+[ 146, "Lower Center Abdomen", "PAIN_BODYPART66" ],
+[ 147, "Lower Right Abdomen", "PAIN_BODYPART67" ],
+[ 148, "Upper Left Abdomen", "SW_BODYPART59" ],
+[ 149, "Upper Center Abdomen", "SW_BODYPART60" ],
+[ 150, "Upper Right Abdomen", "SW_BODYPART61" ],
+[ 151, "Middle Left Abdomen", "SW_BODYPART62" ],
+[ 152, "Middle Center Abdomen", "SW_BODYPART63" ],
+[ 153, "Middle Right Abdomen", "SW_BODYPART64" ],
+[ 154, "Lower Left Abdomen", "SW_BODYPART65" ],
+[ 155, "Lower Center Abdomen", "SW_BODYPART66" ],
+[ 156, "Lower Right Abdomen", "SW_BODYPART67" ],
+[ 157, "Ankles", "BODYPART45" ],
+[ 158, "Toes", "BODYPART46" ],
+[ 159, "Right Hand", "PAIN_BODYPART72" ],
+[ 160, "Right Thumb", "PAIN_BODYPART73" ],
+[ 161, "Right Fingers", "PAIN_BODYPART74" ],
+[ 162, "Left Hand", "PAIN_BODYPART75" ],
+[ 163, "Left Thumb", "PAIN_BODYPART76" ],
+[ 164, "Left Fingers", "PAIN_BODYPART77" ],
+[ 165, "Right Hand", "SW_BODYPART72" ],
+[ 166, "Right Thumb", "SW_BODYPART73" ],
+[ 167, "Right Fingers", "SW_BODYPART74" ],
+[ 168, "Left Hand", "SW_BODYPART75" ],
+[ 169, "Left Thumb", "SW_BODYPART76" ],
+[ 170, "Left Fingers", "SW_BODYPART77" ],
+[ 171, "Hands", "BODYPART36" ],
+[ 172, "Thumbs", "BODYPART37" ],
+[ 173, "Fingers", "BODYPART38" ],
+[ 174, "Lower Back", "BODYPART41" ],
+[ 175, "Lower Back", "PAIN_BODYPART78" ],
+[ 176, "Lower Back", "SW_BODYPART78" ],
+[ 177, "Armpits", "BODYPART42" ],
+[ 178, "Nipples", "BODYPART43" ],
+[ 179, "Breasts", "BODYPART44" ],
+[ 180, "Right Armpit", "PAIN_BODYPART79" ],
+[ 181, "Left Armpit", "PAIN_BODYPART80" ],
+[ 182, "Right Armpit", "SW_BODYPART79" ],
+[ 183, "Left Armpit", "SW_BODYPART80" ],
+[ 184, "Right Foot", "PAIN_BODYPART91" ],
+[ 185, "Right Toes", "PAIN_BODYPART92" ],
+[ 186, "Left Foot", "PAIN_BODYPART93" ],
+[ 187, "Left Toes", "PAIN_BODYPART94" ],
+[ 188, "Right Foot", "SW_BODYPART91" ],
+[ 189, "Right Toes", "SW_BODYPART92" ],
+[ 190, "Left Foot", "SW_BODYPART93" ],
+[ 191, "Left Toes", "SW_BODYPART94" ],
+[ 192, "Upper Right Abdomen", "BODYPART47" ],
+[ 193, "Upper Center Abdomen", "BODYPART48" ],
+[ 194, "Upper Left Abdomen", "BODYPART49" ],
+[ 195, "Middle Right Abdomen", "BODYPART50" ],
+[ 196, "Middle Center Abdomen", "BODYPART51" ],
+[ 197, "Middle Left Abdomen", "BODYPART52" ],
+[ 198, "Lower Right Abdomen", "BODYPART53" ],
+[ 199, "Lower Center Abdomen", "BODYPART54" ],
+[ 200, "Lower Left Abdomen", "BODYPART55" ],
+[ 201, "Back Head", "BODYPART56" ],
+[ 202, "Scalp", "BODYPART57" ],
+[ 203, "Metabolic Panel", "SYMPTCG16" ],
+[ 204, "Urinalysis", "SYMPTCG17" ],
+[ 205, "Lipids", "SYMPTCG18" ],
+[ 206, "CBC", "SYMPTCG19" ],
+[ 207, "Other", "SYMPTCG20" ],
+[ 208, "CSF", "SYMPTCG21" ],
+[ 209, "Shoulders", "BODYPART58" ],
+[ 210, "Fetal/Neonatal Observations", "SYMPTCG22" ],
+[ 211, "Imaging", "SYMPTCG23" ],
+[ 212, "Right Shoulder", "PAIN_BODYPART95" ],
+[ 213, "Left Shoulder", "PAIN_BODYPART96" ],
+[ 214, "Right Hip", "PAIN_BODYPART97" ],
+[ 215, "Left Hip", "PAIN_BODYPART98" ],
+[ 216, "Right Shoulder", "SW_BODYPART95" ],
+[ 217, "Left Shoulder", "SW_BODYPART96" ],
+[ 218, "Right Hip", "SW_BODYPART97" ],
+[ 219, "Left Hip", "SW_BODYPART98" ],
+[ 220, "Hip", "BODYPART59" ],
+[ 221, "Physical Exam", "SYMPTCG24" ],
+[ 222, "Stool", "SYMPTCG25" ],
+[ 223, "Screenings", "SYMPTCG26" ],
+[ 224, "PTSD", "SYMPTCG27" ],
+[ 225, "Core Symptoms", "SYMPTCG28" ],
+[ 226, "Pathology", "SYMPTCG29" ],
+[ 227, "Temporals", "BODYPART60" ],
+[ 228, "Microbiology", "SYMPTCG30" ],
+[ 229, "Tumor Markers", "SYMPTCG31" ],
+[ 230, "Arterial Blood Gas", "SYMPTCG32" ],
+[ 231, "Core Symptoms", "SYMPTCG33" ],
+[ 232, "Eyelids", "SW_BODYPART101" ],
+[ 233, "Chest", "BODYPART05" ],
+[ 234, "Eyelids", "BODYPART61" ],
+[ 235, "Breasts", "PAIN_BODYPART99" ],
+[ 236, "Nipples", "PAIN_BODYPART100" ],
+[ 237, "Eyelids", "PAIN_BODYPART101" ],
+[ 238, "Breasts", "SW_BODYPART99" ],
+[ 239, "Nipples", "SW_BODYPART100" ],
+[ 240, "Assessment/Evaluation", "SYMPTCG34" ],
+[ 241, "Core Symptoms", "SYMPTCG35" ],
+]
+export const RelationArr = [
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 22552667,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Eyelids",
+          "parent": "PAIN_BODYPART07",
+          "code": "PAIN_BODYPART101",
+          "bodypartCode": "BODYPART61"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 4234235,
+            "start": 8324,
+            "end": 22552667,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 22552667,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Eyelids",
+              "parent": "PAIN_BODYPART07",
+              "code": "PAIN_BODYPART101",
+              "bodypartCode": "BODYPART61"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 22552665,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Breasts",
+          "parent": "PAIN_BODYPART05",
+          "code": "PAIN_BODYPART99",
+          "bodypartCode": "BODYPART44",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 3778311,
+            "start": 8324,
+            "end": 22552665,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 22552665,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Breasts",
+              "parent": "PAIN_BODYPART05",
+              "code": "PAIN_BODYPART99",
+              "bodypartCode": "BODYPART44",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 22552666,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Nipples",
+          "parent": "PAIN_BODYPART05",
+          "code": "PAIN_BODYPART100",
+          "bodypartCode": "BODYPART43",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 3778344,
+            "start": 8324,
+            "end": 22552666,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 22552666,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Nipples",
+              "parent": "PAIN_BODYPART05",
+              "code": "PAIN_BODYPART100",
+              "bodypartCode": "BODYPART43",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 6705535,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Shoulder",
+          "parent": "PAIN_BODYPART31",
+          "code": "PAIN_BODYPART96",
+          "bodypartCode": "BODYPART58",
+          "es_name": ""
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 1867410,
+            "start": 8324,
+            "end": 6705535,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705535,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Shoulder",
+              "parent": "PAIN_BODYPART31",
+              "code": "PAIN_BODYPART96",
+              "bodypartCode": "BODYPART58",
+              "es_name": ""
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 6705536,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Hip",
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART97",
+          "bodypartCode": "BODYPART59",
+          "es_name": ""
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 1867411,
+            "start": 8324,
+            "end": 6705536,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705536,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Hip",
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART97",
+              "bodypartCode": "BODYPART59",
+              "es_name": ""
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 6705534,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Shoulder",
+          "parent": "PAIN_BODYPART17",
+          "code": "PAIN_BODYPART95",
+          "bodypartCode": "BODYPART58",
+          "es_name": ""
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 1867409,
+            "start": 8324,
+            "end": 6705534,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705534,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Shoulder",
+              "parent": "PAIN_BODYPART17",
+              "code": "PAIN_BODYPART95",
+              "bodypartCode": "BODYPART58",
+              "es_name": ""
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 6705537,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Hip",
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART98",
+          "bodypartCode": "BODYPART59",
+          "es_name": ""
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 1867412,
+            "start": 8324,
+            "end": 6705537,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705537,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Hip",
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART98",
+              "bodypartCode": "BODYPART59",
+              "es_name": ""
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 1103259,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Foot",
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART93",
+          "bodypartCode": "BODYPART23",
+          "es_name": "Pie izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 324460,
+            "start": 8324,
+            "end": 1103259,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103259,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Foot",
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART93",
+              "bodypartCode": "BODYPART23",
+              "es_name": "Pie izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 1103260,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Toes",
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART94",
+          "es_name": "Dedos del pie izquierdo",
+          "bodypartCode": "BODYPART46"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 324461,
+            "start": 8324,
+            "end": 1103260,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103260,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Toes",
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART94",
+              "es_name": "Dedos del pie izquierdo",
+              "bodypartCode": "BODYPART46"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 1103257,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Foot",
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART91",
+          "bodypartCode": "BODYPART23",
+          "es_name": "Pie derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 324458,
+            "start": 8324,
+            "end": 1103257,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103257,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Foot",
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART91",
+              "bodypartCode": "BODYPART23",
+              "es_name": "Pie derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 1103258,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Toes",
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART92",
+          "bodypartCode": "BODYPART46",
+          "es_name": "Derechas"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 324459,
+            "start": 8324,
+            "end": 1103258,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103258,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Toes",
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART92",
+              "bodypartCode": "BODYPART46",
+              "es_name": "Derechas"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 892555,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Armpit",
+          "parent": "PAIN_BODYPART05",
+          "code": "PAIN_BODYPART80",
+          "es_name": "Axila izquierda",
+          "bodypartCode": "BODYPART42"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 1731,
+            "start": 8324,
+            "end": 892555,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 892555,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Armpit",
+              "parent": "PAIN_BODYPART05",
+              "code": "PAIN_BODYPART80",
+              "es_name": "Axila izquierda",
+              "bodypartCode": "BODYPART42"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 892554,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Armpit",
+          "parent": "PAIN_BODYPART05",
+          "code": "PAIN_BODYPART79",
+          "bodypartCode": "BODYPART42",
+          "es_name": "Axila derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 1728,
+            "start": 8324,
+            "end": 892554,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 892554,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Armpit",
+              "parent": "PAIN_BODYPART05",
+              "code": "PAIN_BODYPART79",
+              "bodypartCode": "BODYPART42",
+              "es_name": "Axila derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 796160,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Thumb",
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART76",
+          "es_name": "Pulgar izquierdo",
+          "bodypartCode": "BODYPART37"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217214,
+            "start": 8324,
+            "end": 796160,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796160,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Thumb",
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART76",
+              "es_name": "Pulgar izquierdo",
+              "bodypartCode": "BODYPART37"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 796176,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Fingers",
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART77",
+          "es_name": "Dedos izquierdos",
+          "bodypartCode": "BODYPART38"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217215,
+            "start": 8324,
+            "end": 796176,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796176,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Fingers",
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART77",
+              "es_name": "Dedos izquierdos",
+              "bodypartCode": "BODYPART38"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 795740,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Fingers",
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART74",
+          "bodypartCode": "BODYPART38",
+          "es_name": "Dedos derechos"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217212,
+            "start": 8324,
+            "end": 795740,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 795740,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Fingers",
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART74",
+              "bodypartCode": "BODYPART38",
+              "es_name": "Dedos derechos"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 796093,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Hand",
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART75",
+          "bodypartCode": "BODYPART36",
+          "es_name": "Mano izquierda"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217213,
+            "start": 8324,
+            "end": 796093,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796093,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Hand",
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART75",
+              "bodypartCode": "BODYPART36",
+              "es_name": "Mano izquierda"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 795484,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Hand",
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART72",
+          "bodypartCode": "BODYPART36",
+          "es_name": "Mano derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217210,
+            "start": 8324,
+            "end": 795484,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 795484,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Hand",
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART72",
+              "bodypartCode": "BODYPART36",
+              "es_name": "Mano derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 795537,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Thumb",
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART73",
+          "bodypartCode": "BODYPART37",
+          "es_name": "Pulgar derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217211,
+            "start": 8324,
+            "end": 795537,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 795537,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Thumb",
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART73",
+              "bodypartCode": "BODYPART37",
+              "es_name": "Pulgar derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 853489,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Lower Back",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART78",
+          "bodypartCode": "BODYPART41",
+          "es_name": "Espalda baja"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 217291,
+            "start": 8324,
+            "end": 853489,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 853489,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Lower Back",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART78",
+              "bodypartCode": "BODYPART41",
+              "es_name": "Espalda baja"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354524,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART67",
+          "cascadeUp": true,
+          "name": "Lower Right Abdomen",
+          "bodypartCode": "BODYPART53",
+          "es_name": "Abdomen inferior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12409,
+            "start": 8324,
+            "end": 354524,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354524,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART67",
+              "cascadeUp": true,
+              "name": "Lower Right Abdomen",
+              "bodypartCode": "BODYPART53",
+              "es_name": "Abdomen inferior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354503,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART66",
+          "cascadeUp": true,
+          "name": "Lower Center Abdomen",
+          "bodypartCode": "BODYPART54",
+          "es_name": "Abdomen central inferior",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12408,
+            "start": 8324,
+            "end": 354503,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354503,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART66",
+              "cascadeUp": true,
+              "name": "Lower Center Abdomen",
+              "bodypartCode": "BODYPART54",
+              "es_name": "Abdomen central inferior",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354479,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART61",
+          "cascadeUp": true,
+          "name": "Upper Right Abdomen",
+          "bodypartCode": "BODYPART47",
+          "es_name": "Abdomen superior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12403,
+            "start": 8324,
+            "end": 354479,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354479,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART61",
+              "cascadeUp": true,
+              "name": "Upper Right Abdomen",
+              "bodypartCode": "BODYPART47",
+              "es_name": "Abdomen superior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354478,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART60",
+          "cascadeUp": true,
+          "name": "Upper Center Abdomen",
+          "bodypartCode": "BODYPART48",
+          "es_name": "Abdomen central superior",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12402,
+            "start": 8324,
+            "end": 354478,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354478,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART60",
+              "cascadeUp": true,
+              "name": "Upper Center Abdomen",
+              "bodypartCode": "BODYPART48",
+              "es_name": "Abdomen central superior",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354477,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART59",
+          "cascadeUp": true,
+          "name": "Upper Left Abdomen",
+          "bodypartCode": "BODYPART49",
+          "es_name": "Abdomen superior izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12401,
+            "start": 8324,
+            "end": 354477,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354477,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART59",
+              "cascadeUp": true,
+              "name": "Upper Left Abdomen",
+              "bodypartCode": "BODYPART49",
+              "es_name": "Abdomen superior izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354500,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART65",
+          "cascadeUp": true,
+          "name": "Lower Left Abdomen",
+          "bodypartCode": "BODYPART55",
+          "es_name": "Abdomen inferior izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12407,
+            "start": 8324,
+            "end": 354500,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354500,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART65",
+              "cascadeUp": true,
+              "name": "Lower Left Abdomen",
+              "bodypartCode": "BODYPART55",
+              "es_name": "Abdomen inferior izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354482,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART64",
+          "cascadeUp": true,
+          "name": "Middle Right Abdomen",
+          "bodypartCode": "BODYPART50",
+          "es_name": "Abdomen medio derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12406,
+            "start": 8324,
+            "end": 354482,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354482,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART64",
+              "cascadeUp": true,
+              "name": "Middle Right Abdomen",
+              "bodypartCode": "BODYPART50",
+              "es_name": "Abdomen medio derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354481,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART63",
+          "cascadeUp": true,
+          "name": "Middle Center Abdomen",
+          "bodypartCode": "BODYPART51",
+          "es_name": "Centro Medio Abdomen",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12405,
+            "start": 8324,
+            "end": 354481,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354481,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART63",
+              "cascadeUp": true,
+              "name": "Middle Center Abdomen",
+              "bodypartCode": "BODYPART51",
+              "es_name": "Centro Medio Abdomen",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 354480,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART11",
+          "code": "PAIN_BODYPART62",
+          "cascadeUp": true,
+          "name": "Middle Left Abdomen",
+          "bodypartCode": "BODYPART52",
+          "es_name": "Abdomen medio izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 12404,
+            "start": 8324,
+            "end": 354480,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354480,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART11",
+              "code": "PAIN_BODYPART62",
+              "cascadeUp": true,
+              "name": "Middle Left Abdomen",
+              "bodypartCode": "BODYPART52",
+              "es_name": "Abdomen medio izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8370,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Whole Body",
+          "code": "PAIN_BODYPART01",
+          "bodypartCode": "BODYPART01",
+          "es_name": "Todo el cuerpo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5103,
+            "start": 8324,
+            "end": 8370,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8370,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Whole Body",
+              "code": "PAIN_BODYPART01",
+              "bodypartCode": "BODYPART01",
+              "es_name": "Todo el cuerpo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8377,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Ear",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART08",
+          "bodypartCode": "BODYPART08",
+          "es_name": "Oreja derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5110,
+            "start": 8324,
+            "end": 8377,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8377,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Ear",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART08",
+              "bodypartCode": "BODYPART08",
+              "es_name": "Oreja derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8378,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART09",
+          "cascadeUp": true,
+          "name": "Forehead",
+          "bodypartCode": "BODYPART09",
+          "es_name": "Frente",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5111,
+            "start": 8324,
+            "end": 8378,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8378,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART09",
+              "cascadeUp": true,
+              "name": "Forehead",
+              "bodypartCode": "BODYPART09",
+              "es_name": "Frente",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8375,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Mouth",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART06",
+          "bodypartCode": "BODYPART06",
+          "es_name": "Boca"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5108,
+            "start": 8324,
+            "end": 8375,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8375,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Mouth",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART06",
+              "bodypartCode": "BODYPART06",
+              "es_name": "Boca"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8376,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Eye",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART07",
+          "bodypartCode": "BODYPART07",
+          "es_name": "Ojo derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5109,
+            "start": 8324,
+            "end": 8376,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8376,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Eye",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART07",
+              "bodypartCode": "BODYPART07",
+              "es_name": "Ojo derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8373,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Throat",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART04",
+          "bodypartCode": "BODYPART04",
+          "es_name": "Garganta"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5106,
+            "start": 8324,
+            "end": 8373,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8373,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Throat",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART04",
+              "bodypartCode": "BODYPART04",
+              "es_name": "Garganta"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8374,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Chest",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART05",
+          "bodypartCode": "BODYPART05",
+          "es_name": "Pecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5107,
+            "start": 8324,
+            "end": 8374,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8374,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Chest",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART05",
+              "bodypartCode": "BODYPART05",
+              "es_name": "Pecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8371,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Head",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART02",
+          "es_name": "Cabeza",
+          "bodypartCode": "BODYPART02"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5104,
+            "start": 8324,
+            "end": 8371,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8371,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Head",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART02",
+              "es_name": "Cabeza",
+              "bodypartCode": "BODYPART02"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8372,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Nose",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART03",
+          "es_name": "Nariz",
+          "bodypartCode": "BODYPART03"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5105,
+            "start": 8324,
+            "end": 8372,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8372,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Nose",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART03",
+              "es_name": "Nariz",
+              "bodypartCode": "BODYPART03"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 289,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Back of Throat",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART58",
+          "es_name": "Parte posterior de la garganta",
+          "bodypartCode": "BODYPART35"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5160,
+            "start": 8324,
+            "end": 289,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 289,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Back of Throat",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART58",
+              "es_name": "Parte posterior de la garganta",
+              "bodypartCode": "BODYPART35"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 284,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Roof Of Mouth",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART53",
+          "es_name": "Techo de la boca",
+          "bodypartCode": "BODYPART34"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5155,
+            "start": 8324,
+            "end": 284,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 284,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Roof Of Mouth",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART53",
+              "es_name": "Techo de la boca",
+              "bodypartCode": "BODYPART34"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 283,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Tongue",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART52",
+          "bodypartCode": "BODYPART26",
+          "es_name": "Lengua"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5154,
+            "start": 8324,
+            "end": 283,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 283,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Tongue",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART52",
+              "bodypartCode": "BODYPART26",
+              "es_name": "Lengua"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 282,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Lower Gums & Teeth",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART51",
+          "bodypartCode": "BODYPART29",
+          "es_name": "Encías y dientes inferiores"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5153,
+            "start": 8324,
+            "end": 282,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 282,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Lower Gums & Teeth",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART51",
+              "bodypartCode": "BODYPART29",
+              "es_name": "Encías y dientes inferiores"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 281,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Upper Gums & Teeth",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART50",
+          "bodypartCode": "BODYPART29",
+          "es_name": "Encías y dientes superiores"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5152,
+            "start": 8324,
+            "end": 281,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 281,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Upper Gums & Teeth",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART50",
+              "bodypartCode": "BODYPART29",
+              "es_name": "Encías y dientes superiores"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 235,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Leg",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART27",
+          "es_name": "Pierna izquierda",
+          "bodypartCode": "BODYPART13"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5129,
+            "start": 8324,
+            "end": 235,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 235,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Leg",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART27",
+              "es_name": "Pierna izquierda",
+              "bodypartCode": "BODYPART13"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 234,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Wrist",
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART26",
+          "es_name": "Muñeca izquierda",
+          "bodypartCode": "BODYPART12"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5128,
+            "start": 8324,
+            "end": 234,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 234,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Wrist",
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART26",
+              "es_name": "Muñeca izquierda",
+              "bodypartCode": "BODYPART12"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 257,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART29",
+          "cascadeUp": true,
+          "name": "Left Elbow",
+          "bodypartCode": "BODYPART15",
+          "es_name": "Codo izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5131,
+            "start": 8324,
+            "end": 257,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 257,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART29",
+              "cascadeUp": true,
+              "name": "Left Elbow",
+              "bodypartCode": "BODYPART15",
+              "es_name": "Codo izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 256,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART28",
+          "cascadeUp": true,
+          "name": "Left Knee",
+          "bodypartCode": "BODYPART14",
+          "es_name": "Rodilla izquierda",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5130,
+            "start": 8324,
+            "end": 256,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 256,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART28",
+              "cascadeUp": true,
+              "name": "Left Knee",
+              "bodypartCode": "BODYPART14",
+              "es_name": "Rodilla izquierda",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 259,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART31",
+          "cascadeUp": true,
+          "name": "Left Upper Arm",
+          "bodypartCode": "BODYPART17",
+          "es_name": "Brazo superior izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5133,
+            "start": 8324,
+            "end": 259,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 259,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART31",
+              "cascadeUp": true,
+              "name": "Left Upper Arm",
+              "bodypartCode": "BODYPART17",
+              "es_name": "Brazo superior izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 258,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART34",
+          "code": "PAIN_BODYPART30",
+          "cascadeUp": true,
+          "name": "Left Lower Arm",
+          "bodypartCode": "BODYPART16",
+          "es_name": "Brazo izquierdo inferior",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5132,
+            "start": 8324,
+            "end": 258,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 258,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART34",
+              "code": "PAIN_BODYPART30",
+              "cascadeUp": true,
+              "name": "Left Lower Arm",
+              "bodypartCode": "BODYPART16",
+              "es_name": "Brazo izquierdo inferior",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 261,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART33",
+          "cascadeUp": true,
+          "name": "Left Upper Leg",
+          "bodypartCode": "BODYPART19",
+          "es_name": "Pata superior izquierda",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5135,
+            "start": 8324,
+            "end": 261,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 261,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART33",
+              "cascadeUp": true,
+              "name": "Left Upper Leg",
+              "bodypartCode": "BODYPART19",
+              "es_name": "Pata superior izquierda",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 260,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART32",
+          "cascadeUp": true,
+          "name": "Left Lower Leg",
+          "bodypartCode": "BODYPART18",
+          "es_name": "Pata inferior izquierda",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5134,
+            "start": 8324,
+            "end": 260,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 260,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART32",
+              "cascadeUp": true,
+              "name": "Left Lower Leg",
+              "bodypartCode": "BODYPART18",
+              "es_name": "Pata inferior izquierda",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8388,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART19",
+          "cascadeUp": true,
+          "name": "Right Upper Leg",
+          "bodypartCode": "BODYPART19",
+          "es_name": "Pata superior derecha",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5121,
+            "start": 8324,
+            "end": 8388,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8388,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART19",
+              "cascadeUp": true,
+              "name": "Right Upper Leg",
+              "bodypartCode": "BODYPART19",
+              "es_name": "Pata superior derecha",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8387,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART18",
+          "cascadeUp": true,
+          "name": "Right Lower Leg",
+          "bodypartCode": "BODYPART18",
+          "es_name": "Pata inferior derecha",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5120,
+            "start": 8324,
+            "end": 8387,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8387,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART18",
+              "cascadeUp": true,
+              "name": "Right Lower Leg",
+              "bodypartCode": "BODYPART18",
+              "es_name": "Pata inferior derecha",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8390,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Butt",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART21",
+          "es_name": "Extremo",
+          "bodypartCode": "BODYPART21"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5123,
+            "start": 8324,
+            "end": 8390,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8390,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Butt",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART21",
+              "es_name": "Extremo",
+              "bodypartCode": "BODYPART21"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8389,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Upper Back",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART20",
+          "es_name": "Superior de la espalda",
+          "bodypartCode": "BODYPART20"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5122,
+            "start": 8324,
+            "end": 8389,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8389,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Upper Back",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART20",
+              "es_name": "Superior de la espalda",
+              "bodypartCode": "BODYPART20"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8392,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART23",
+          "cascadeUp": true,
+          "name": "Right Ankle",
+          "bodypartCode": "BODYPART45",
+          "es_name": "Tobillo derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5125,
+            "start": 8324,
+            "end": 8392,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8392,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART23",
+              "cascadeUp": true,
+              "name": "Right Ankle",
+              "bodypartCode": "BODYPART45",
+              "es_name": "Tobillo derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8391,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Arm",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART22",
+          "bodypartCode": "BODYPART22",
+          "es_name": "Brazo derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5124,
+            "start": 8324,
+            "end": 8391,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8391,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Arm",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART22",
+              "bodypartCode": "BODYPART22",
+              "es_name": "Brazo derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 232,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Cheeks & Chin",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART25",
+          "bodypartCode": "BODYPART02",
+          "es_name": "Mejillas y barbilla"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5127,
+            "start": 8324,
+            "end": 232,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 232,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Cheeks & Chin",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART25",
+              "bodypartCode": "BODYPART02",
+              "es_name": "Mejillas y barbilla"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8393,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART24",
+          "cascadeUp": true,
+          "name": "Scalp",
+          "bodypartCode": "BODYPART57",
+          "es_name": "Cuero cabelludo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5126,
+            "start": 8324,
+            "end": 8393,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8393,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART24",
+              "cascadeUp": true,
+              "name": "Scalp",
+              "bodypartCode": "BODYPART57",
+              "es_name": "Cuero cabelludo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 279,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Upper Lips",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART48",
+          "es_name": "Labios superiores",
+          "bodypartCode": "BODYPART27"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5150,
+            "start": 8324,
+            "end": 279,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 279,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Upper Lips",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART48",
+              "es_name": "Labios superiores",
+              "bodypartCode": "BODYPART27"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 280,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Lower Lips",
+          "parent": "PAIN_BODYPART06",
+          "code": "PAIN_BODYPART49",
+          "es_name": "Labios inferiores",
+          "bodypartCode": "BODYPART27"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5151,
+            "start": 8324,
+            "end": 280,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 280,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Lower Lips",
+              "parent": "PAIN_BODYPART06",
+              "code": "PAIN_BODYPART49",
+              "es_name": "Labios inferiores",
+              "bodypartCode": "BODYPART27"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 262,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Arm",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART34",
+          "es_name": "Brazo izquierdo",
+          "bodypartCode": "BODYPART22"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5136,
+            "start": 8324,
+            "end": 262,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 262,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Arm",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART34",
+              "es_name": "Brazo izquierdo",
+              "bodypartCode": "BODYPART22"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 263,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART27",
+          "code": "PAIN_BODYPART35",
+          "cascadeUp": true,
+          "name": "Left Ankle",
+          "bodypartCode": "BODYPART45",
+          "es_name": "Tobillo izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5137,
+            "start": 8324,
+            "end": 263,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 263,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART27",
+              "code": "PAIN_BODYPART35",
+              "cascadeUp": true,
+              "name": "Left Ankle",
+              "bodypartCode": "BODYPART45",
+              "es_name": "Tobillo izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 264,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Eye",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART36",
+          "bodypartCode": "BODYPART07",
+          "es_name": "Ojo izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5138,
+            "start": 8324,
+            "end": 264,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 264,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Eye",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART36",
+              "bodypartCode": "BODYPART07",
+              "es_name": "Ojo izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 265,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Ear",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART37",
+          "es_name": "Oreja izquierda",
+          "bodypartCode": "BODYPART08"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5139,
+            "start": 8324,
+            "end": 265,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 265,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Ear",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART37",
+              "es_name": "Oreja izquierda",
+              "bodypartCode": "BODYPART08"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 267,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Temporal",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART38",
+          "es_name": "Derecho temporal",
+          "bodypartCode": "BODYPART60"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5140,
+            "start": 8324,
+            "end": 267,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 267,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Temporal",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART38",
+              "es_name": "Derecho temporal",
+              "bodypartCode": "BODYPART60"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 270,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Temporal",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART39",
+          "es_name": "Temporal izquierdo",
+          "bodypartCode": "BODYPART60"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5141,
+            "start": 8324,
+            "end": 270,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 270,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Temporal",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART39",
+              "es_name": "Temporal izquierdo",
+              "bodypartCode": "BODYPART60"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 271,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART40",
+          "cascadeUp": true,
+          "name": "Back Head",
+          "bodypartCode": "BODYPART02",
+          "es_name": "Cabeza trasera",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5142,
+            "start": 8324,
+            "end": 271,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 271,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART40",
+              "cascadeUp": true,
+              "name": "Back Head",
+              "bodypartCode": "BODYPART02",
+              "es_name": "Cabeza trasera",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 272,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Neck",
+          "parent": "PAIN_BODYPART02",
+          "code": "PAIN_BODYPART41",
+          "es_name": "Cuello",
+          "bodypartCode": "BODYPART31"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5143,
+            "start": 8324,
+            "end": 272,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 272,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Neck",
+              "parent": "PAIN_BODYPART02",
+              "code": "PAIN_BODYPART41",
+              "es_name": "Cuello",
+              "bodypartCode": "BODYPART31"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8380,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Abdomen",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART11",
+          "bodypartCode": "BODYPART11",
+          "es_name": "Abdomen"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5113,
+            "start": 8324,
+            "end": 8380,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8380,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Abdomen",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART11",
+              "bodypartCode": "BODYPART11",
+              "es_name": "Abdomen"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8379,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Pelvis",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART10",
+          "bodypartCode": "BODYPART10",
+          "es_name": "Pelvis"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5112,
+            "start": 8324,
+            "end": 8379,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8379,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Pelvis",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART10",
+              "bodypartCode": "BODYPART10",
+              "es_name": "Pelvis"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8382,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Leg",
+          "parent": "PAIN_BODYPART01",
+          "code": "PAIN_BODYPART13",
+          "bodypartCode": "BODYPART13",
+          "es_name": "Pierna derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5115,
+            "start": 8324,
+            "end": 8382,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8382,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Leg",
+              "parent": "PAIN_BODYPART01",
+              "code": "PAIN_BODYPART13",
+              "bodypartCode": "BODYPART13",
+              "es_name": "Pierna derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8381,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Wrist",
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART12",
+          "es_name": "Muñeca derecha",
+          "bodypartCode": "BODYPART12"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5114,
+            "start": 8324,
+            "end": 8381,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8381,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Wrist",
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART12",
+              "es_name": "Muñeca derecha",
+              "bodypartCode": "BODYPART12"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8384,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART15",
+          "cascadeUp": true,
+          "name": "Right Elbow",
+          "bodypartCode": "BODYPART15",
+          "es_name": "Codo derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5117,
+            "start": 8324,
+            "end": 8384,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8384,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART15",
+              "cascadeUp": true,
+              "name": "Right Elbow",
+              "bodypartCode": "BODYPART15",
+              "es_name": "Codo derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8383,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART13",
+          "code": "PAIN_BODYPART14",
+          "cascadeUp": true,
+          "name": "Right Knee",
+          "bodypartCode": "BODYPART14",
+          "es_name": "Rodilla derecha",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5116,
+            "start": 8324,
+            "end": 8383,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8383,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART13",
+              "code": "PAIN_BODYPART14",
+              "cascadeUp": true,
+              "name": "Right Knee",
+              "bodypartCode": "BODYPART14",
+              "es_name": "Rodilla derecha",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8386,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART17",
+          "cascadeUp": true,
+          "name": "Right Upper Arm",
+          "bodypartCode": "BODYPART17",
+          "es_name": "Brazo superior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5119,
+            "start": 8324,
+            "end": 8386,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8386,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART17",
+              "cascadeUp": true,
+              "name": "Right Upper Arm",
+              "bodypartCode": "BODYPART17",
+              "es_name": "Brazo superior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8324,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "pain",
+          "code": "SC001"
+        }
+      },
+      "end": {
+        "identity": 8385,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "PAIN_BODYPART22",
+          "code": "PAIN_BODYPART16",
+          "cascadeUp": true,
+          "name": "Right Lower Arm",
+          "bodypartCode": "BODYPART16",
+          "es_name": "Brazo inferior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8324,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "pain",
+              "code": "SC001"
+            }
+          },
+          "relationship": {
+            "identity": 5118,
+            "start": 8324,
+            "end": 8385,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 8385,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "PAIN_BODYPART22",
+              "code": "PAIN_BODYPART16",
+              "cascadeUp": true,
+              "name": "Right Lower Arm",
+              "bodypartCode": "BODYPART16",
+              "es_name": "Brazo inferior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 22552668,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Breasts",
+          "parent": "SW_BODYPART05",
+          "code": "SW_BODYPART99",
+          "bodypartCode": "BODYPART44",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1101510,
+            "start": 8325,
+            "end": 22552668,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 22552668,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Breasts",
+              "parent": "SW_BODYPART05",
+              "code": "SW_BODYPART99",
+              "bodypartCode": "BODYPART44",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 22831864,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Nipples",
+          "parent": "SW_BODYPART05",
+          "code": "SW_BODYPART100",
+          "bodypartCode": "BODYPART43",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1516990,
+            "start": 8325,
+            "end": 22831864,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 22831864,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Nipples",
+              "parent": "SW_BODYPART05",
+              "code": "SW_BODYPART100",
+              "bodypartCode": "BODYPART43",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 15917873,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Eyelids",
+          "parent": "SW_BODYPART07",
+          "code": "SW_BODYPART101",
+          "bodypartCode": "BODYPART61"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 2010980,
+            "start": 8325,
+            "end": 15917873,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 15917873,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Eyelids",
+              "parent": "SW_BODYPART07",
+              "code": "SW_BODYPART101",
+              "bodypartCode": "BODYPART61"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 6705539,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Shoulder",
+          "parent": "SW_BODYPART31",
+          "code": "SW_BODYPART96",
+          "es_name": "Hombro izquierdo",
+          "bodypartCode": "BODYPART58"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1867414,
+            "start": 8325,
+            "end": 6705539,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705539,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Shoulder",
+              "parent": "SW_BODYPART31",
+              "code": "SW_BODYPART96",
+              "es_name": "Hombro izquierdo",
+              "bodypartCode": "BODYPART58"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 6705540,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Hip",
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART97",
+          "bodypartCode": "BODYPART59",
+          "es_name": "Cadera derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1867415,
+            "start": 8325,
+            "end": 6705540,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705540,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Hip",
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART97",
+              "bodypartCode": "BODYPART59",
+              "es_name": "Cadera derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 6705538,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Shoulder",
+          "parent": "SW_BODYPART17",
+          "code": "SW_BODYPART95",
+          "bodypartCode": "BODYPART58",
+          "es_name": "Hombro derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1867413,
+            "start": 8325,
+            "end": 6705538,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705538,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Shoulder",
+              "parent": "SW_BODYPART17",
+              "code": "SW_BODYPART95",
+              "bodypartCode": "BODYPART58",
+              "es_name": "Hombro derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 6705541,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Hip",
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART98",
+          "es_name": "Cadera izquierda",
+          "bodypartCode": "BODYPART59"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1867416,
+            "start": 8325,
+            "end": 6705541,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 6705541,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Hip",
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART98",
+              "es_name": "Cadera izquierda",
+              "bodypartCode": "BODYPART59"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 1103264,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Toes",
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART94",
+          "bodypartCode": "BODYPART46",
+          "es_name": "Dedos del pie izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 324471,
+            "start": 8325,
+            "end": 1103264,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103264,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Toes",
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART94",
+              "bodypartCode": "BODYPART46",
+              "es_name": "Dedos del pie izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 1103263,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Foot",
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART93",
+          "bodypartCode": "BODYPART23",
+          "es_name": "Pie izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 324470,
+            "start": 8325,
+            "end": 1103263,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103263,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Foot",
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART93",
+              "bodypartCode": "BODYPART23",
+              "es_name": "Pie izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 1103261,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Foot",
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART91",
+          "bodypartCode": "BODYPART23",
+          "es_name": "Pie derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 324462,
+            "start": 8325,
+            "end": 1103261,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103261,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Foot",
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART91",
+              "bodypartCode": "BODYPART23",
+              "es_name": "Pie derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 1103262,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Toes",
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART92",
+          "bodypartCode": "BODYPART46",
+          "es_name": "Derechas"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 324463,
+            "start": 8325,
+            "end": 1103262,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 1103262,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Toes",
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART92",
+              "bodypartCode": "BODYPART46",
+              "es_name": "Derechas"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 967154,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Armpit",
+          "parent": "SW_BODYPART05",
+          "code": "SW_BODYPART80",
+          "bodypartCode": "BODYPART42",
+          "es_name": "Axila izquierda"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1755,
+            "start": 8325,
+            "end": 967154,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 967154,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Armpit",
+              "parent": "SW_BODYPART05",
+              "code": "SW_BODYPART80",
+              "bodypartCode": "BODYPART42",
+              "es_name": "Axila izquierda"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 967140,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Armpit",
+          "parent": "SW_BODYPART05",
+          "code": "SW_BODYPART79",
+          "bodypartCode": "BODYPART42",
+          "es_name": "Axila derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 1752,
+            "start": 8325,
+            "end": 967140,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 967140,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Armpit",
+              "parent": "SW_BODYPART05",
+              "code": "SW_BODYPART79",
+              "bodypartCode": "BODYPART42",
+              "es_name": "Axila derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 853490,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Lower Back",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART78",
+          "bodypartCode": "BODYPART41",
+          "es_name": "Espalda baja"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 231959,
+            "start": 8325,
+            "end": 853490,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 853490,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Lower Back",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART78",
+              "bodypartCode": "BODYPART41",
+              "es_name": "Espalda baja"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 796258,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Hand",
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART72",
+          "bodypartCode": "BODYPART36",
+          "es_name": "Mano derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 217220,
+            "start": 8325,
+            "end": 796258,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796258,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Hand",
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART72",
+              "bodypartCode": "BODYPART36",
+              "es_name": "Mano derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 796259,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Thumb",
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART73",
+          "bodypartCode": "BODYPART37",
+          "es_name": "Pulgar derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 217221,
+            "start": 8325,
+            "end": 796259,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796259,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Thumb",
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART73",
+              "bodypartCode": "BODYPART37",
+              "es_name": "Pulgar derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 796260,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Fingers",
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART74",
+          "bodypartCode": "BODYPART38",
+          "es_name": "Dedos derechos"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 217222,
+            "start": 8325,
+            "end": 796260,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796260,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Fingers",
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART74",
+              "bodypartCode": "BODYPART38",
+              "es_name": "Dedos derechos"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 796261,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Hand",
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART75",
+          "bodypartCode": "BODYPART36",
+          "es_name": "Mano izquierda"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 217223,
+            "start": 8325,
+            "end": 796261,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796261,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Hand",
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART75",
+              "bodypartCode": "BODYPART36",
+              "es_name": "Mano izquierda"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 796262,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Thumb",
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART76",
+          "bodypartCode": "BODYPART37",
+          "es_name": "Pulgar izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 217224,
+            "start": 8325,
+            "end": 796262,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796262,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Thumb",
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART76",
+              "bodypartCode": "BODYPART37",
+              "es_name": "Pulgar izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 796263,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Fingers",
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART77",
+          "bodypartCode": "BODYPART38",
+          "es_name": "Dedos izquierdos"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 217225,
+            "start": 8325,
+            "end": 796263,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 796263,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Fingers",
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART77",
+              "bodypartCode": "BODYPART38",
+              "es_name": "Dedos izquierdos"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354550,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART60",
+          "cascadeUp": true,
+          "name": "Upper Center Abdomen",
+          "bodypartCode": "BODYPART48",
+          "es_name": "Abdomen central superior",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12411,
+            "start": 8325,
+            "end": 354550,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354550,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART60",
+              "cascadeUp": true,
+              "name": "Upper Center Abdomen",
+              "bodypartCode": "BODYPART48",
+              "es_name": "Abdomen central superior",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354528,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART59",
+          "cascadeUp": true,
+          "name": "Upper Left Abdomen",
+          "bodypartCode": "BODYPART49",
+          "es_name": "Abdomen superior izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12410,
+            "start": 8325,
+            "end": 354528,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354528,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART59",
+              "cascadeUp": true,
+              "name": "Upper Left Abdomen",
+              "bodypartCode": "BODYPART49",
+              "es_name": "Abdomen superior izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354662,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART64",
+          "cascadeUp": true,
+          "name": "Middle Right Abdomen",
+          "bodypartCode": "BODYPART50",
+          "es_name": "Abdomen medio derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12415,
+            "start": 8325,
+            "end": 354662,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354662,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART64",
+              "cascadeUp": true,
+              "name": "Middle Right Abdomen",
+              "bodypartCode": "BODYPART50",
+              "es_name": "Abdomen medio derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354661,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART63",
+          "cascadeUp": true,
+          "name": "Middle Center Abdomen",
+          "bodypartCode": "BODYPART51",
+          "es_name": "Centro Medio Abdomen",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12414,
+            "start": 8325,
+            "end": 354661,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354661,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART63",
+              "cascadeUp": true,
+              "name": "Middle Center Abdomen",
+              "bodypartCode": "BODYPART51",
+              "es_name": "Centro Medio Abdomen",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354572,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART62",
+          "cascadeUp": true,
+          "name": "Middle Left Abdomen",
+          "bodypartCode": "BODYPART52",
+          "es_name": "Abdomen medio izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12413,
+            "start": 8325,
+            "end": 354572,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354572,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART62",
+              "cascadeUp": true,
+              "name": "Middle Left Abdomen",
+              "bodypartCode": "BODYPART52",
+              "es_name": "Abdomen medio izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354565,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART61",
+          "cascadeUp": true,
+          "name": "Upper Right Abdomen",
+          "bodypartCode": "BODYPART47",
+          "es_name": "Abdomen superior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12412,
+            "start": 8325,
+            "end": 354565,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354565,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART61",
+              "cascadeUp": true,
+              "name": "Upper Right Abdomen",
+              "bodypartCode": "BODYPART47",
+              "es_name": "Abdomen superior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354685,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART66",
+          "cascadeUp": true,
+          "name": "Lower Center Abdomen",
+          "bodypartCode": "BODYPART54",
+          "es_name": "Abdomen central inferior",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12417,
+            "start": 8325,
+            "end": 354685,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354685,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART66",
+              "cascadeUp": true,
+              "name": "Lower Center Abdomen",
+              "bodypartCode": "BODYPART54",
+              "es_name": "Abdomen central inferior",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354683,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART65",
+          "cascadeUp": true,
+          "name": "Lower Left Abdomen",
+          "bodypartCode": "BODYPART55",
+          "es_name": "Abdomen inferior izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12416,
+            "start": 8325,
+            "end": 354683,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354683,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART65",
+              "cascadeUp": true,
+              "name": "Lower Left Abdomen",
+              "bodypartCode": "BODYPART55",
+              "es_name": "Abdomen inferior izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 354692,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART11",
+          "code": "SW_BODYPART67",
+          "cascadeUp": true,
+          "name": "Lower Right Abdomen",
+          "bodypartCode": "BODYPART53",
+          "es_name": "Abdomen inferior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 12418,
+            "start": 8325,
+            "end": 354692,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 354692,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART11",
+              "code": "SW_BODYPART67",
+              "cascadeUp": true,
+              "name": "Lower Right Abdomen",
+              "bodypartCode": "BODYPART53",
+              "es_name": "Abdomen inferior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 304,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Leg",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART13",
+          "bodypartCode": "BODYPART13",
+          "es_name": "Pierna derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5173,
+            "start": 8325,
+            "end": 304,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 304,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Leg",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART13",
+              "bodypartCode": "BODYPART13",
+              "es_name": "Pierna derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 303,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Wrist",
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART12",
+          "es_name": "Muñeca derecha",
+          "bodypartCode": "BODYPART12"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5172,
+            "start": 8325,
+            "end": 303,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 303,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Wrist",
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART12",
+              "es_name": "Muñeca derecha",
+              "bodypartCode": "BODYPART12"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 306,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART15",
+          "cascadeUp": true,
+          "name": "Right Elbow",
+          "bodypartCode": "BODYPART15",
+          "es_name": "Codo derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5175,
+            "start": 8325,
+            "end": 306,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 306,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART15",
+              "cascadeUp": true,
+              "name": "Right Elbow",
+              "bodypartCode": "BODYPART15",
+              "es_name": "Codo derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 305,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART14",
+          "cascadeUp": true,
+          "name": "Right Knee",
+          "bodypartCode": "BODYPART14",
+          "es_name": "Rodilla derecha",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5174,
+            "start": 8325,
+            "end": 305,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 305,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART14",
+              "cascadeUp": true,
+              "name": "Right Knee",
+              "bodypartCode": "BODYPART14",
+              "es_name": "Rodilla derecha",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 300,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART09",
+          "cascadeUp": true,
+          "name": "Forehead",
+          "bodypartCode": "BODYPART09",
+          "es_name": "Frente",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5169,
+            "start": 8325,
+            "end": 300,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 300,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART09",
+              "cascadeUp": true,
+              "name": "Forehead",
+              "bodypartCode": "BODYPART09",
+              "es_name": "Frente",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 298,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Ear",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART08",
+          "bodypartCode": "BODYPART08",
+          "es_name": "Oreja derecha"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5168,
+            "start": 8325,
+            "end": 298,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 298,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Ear",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART08",
+              "bodypartCode": "BODYPART08",
+              "es_name": "Oreja derecha"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 302,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Abdomen",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART11",
+          "bodypartCode": "BODYPART11",
+          "es_name": "Abdomen"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5171,
+            "start": 8325,
+            "end": 302,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 302,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Abdomen",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART11",
+              "bodypartCode": "BODYPART11",
+              "es_name": "Abdomen"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 301,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Pelvis",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART10",
+          "bodypartCode": "BODYPART10",
+          "es_name": "Pelvis"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5170,
+            "start": 8325,
+            "end": 301,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 301,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Pelvis",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART10",
+              "bodypartCode": "BODYPART10",
+              "es_name": "Pelvis"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 314,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Butt",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART21",
+          "bodypartCode": "BODYPART21",
+          "es_name": "Extremo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5181,
+            "start": 8325,
+            "end": 314,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 314,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Butt",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART21",
+              "bodypartCode": "BODYPART21",
+              "es_name": "Extremo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 353,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Back of Throat",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART58",
+          "es_name": "Parte posterior de la garganta",
+          "bodypartCode": "BODYPART35"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5218,
+            "start": 8325,
+            "end": 353,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 353,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Back of Throat",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART58",
+              "es_name": "Parte posterior de la garganta",
+              "bodypartCode": "BODYPART35"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 332,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Ear",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART37",
+          "bodypartCode": "BODYPART08",
+          "es_name": "Oreja izquierda"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5197,
+            "start": 8325,
+            "end": 332,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 332,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Ear",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART37",
+              "bodypartCode": "BODYPART08",
+              "es_name": "Oreja izquierda"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 331,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Eye",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART36",
+          "bodypartCode": "BODYPART07",
+          "es_name": "Ojo izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5196,
+            "start": 8325,
+            "end": 331,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 331,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Eye",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART36",
+              "bodypartCode": "BODYPART07",
+              "es_name": "Ojo izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 334,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Temporal",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART39",
+          "bodypartCode": "BODYPART60",
+          "es_name": "Temporal izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5199,
+            "start": 8325,
+            "end": 334,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 334,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Temporal",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART39",
+              "bodypartCode": "BODYPART60",
+              "es_name": "Temporal izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 333,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Temporal",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART38",
+          "bodypartCode": "BODYPART60",
+          "es_name": "Right Temporal"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5198,
+            "start": 8325,
+            "end": 333,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 333,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Temporal",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART38",
+              "bodypartCode": "BODYPART60",
+              "es_name": "Right Temporal"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 328,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART33",
+          "cascadeUp": true,
+          "name": "Left Upper Leg",
+          "bodypartCode": "BODYPART19",
+          "es_name": "Pata superior izquierda",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5193,
+            "start": 8325,
+            "end": 328,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 328,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART33",
+              "cascadeUp": true,
+              "name": "Left Upper Leg",
+              "bodypartCode": "BODYPART19",
+              "es_name": "Pata superior izquierda",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 327,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART32",
+          "cascadeUp": true,
+          "name": "Left Lower Leg",
+          "bodypartCode": "BODYPART18",
+          "es_name": "Pata inferior izquierda",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5192,
+            "start": 8325,
+            "end": 327,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 327,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART32",
+              "cascadeUp": true,
+              "name": "Left Lower Leg",
+              "bodypartCode": "BODYPART18",
+              "es_name": "Pata inferior izquierda",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 330,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART35",
+          "cascadeUp": true,
+          "name": "Left Ankle",
+          "bodypartCode": "BODYPART45",
+          "es_name": "Tobillo izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5195,
+            "start": 8325,
+            "end": 330,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 330,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART35",
+              "cascadeUp": true,
+              "name": "Left Ankle",
+              "bodypartCode": "BODYPART45",
+              "es_name": "Tobillo izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 329,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Arm",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART34",
+          "bodypartCode": "BODYPART22",
+          "es_name": "Brazo izquierdo"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5194,
+            "start": 8325,
+            "end": 329,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 329,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Arm",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART34",
+              "bodypartCode": "BODYPART22",
+              "es_name": "Brazo izquierdo"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 323,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART29",
+          "cascadeUp": true,
+          "name": "Left Elbow",
+          "bodypartCode": "BODYPART15",
+          "es_name": "Codo izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5189,
+            "start": 8325,
+            "end": 323,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 323,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART29",
+              "cascadeUp": true,
+              "name": "Left Elbow",
+              "bodypartCode": "BODYPART15",
+              "es_name": "Codo izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 321,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART27",
+          "code": "SW_BODYPART28",
+          "cascadeUp": true,
+          "name": "Left Knee",
+          "bodypartCode": "BODYPART14",
+          "es_name": "Rodilla izquierda",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5188,
+            "start": 8325,
+            "end": 321,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 321,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART27",
+              "code": "SW_BODYPART28",
+              "cascadeUp": true,
+              "name": "Left Knee",
+              "bodypartCode": "BODYPART14",
+              "es_name": "Rodilla izquierda",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 326,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART31",
+          "cascadeUp": true,
+          "name": "Left Upper Arm",
+          "bodypartCode": "BODYPART17",
+          "es_name": "Brazo superior izquierdo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5191,
+            "start": 8325,
+            "end": 326,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 326,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART31",
+              "cascadeUp": true,
+              "name": "Left Upper Arm",
+              "bodypartCode": "BODYPART17",
+              "es_name": "Brazo superior izquierdo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 325,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART30",
+          "cascadeUp": true,
+          "name": "Left Lower Arm",
+          "bodypartCode": "BODYPART16",
+          "es_name": "Brazo izquierdo inferior",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5190,
+            "start": 8325,
+            "end": 325,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 325,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART30",
+              "cascadeUp": true,
+              "name": "Left Lower Arm",
+              "bodypartCode": "BODYPART16",
+              "es_name": "Brazo izquierdo inferior",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 318,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Cheeks & Chin",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART25",
+          "bodypartCode": "BODYPART02",
+          "es_name": "Mejillas y barbilla"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5185,
+            "start": 8325,
+            "end": 318,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 318,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Cheeks & Chin",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART25",
+              "bodypartCode": "BODYPART02",
+              "es_name": "Mejillas y barbilla"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 317,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART24",
+          "cascadeUp": true,
+          "name": "Scalp",
+          "bodypartCode": "BODYPART57",
+          "es_name": "Cuero cabelludo",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5184,
+            "start": 8325,
+            "end": 317,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 317,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART24",
+              "cascadeUp": true,
+              "name": "Scalp",
+              "bodypartCode": "BODYPART57",
+              "es_name": "Cuero cabelludo",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 320,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Leg",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART27",
+          "bodypartCode": "BODYPART13",
+          "es_name": "Pierna izquierda"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5187,
+            "start": 8325,
+            "end": 320,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 320,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Leg",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART27",
+              "bodypartCode": "BODYPART13",
+              "es_name": "Pierna izquierda"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 319,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Left Wrist",
+          "parent": "SW_BODYPART34",
+          "code": "SW_BODYPART26",
+          "es_name": "Muñeca izquierda",
+          "bodypartCode": "BODYPART12"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5186,
+            "start": 8325,
+            "end": 319,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 319,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Left Wrist",
+              "parent": "SW_BODYPART34",
+              "code": "SW_BODYPART26",
+              "es_name": "Muñeca izquierda",
+              "bodypartCode": "BODYPART12"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 347,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Tongue",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART52",
+          "bodypartCode": "BODYPART26",
+          "es_name": "Lengua"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5212,
+            "start": 8325,
+            "end": 347,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 347,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Tongue",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART52",
+              "bodypartCode": "BODYPART26",
+              "es_name": "Lengua"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 348,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Roof Of Mouth",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART53",
+          "bodypartCode": "BODYPART34",
+          "es_name": "Techo de la boca"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5213,
+            "start": 8325,
+            "end": 348,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 348,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Roof Of Mouth",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART53",
+              "bodypartCode": "BODYPART34",
+              "es_name": "Techo de la boca"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 343,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Upper Lips",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART48",
+          "bodypartCode": "BODYPART27",
+          "es_name": "Labios superiores"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5208,
+            "start": 8325,
+            "end": 343,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 343,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Upper Lips",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART48",
+              "bodypartCode": "BODYPART27",
+              "es_name": "Labios superiores"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 344,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Lower Lips",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART49",
+          "bodypartCode": "BODYPART27",
+          "es_name": "Labios inferiores"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5209,
+            "start": 8325,
+            "end": 344,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 344,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Lower Lips",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART49",
+              "bodypartCode": "BODYPART27",
+              "es_name": "Labios inferiores"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 345,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Upper Gums & Teeth",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART50",
+          "bodypartCode": "BODYPART29",
+          "es_name": "Encías y dientes superiores"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5210,
+            "start": 8325,
+            "end": 345,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 345,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Upper Gums & Teeth",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART50",
+              "bodypartCode": "BODYPART29",
+              "es_name": "Encías y dientes superiores"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 346,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Lower Gums & Teeth",
+          "parent": "SW_BODYPART06",
+          "code": "SW_BODYPART51",
+          "bodypartCode": "BODYPART29",
+          "es_name": "Encías y dientes inferiores"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5211,
+            "start": 8325,
+            "end": 346,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 346,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Lower Gums & Teeth",
+              "parent": "SW_BODYPART06",
+              "code": "SW_BODYPART51",
+              "bodypartCode": "BODYPART29",
+              "es_name": "Encías y dientes inferiores"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 335,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART40",
+          "cascadeUp": true,
+          "name": "Back Head",
+          "bodypartCode": "BODYPART02",
+          "es_name": "Cabeza trasera",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5200,
+            "start": 8325,
+            "end": 335,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 335,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART40",
+              "cascadeUp": true,
+              "name": "Back Head",
+              "bodypartCode": "BODYPART02",
+              "es_name": "Cabeza trasera",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 336,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Neck",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART41",
+          "bodypartCode": "BODYPART31",
+          "es_name": "Cuello"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5201,
+            "start": 8325,
+            "end": 336,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 336,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Neck",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART41",
+              "bodypartCode": "BODYPART31",
+              "es_name": "Cuello"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 292,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Nose",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART03",
+          "bodypartCode": "BODYPART03",
+          "es_name": "Nariz"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5163,
+            "start": 8325,
+            "end": 292,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 292,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Nose",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART03",
+              "bodypartCode": "BODYPART03",
+              "es_name": "Nariz"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 291,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Head",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART02",
+          "bodypartCode": "BODYPART02",
+          "es_name": "Cabeza"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5162,
+            "start": 8325,
+            "end": 291,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 291,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Head",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART02",
+              "bodypartCode": "BODYPART02",
+              "es_name": "Cabeza"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 290,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Whole Body",
+          "code": "SW_BODYPART01",
+          "es_name": "Todo el cuerpo",
+          "bodypartCode": "BODYPART01"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5161,
+            "start": 8325,
+            "end": 290,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 290,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Whole Body",
+              "code": "SW_BODYPART01",
+              "es_name": "Todo el cuerpo",
+              "bodypartCode": "BODYPART01"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 297,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Eye",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART07",
+          "bodypartCode": "BODYPART07",
+          "es_name": "Ojo derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5167,
+            "start": 8325,
+            "end": 297,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 297,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Eye",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART07",
+              "bodypartCode": "BODYPART07",
+              "es_name": "Ojo derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 296,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Mouth",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART06",
+          "bodypartCode": "BODYPART06",
+          "es_name": "Boca"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5166,
+            "start": 8325,
+            "end": 296,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 296,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Mouth",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART06",
+              "bodypartCode": "BODYPART06",
+              "es_name": "Boca"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 294,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Chest",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART05",
+          "bodypartCode": "BODYPART05",
+          "es_name": "Pecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5165,
+            "start": 8325,
+            "end": 294,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 294,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Chest",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART05",
+              "bodypartCode": "BODYPART05",
+              "es_name": "Pecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 293,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Throat",
+          "parent": "SW_BODYPART02",
+          "code": "SW_BODYPART04",
+          "bodypartCode": "BODYPART04",
+          "es_name": "Garganta"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5164,
+            "start": 8325,
+            "end": 293,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 293,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Throat",
+              "parent": "SW_BODYPART02",
+              "code": "SW_BODYPART04",
+              "bodypartCode": "BODYPART04",
+              "es_name": "Garganta"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 310,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART18",
+          "cascadeUp": true,
+          "name": "Right Lower Leg",
+          "bodypartCode": "BODYPART18",
+          "es_name": "Pata inferior derecha",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5178,
+            "start": 8325,
+            "end": 310,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 310,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART18",
+              "cascadeUp": true,
+              "name": "Right Lower Leg",
+              "bodypartCode": "BODYPART18",
+              "es_name": "Pata inferior derecha",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 312,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART19",
+          "cascadeUp": true,
+          "name": "Right Upper Leg",
+          "bodypartCode": "BODYPART19",
+          "es_name": "Pata superior derecha",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5179,
+            "start": 8325,
+            "end": 312,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 312,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART19",
+              "cascadeUp": true,
+              "name": "Right Upper Leg",
+              "bodypartCode": "BODYPART19",
+              "es_name": "Pata superior derecha",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 307,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART16",
+          "cascadeUp": true,
+          "name": "Right Lower Arm",
+          "bodypartCode": "BODYPART16",
+          "es_name": "Brazo inferior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5176,
+            "start": 8325,
+            "end": 307,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 307,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART16",
+              "cascadeUp": true,
+              "name": "Right Lower Arm",
+              "bodypartCode": "BODYPART16",
+              "es_name": "Brazo inferior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 308,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "parent": "SW_BODYPART22",
+          "code": "SW_BODYPART17",
+          "cascadeUp": true,
+          "name": "Right Upper Arm",
+          "bodypartCode": "BODYPART17",
+          "es_name": "Brazo superior derecho",
+          "cascadeDown": true
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5177,
+            "start": 8325,
+            "end": 308,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 308,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "parent": "SW_BODYPART22",
+              "code": "SW_BODYPART17",
+              "cascadeUp": true,
+              "name": "Right Upper Arm",
+              "bodypartCode": "BODYPART17",
+              "es_name": "Brazo superior derecho",
+              "cascadeDown": true
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 315,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Arm",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART22",
+          "bodypartCode": "BODYPART22",
+          "es_name": "Brazo derecho"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5182,
+            "start": 8325,
+            "end": 315,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 315,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Arm",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART22",
+              "bodypartCode": "BODYPART22",
+              "es_name": "Brazo derecho"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 316,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Right Ankle",
+          "parent": "SW_BODYPART13",
+          "code": "SW_BODYPART23",
+          "es_name": "Tobillo derecho",
+          "bodypartCode": "BODYPART45"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5183,
+            "start": 8325,
+            "end": 316,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 316,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Right Ankle",
+              "parent": "SW_BODYPART13",
+              "code": "SW_BODYPART23",
+              "es_name": "Tobillo derecho",
+              "bodypartCode": "BODYPART45"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  },
+  {
+    "p": {
+      "start": {
+        "identity": 8325,
+        "labels": [
+          "Section"
+        ],
+        "properties": {
+          "name": "swelling",
+          "code": "SC002"
+        }
+      },
+      "end": {
+        "identity": 313,
+        "labels": [
+          "SymptomCategory"
+        ],
+        "properties": {
+          "name": "Upper Back",
+          "parent": "SW_BODYPART01",
+          "code": "SW_BODYPART20",
+          "bodypartCode": "BODYPART20",
+          "es_name": "Superior de la espalda"
+        }
+      },
+      "segments": [
+        {
+          "start": {
+            "identity": 8325,
+            "labels": [
+              "Section"
+            ],
+            "properties": {
+              "name": "swelling",
+              "code": "SC002"
+            }
+          },
+          "relationship": {
+            "identity": 5180,
+            "start": 8325,
+            "end": 313,
+            "type": "SECTION_HAS_CATEGORY",
+            "properties": {}
+          },
+          "end": {
+            "identity": 313,
+            "labels": [
+              "SymptomCategory"
+            ],
+            "properties": {
+              "name": "Upper Back",
+              "parent": "SW_BODYPART01",
+              "code": "SW_BODYPART20",
+              "bodypartCode": "BODYPART20",
+              "es_name": "Superior de la espalda"
+            }
+          }
+        }
+      ],
+      "length": 1
+    }
+  }
+]
