@@ -1,22 +1,32 @@
 from rest_framework import serializers
-from .models import Drug, NonDrug, TreatmentGroup, Treatment
+from .models import TreatmentTypeRefDesc, TreatmentTypeRefModel
+from collections import OrderedDict
 
-class DrugSerializer(serializers.ModelSerializer):
+class TreatmentTypeRefDescSerializer(serializers.ModelSerializer):
+	def to_representation(self, instance):
+		result = super().to_representation(instance)
+		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
 	class Meta:
-		model = Drug
-		fields = '__all__'
-class NonDrugSerializer(serializers.ModelSerializer):
+		model = TreatmentTypeRefDesc
+		exclude = ['id']
+		# fields = '__all__'
+
+class TreatmentTypeRefModelSerializer(serializers.ModelSerializer):
+	treatment_type_desc = TreatmentTypeRefDescSerializer(read_only=True, many=True)
+	typeID = serializers.SerializerMethodField()
+	type = serializers.SerializerMethodField()
+	def to_representation(self, instance):
+		result = super().to_representation(instance)
+		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
+	def get_typeID(self, sample):
+		return sample.type_id
+	def get_type(self, sample):
+		return sample.tre_type
 	class Meta:
-		model = NonDrug
-		fields = '__all__'
-class TreatmentGroupSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = TreatmentGroup
-		fields = '__all__'
-class TreatmentSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = Treatment
-		fields = '__all__'
+		model = TreatmentTypeRefModel
+		# exclude = ['id', 'tre_type']
+		fields = ['typeID', 'type', 'name', 'active', 'treatment_type_desc']
+		# fields = '__all__'
 # class TreatmentTypeRefModelSerializer(serializers.ModelSerializer):
 # 	treatment_type_desc = TreatmentTypeRefDescSerializer()
 # 	class Meta:

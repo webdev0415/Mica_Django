@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
     'template',
     'illness',
-    # 'treatment',
+    'treatment',
     # 'generic',
 ]
 

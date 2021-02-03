@@ -30,6 +30,7 @@ urlpatterns = [
     # path('treatment/', include('treatment.urls')),
     # path('generic/', include('generic.urls')),
     path('2070Services/mica/api/template/', include('template.urls')),
+    path('2070Services/mica/api/treatment/', include('treatment.urls')),
     # path('treatment/', include('treatment.urls')),
     # path('generic/', include('generic.urls')),
     # path('illness/', include('illness.urls')),

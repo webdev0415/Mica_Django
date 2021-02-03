@@ -70,25 +70,21 @@ class SymptomTemplate(models.Model):
 		models.IntegerField(blank=True, null=True)
 		)
 
-	# symptom_template = ArrayField(
-	# 	models.IntegerField(blank=True, null=True)
-	# 	)
-	# symptom_template = models.ForeignKey(SymptomTemplate, on_delete=models.CASCADE)
-
-
-
 class DataStoreSources(models.Model):
 	source_ref_date = models.BigIntegerField(null = True, blank = True)
 	source_id = models.IntegerField(null = True, blank = True)
 	added_by = models.CharField(max_length=300, null = True, blank = True)
 	source_info = models.CharField(max_length=300, null = True, blank = True)
 	verified = models.BooleanField(null = True, blank = True)
+
 class Scale(models.Model):
 	time_frame = models.CharField(max_length=300, null = True, blank = True)
+
 class ModifierType(models.Model):
 	likelihood = models.IntegerField(default=0)
 	modifier_value = models.CharField(max_length=300, null = True, blank = True)
 	scale = models.ForeignKey(Scale, on_delete=models.CASCADE)
+
 class SymptomDataStore(models.Model):
 	bias = models.BooleanField(null = True, blank = True)
 	multiplier = ArrayField(
@@ -103,6 +99,7 @@ class SymptomDataStore(models.Model):
 	min_diag_criteria = models.BooleanField(null = True, blank = True)
 	med_necessary = models.BooleanField(null = True, blank = True)
 	source_info = models.ManyToManyField(DataStoreSources, related_name='symptomdatastore_datastoresources', blank=True)
+
 class SymptomTmpl(models.Model):
 	symptom_id = models.CharField(max_length=300, null = True, blank = True)
 	bias = models.BooleanField(null=True)
@@ -128,6 +125,7 @@ class SymptomTmpl(models.Model):
 	display_dr_app = models.BooleanField(null=True)
 	gender_group = models.CharField(max_length=300, null = True, blank = True)
 	time_type = models.CharField(max_length=300, null = True, blank = True)
+
 class Symptom(models.Model):
 	symtom_id = models.CharField(max_length=300, null = True, blank = True)
 	multiple_values = models.CharField(max_length=300, null = True, blank = True)
@@ -144,14 +142,7 @@ class Symptom(models.Model):
 	rows = models.ManyToManyField(SymptomDataStore, related_name='symptom_symptomdatastore', blank=True)
 	pain_swelling_id = models.IntegerField(blank=True, null=True)
 	display_order = models.IntegerField(default=0, null=True, blank=True)
-	# icd_r_odes = ArrayField(
-	# 	models.CharField(max_length=300, null = True, blank = True),
-	# 	)
 	display_symptom = models.BooleanField(null=True)
-	# kiosk_name = models.CharField(max_length=300, null = True, blank = True)
-	# formal_name = models.CharField(max_length=300, null = True, blank = True)
-	# med_necessary = models.BooleanField(null=True)
-	# min_diag_criteria = models.BooleanField(null=True)
 	display_dr_app = models.BooleanField(null=True)
 	gender_group = models.CharField(max_length=300, null = True, blank = True)
 	cardinality = models.BooleanField(null=True)
@@ -173,8 +164,6 @@ class Symptom(models.Model):
 		)
 	create_date = models.BigIntegerField(null=True, blank=True)
 	update_date = models.BigIntegerField(null=True, blank=True)	
-	# created_at = models.DateTimeField(auto_now_add=True, editable=False)
-	# updated_at = models.DateTimeField(auto_now=True)
 
 # class Category(models.Model):
 # 	name = models.CharField(max_length=300, null = True, blank = True)
@@ -207,10 +196,12 @@ class DataKeyStore(models.Model):
 	title = models.CharField(max_length=300, null = True, blank = True)
 	es_title = models.CharField(max_length=300, null = True, blank = True)
 	values = models.ManyToManyField(ValueStore, related_name='datakeystore_valuestore', blank=True)
+
 class Section(models.Model):
 	name = models.CharField(max_length=300, null = True, blank = True)
 	section_id = models.CharField(max_length=300, null = True, blank = True)
 	categories = models.ManyToManyField(SymptomCategory, related_name='datakeystore_valuestore', blank=True)
+
 class SymptomGroup(models.Model):
 	name = models.CharField(max_length=300, null = True, blank = True)
 	group_id = models.CharField(max_length=300, null = True, blank = True)
@@ -221,7 +212,3 @@ class SymptomGroup(models.Model):
 	datastore_ref_types = models.ManyToManyField(DataKeyStore, related_name='symptomgroup_datakeystore', blank=True)
 	create_date = models.BigIntegerField(null = True, blank = True)
 	updated_date = models.BigIntegerField(null = True, blank = True)
-	# created_at = models.DateTimeField(auto_now_add=True, editable=False, null=True)
-	# updated_at = models.DateTimeField(auto_now=True, null=True)
-	# categories = models.ForeignKey(SymptomCategory, on_delete=models.CASCADE)
-	# categories = models.ManyToManyField(Category, related_name='symptomgroup_category')

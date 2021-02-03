@@ -120,3 +120,40 @@ export default function App() {
     </div>
   );
 }
+import "./styles.css";
+import {ArrData} from "./arr"
+import {relationArr } from "./arr"
+export default function App() {
+  let count = 0;
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      {
+      ArrData.map((item, idx)=>{
+        count = count + 1
+        const detectArr = relationArr.filter(li=>li["p"].start.properties.shortName === item["n"].properties.shortName)[0]
+        // let subgrouparr, datastorearr
+        // if (item["n"].properties.subGroups && item["n"].properties.subGroups.length > 0) {
+        //   subgrouparr = item["n"].properties.subGroups.map(item => `"${item}"`)
+        // }
+        // if (item["n"].properties.dataStoreTemplates && item["n"].properties.dataStoreTemplates.length > 0) {
+        //   datastorearr = item["n"].properties.dataStoreTemplates.map(item=>`"${item}"`)
+        // }
+        return (
+          <span key={idx}>{`('${count}', 
+          '${item["n"].properties.shortName}', 
+          '${item["n"].properties.longName}',
+          ${item["n"].properties.defaultValue},
+          ${item["n"].properties.priority},
+          ${item["n"].properties.typeDescID},
+          '${item["n"].properties.description}',
+          '{${detectArr["p"].end.properties.conceptID}}',
+          ),
+          `}<br /></span>
+        )
+      })
+    }
+    </div>
+  );
+}

@@ -1,0 +1,184 @@
+﻿[
+  {
+    "n": {
+"identity": 7173,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Physical Exam",
+"active": false,
+"typeID": 11,
+"type": "physicalexam"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7174,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "OTC Drugs",
+"active": true,
+"typeID": 12,
+"type": "otcdrugs"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579661,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Prescription Drugs",
+"active": true,
+"typeID": 0,
+"type": "prescription"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579673,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Diet",
+"active": true,
+"typeID": 1,
+"type": "diet"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579677,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Activity",
+"active": true,
+"typeID": 2,
+"type": "activity"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579687,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Physical Therapy",
+"active": true,
+"typeID": 3,
+"type": "therapy"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579702,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Counseling",
+"active": true,
+"typeID": 4,
+"type": "counseling"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579725,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Return to Work/School Status",
+"active": true,
+"typeID": 5,
+"type": "work"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579732,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Wound Care",
+"active": true,
+"typeID": 6,
+"type": "woundcare"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579745,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Imaging",
+"active": true,
+"typeID": 7,
+"type": "imaging"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579755,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Labs",
+"active": true,
+"typeID": 8,
+"type": "labs"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579756,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Procedures",
+"active": true,
+"typeID": 9,
+"type": "procedures"
+      }
+    }
+  },
+  {
+    "n": {
+"identity": 7579757,
+"labels": [
+        "TreatmentTypeRef"
+      ],
+"properties": {
+"name": "Discharge Disposition",
+"active": true,
+"typeID": 10,
+"type": "discharge"
+      }
+    }
+  }
+]

@@ -22,13 +22,13 @@ INSTALLED_APPS = [
 
     'template',
     'illness',
-    # 'treatment',
+    'treatment',
     # 'generic',
 ]
 
 ROOT_URLCONF = 'mica_django.urls'
 WSGI_APPLICATION = 'mica_django.wsgi.application'
-
+SITE_ID = 1
 
 TEMPLATES = [
     {
