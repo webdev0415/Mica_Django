@@ -20,7 +20,7 @@ from django_auto_prefetching import AutoPrefetchViewSetMixin
 #     serializer_class = IllnessSerializer
 
 
-class IllnessDataView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
+class IllnessDataView(viewsets.ModelViewSet):
 	# queryset = IllnessData.objects.all()	
 	serializer_class = IllnessSerializer
 	lookup_field = "icd10_code"

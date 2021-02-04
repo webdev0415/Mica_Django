@@ -15,11 +15,11 @@ class SymptomCategoryView(viewsets.ModelViewSet):
 	queryset = SymptomCategory.objects.all()
 	serializer_class = SymptomCategorySerializer
 
-class DataKeyStoreView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
+class DataKeyStoreView(viewsets.ModelViewSet):
 	queryset = DataKeyStore.objects.all()
 	serializer_class = DataKeyStoreSerializer
 	
-class SymptomGroupView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
+class SymptomGroupView(viewsets.ModelViewSet):
 	serializer_class = SymptomGroupSerializer
 	def get_queryset(self):
 		qs = SymptomGroup.objects.all()

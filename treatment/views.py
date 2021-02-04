@@ -5,7 +5,7 @@ from .models import TreatmentTypeRefDesc, TreatmentTypeRefModel
 from rest_framework.response import Response
 from django_auto_prefetching import AutoPrefetchViewSetMixin
 
-class TreatmentTypeRefModelView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
+class TreatmentTypeRefModelView(viewsets.ModelViewSet):
 	serializer_class = TreatmentTypeRefModelSerializer
 	# queryset = TreatmentTypeRefModel.objects.all()
 	def get_queryset(self):
