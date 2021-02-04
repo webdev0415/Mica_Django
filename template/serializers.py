@@ -59,12 +59,16 @@ class SymptomSerializer(serializers.ModelSerializer):
 		exclude = ['id']
 class SymptomCategorySerializer(serializers.ModelSerializer):
 	symptoms = SymptomSerializer(read_only=True, many=True)
+	categoryID = serializers.SerializerMethodField()
+	def get_categoryID(self, sample):
+		return sample.category_id
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
 	class Meta:
 		model = SymptomCategory
-		exclude = ['id']
+		fields = ['name', 'es_name', 'categoryID', 'symptoms']
+		# exclude = ['id']
 class ValueStoreSerializer(serializers.ModelSerializer):
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
@@ -93,10 +97,17 @@ class SectionSerializer(serializers.ModelSerializer):
 class SymptomGroupSerializer(serializers.ModelSerializer):
 	categories = SymptomCategorySerializer(read_only=True, many=True)
 	sections = SectionSerializer(read_only=True, many=True)
-	datastore_ref_types = DataKeyStoreSerializer(read_only=True, many=True)
+	dataStoreRefTypes = DataKeyStoreSerializer(read_only=True, many=True, source='datastore_ref_types')
+	groupID = serializers.SerializerMethodField()
+	updatedDate = serializers.SerializerMethodField()
+	def get_groupID(self, sample):
+		return sample.group_id
+	def get_updatedDate(self, sample):
+		return sample.updated_date
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
 	class Meta:
 		model = SymptomGroup
-		exclude = ['id']
+		fields = ['name', 'groupID', 'code', 'updatedDate', 'categories', 'dataStoreRefTypes', 'sections']
+		# exclude = ['id']

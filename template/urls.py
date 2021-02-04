@@ -3,7 +3,7 @@ from django.urls import path, include
 from rest_framework import routers
 # from .views import SnomedCodeView, LogicalSymptomGroupView, SymptomTemplateView, SymptomCategoryView, SymptomGroupView
 from .views import SymptomGroupView, SymptomCategoryView, DataKeyStoreView
-
+router = routers.DefaultRouter(trailing_slash=False)
 router = routers.DefaultRouter()
 router.register(r'symptomgroups', SymptomGroupView, 'symptomgroups')
 router.register(r'datakeystore', DataKeyStoreView, 'datakeystore')

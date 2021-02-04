@@ -4,7 +4,6 @@ from .serializers import IllnessSerializer
 from .models import IllnessData
 from rest_framework import generics
 from rest_framework.response import Response
-
 from rest_framework.filters import SearchFilter
 from url_filter.integrations.drf import DjangoFilterBackend
 
@@ -41,7 +40,6 @@ class IllnessDataView(viewsets.ModelViewSet):
 	def retrieve(self, request, *args, **kwargs):
 		state =  request.GET.get('state', None)
 		version = request.GET.get("version" or None)
-		print(version, state)
 		qs = self.get_queryset()	
 		if version and state:
 			qs = qs.filter(version=version, state=state)

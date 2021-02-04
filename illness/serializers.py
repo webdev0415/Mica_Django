@@ -2,6 +2,8 @@ from rest_framework import serializers
 from .models import IllnessData
 # from template.models import Symptom, SymptomCategory, SymptomGroup, SymptomTmpl, DataStoreSources, Scale, ModifierType, SymptomDataStore
 from collections import OrderedDict
+# from template.serializers import SymptomGroupSerializer
+from template.models import SymptomGroup	
 from template.serializers import SymptomGroupSerializer
 # class DataStoreSourcesSerializer(serializers.ModelSerializer):
 # 	def to_representation(self, instance):

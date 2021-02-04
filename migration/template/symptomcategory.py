@@ -5,16 +5,16 @@ import psycopg2
 #                                          database='oe2',
 #                                          user='root',
 #                                          password='aQfeW4D3')
-try:
-    connection = psycopg2.connect(host='ec2-75-101-232-85.compute-1.amazonaws.com',
-                                         database='d2k0b436k14etr',
-                                         user='ojllqbwycqqwoy',
-                                         password='f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb')
 # try:
-#     connection = psycopg2.connect(host='localhost',
-#                                          database='advi',
-#                                          user='postgres',
-#                                          password='BillGates94415')
+#     connection = psycopg2.connect(host='ec2-50-16-108-254.compute-1.amazonaws.com',
+#                                          database='d9v89qak4p5fl8',
+#                                          user='rkjgpgunvofpws',
+#                                          password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
+try:
+    connection = psycopg2.connect(host='localhost',
+                                         database='advi',
+                                         user='postgres',
+                                         password='BillGates94415')
     postgreSql_insert_query = """INSERT INTO template_symptomcategory (id, name, parent, category_id, bodypart_code, es_name, cascade_up, cascade_down) 
                            VALUES 
 ('1', 'Cheeks & Chin', 'PAIN_BODYPART02', 'PAIN_BODYPART25', 'BODYPART02', 'Mejillas y barbilla', NULL, NULL),

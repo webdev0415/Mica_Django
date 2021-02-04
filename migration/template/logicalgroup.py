@@ -4,16 +4,16 @@ try:
                                          database='oe2',
                                          user='root',
                                          password='aQfeW4D3')
-try:
-    connection = psycopg2.connect(host='ec2-54-224-124-241.compute-1.amazonaws.com',
-                                         database='d6m3jhsgo1lsed',
-                                         user='qkxkflfqjvnlzr',
-                                         password='433644d041ee0701bd60b800251da4ad9dcb07696ebb736e7837212538151370')
 # try:
-#     connection = psycopg2.connect(host='localhost',
-#                                          database='advi',
-#                                          user='postgres',
-#                                          password='BillGates94415')
+#     connection = psycopg2.connect(host='ec2-50-16-108-254.compute-1.amazonaws.com',
+#                                          database='d9v89qak4p5fl8',
+#                                          user='rkjgpgunvofpws',
+#                                          password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
+try:
+    connection = psycopg2.connect(host='localhost',
+                                         database='advi',
+                                         user='postgres',
+                                         password='BillGates94415')
     postgreSql_insert_query = """INSERT INTO template_logicalsymptopgroup (id, group_flag, group_id) 
                            VALUES 
 ('1', 'N', 20),

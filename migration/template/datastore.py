@@ -10,16 +10,16 @@ import psycopg2
 #                                          database='d2k0b436k14etr',
 #                                          user='ojllqbwycqqwoy',
 #                                          password='f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb')
-try:
-    connection = psycopg2.connect(host='ec2-50-16-108-254.compute-1.amazonaws.com',
-                                         database='d9v89qak4p5fl8',
-                                         user='rkjgpgunvofpws',
-                                         password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
 # try:
-#     connection = psycopg2.connect(host='localhost',
-#                                          database='advi',
-#                                          user='postgres',
-#                                          password='BillGates94415')
+#     connection = psycopg2.connect(host='ec2-50-16-108-254.compute-1.amazonaws.com',
+#                                          database='d9v89qak4p5fl8',
+#                                          user='rkjgpgunvofpws',
+#                                          password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
+try:
+    connection = psycopg2.connect(host='localhost',
+                                         database='advi',
+                                         user='postgres',
+                                         password='BillGates94415')
 
 
     postgreSql_insert_query = """INSERT INTO template_valuestore (id, name, es_name, code, default_value, display_list_value, m_antithesis, m_icd10_rcode, count, display_order, old_name) 

@@ -20,13 +20,23 @@ ALLOWED_HOSTS = ['*']
 #         'PORT': '5432',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd9v89qak4p5fl8',
+#         'USER': 'rkjgpgunvofpws',
+#         'PASSWORD': '03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac',
+#         'HOST': 'ec2-50-16-108-254.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd9v89qak4p5fl8',
-        'USER': 'rkjgpgunvofpws',
-        'PASSWORD': '03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac',
-        'HOST': 'ec2-50-16-108-254.compute-1.amazonaws.com',
+        'NAME': 'advi',
+        'USER': 'postgres',
+        'PASSWORD': 'BillGates94415',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
