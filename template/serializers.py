@@ -28,6 +28,11 @@ class ModifierTypeSerializer(serializers.ModelSerializer):
 class SymptomDataStoreSerializer(serializers.ModelSerializer):
 	modifier_values = ModifierTypeSerializer(read_only=True, many=True)
 	source_info = DataStoreSourcesSerializer(read_only=True, many=True)
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('modifier_values')
+		queryset = queryset.prefetch_related('source_info')
+		return queryset
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
@@ -51,6 +56,10 @@ class SymptomTmplSerializer(serializers.ModelSerializer):
 class SymptomSerializer(serializers.ModelSerializer):
 	symptoms_model = SymptomTmplSerializer()
 	rows = SymptomDataStoreSerializer(read_only=True, many=True)
+	def setup_eager_loading(queryset):
+		queryset = queryset.select_related('symptoms_model')
+		queryset = queryset.prefetch_related('rows', 'rows__modifier_values', 'rows__source_info')
+		return queryset
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
@@ -60,6 +69,10 @@ class SymptomSerializer(serializers.ModelSerializer):
 class SymptomCategorySerializer(serializers.ModelSerializer):
 	symptoms = SymptomSerializer(read_only=True, many=True)
 	categoryID = serializers.SerializerMethodField()
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('symptoms', 'symptoms__symptoms_model', 'symptoms__rows', 'symptoms__rows__modifier_values', 'symptoms__rows__source_info')
+		return queryset
 	def get_categoryID(self, sample):
 		return sample.category_id
 	def to_representation(self, instance):
@@ -78,16 +91,23 @@ class ValueStoreSerializer(serializers.ModelSerializer):
 		exclude = ['id']
 class DataKeyStoreSerializer(serializers.ModelSerializer):
 	values = ValueStoreSerializer(read_only=True, many=True)
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('values')
+		return queryset
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
-		result = dict([(key, result[key]) for key in result if result[key] is not None])
-		return {f"{instance.name}" :result}
-		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
+		response = dict([(key, result[key]) for key in result if result[key] is not None])
+		return {f"{instance.name}" :response}
 	class Meta:
 		model = DataKeyStore
 		exclude = ['id', 'name']
 class SectionSerializer(serializers.ModelSerializer):
 	categories = SymptomCategorySerializer(read_only=True, many=True)
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('categories', 'categories__symptoms', 'categories__symptoms__symptoms_model', 'categories__symptoms__rows', 'categories__symptoms__rows__modifier_values', 'categories__symptoms__rows__source_info')
+		return queryset
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
@@ -100,6 +120,12 @@ class SymptomGroupSerializer(serializers.ModelSerializer):
 	dataStoreRefTypes = DataKeyStoreSerializer(read_only=True, many=True, source='datastore_ref_types')
 	groupID = serializers.SerializerMethodField()
 	updatedDate = serializers.SerializerMethodField()
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('categories', 'categories__symptoms', 'categories__symptoms__symptoms_model', 'categories__symptoms__rows', 'categories__symptoms__rows__modifier_values', 'categories__symptoms__rows__source_info')
+		queryset = queryset.prefetch_related('sections', 'sections__categories', 'sections__categories__symptoms', 'sections__categories__symptoms__rows', 'sections__categories__symptoms__rows__modifier_values', 'sections__categories__symptoms__rows__source_info')
+		queryset = queryset.prefetch_related('datastore_ref_types', 'datastore_ref_types__values')
+		return queryset
 	def get_groupID(self, sample):
 		return sample.group_id
 	def get_updatedDate(self, sample):

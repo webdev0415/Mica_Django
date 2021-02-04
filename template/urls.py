@@ -6,7 +6,7 @@ from .views import SymptomGroupView, SymptomCategoryView, DataKeyStoreView
 router = routers.DefaultRouter(trailing_slash=False)
 router = routers.DefaultRouter()
 router.register(r'symptomgroups', SymptomGroupView, 'symptomgroups')
-router.register(r'datakeystore', DataKeyStoreView, 'datakeystore')
+# router.register(r'datakeystore', DataKeyStoreView, 'datakeystore')
 # router.register(r'symptomtemplate', SymptomTemplateView, 'symptomtemplate')
 # router.register(r'symptomcategory', SymptomCategoryView, 'symptomcategory')
 

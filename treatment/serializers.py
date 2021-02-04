@@ -16,6 +16,10 @@ class TreatmentTypeRefModelSerializer(serializers.ModelSerializer):
 	treatmentTypeDesc = TreatmentTypeRefDescSerializer(read_only=True, many=True, source='treatment_type_desc')
 	typeID = serializers.SerializerMethodField()
 	types = serializers.SerializerMethodField()
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('treatment_type_desc')
+		return queryset
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])

@@ -6,7 +6,7 @@ from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.filters import SearchFilter
 from url_filter.integrations.drf import DjangoFilterBackend
-
+from django_auto_prefetching import AutoPrefetchViewSetMixin
 
 # class IllnessListView(generics.ListAPIView):
 # 	serializer_class = IllnessSerializer
@@ -20,7 +20,7 @@ from url_filter.integrations.drf import DjangoFilterBackend
 #     serializer_class = IllnessSerializer
 
 
-class IllnessDataView(viewsets.ModelViewSet):
+class IllnessDataView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
 	# queryset = IllnessData.objects.all()	
 	serializer_class = IllnessSerializer
 	lookup_field = "icd10_code"
@@ -30,12 +30,13 @@ class IllnessDataView(viewsets.ModelViewSet):
 	filter_fields = [field.name for field in IllnessData._meta.fields]
 	search_fields = [ "icd10_code", "verison", "state"]
 	lookup_value_regex = '[\w\.]+'
-
 	def get_queryset(self):
+		qs = IllnessData.objects.all()
+		qs = self.get_serializer_class().setup_eager_loading(qs)
 		if 'icd10_code' in self.kwargs:
-			return IllnessData.objects.filter(icd10_code=self.kwargs['icd10_code'])
+			return qs.filter(icd10_code=self.kwargs['icd10_code'])
 		else:
-			return IllnessData.objects.all()
+			return qs
 
 	def retrieve(self, request, *args, **kwargs):
 		state =  request.GET.get('state', None)

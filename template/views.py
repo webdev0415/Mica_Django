@@ -15,18 +15,28 @@ class SymptomCategoryView(viewsets.ModelViewSet):
 	queryset = SymptomCategory.objects.all()
 	serializer_class = SymptomCategorySerializer
 
-class DataKeyStoreView(viewsets.ModelViewSet):
+class DataKeyStoreView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
 	queryset = DataKeyStore.objects.all()
 	serializer_class = DataKeyStoreSerializer
 	
 class SymptomGroupView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
 	serializer_class = SymptomGroupSerializer
-	queryset = SymptomGroup.objects.all()
+	def get_queryset(self):
+		qs = SymptomGroup.objects.all()
+		qs = self.get_serializer_class().setup_eager_loading(qs)
+		return qs
 	def list(self, request, *args, **kwargs):
-		qs = self.queryset
+		qs = self.get_queryset()
 		serializer = self.get_serializer(qs, many=True)
 		data = {"symptomGroups": serializer.data}
 		return Response(data=data)
+	# serializer_class = SymptomGroupSerializer
+	# queryset = SymptomGroup.objects.all()
+	# def list(self, request, *args, **kwargs):
+	# 	qs = self.queryset
+	# 	serializer = self.get_serializer(qs, many=True)
+	# 	data = {"symptomGroups": serializer.data}
+	# 	return Response(data=data)
 	
 # class LogicalSymptomGroupView(viewsets.ModelViewSet):
 # 	serializer_class = LogicalSymptomGroupSerializer

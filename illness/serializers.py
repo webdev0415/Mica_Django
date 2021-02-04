@@ -87,6 +87,12 @@ from template.serializers import SymptomGroupSerializer
 
 class IllnessSerializer(serializers.ModelSerializer):
 	symptom_groups = SymptomGroupSerializer(read_only=True, many=True)
+	@staticmethod
+	def setup_eager_loading(queryset):
+		queryset = queryset.prefetch_related('symptom_groups', 'symptom_groups__categories', 'symptom_groups__categories__symptoms', 'symptom_groups__categories__symptoms__symptoms_model', 'symptom_groups__categories__symptoms__rows', 'symptom_groups__categories__symptoms__rows__modifier_values', 'symptom_groups__categories__symptoms__rows__source_info')
+		queryset = queryset.prefetch_related('symptom_groups', 'symptom_groups__sections', 'symptom_groups__sections__categories', 'symptom_groups__sections__categories__symptoms', 'symptom_groups__sections__categories__symptoms__symptoms_model', 'symptom_groups__sections__categories__symptoms__rows', 'symptom_groups__sections__categories__symptoms__rows__modifier_values', 'symptom_groups__sections__categories__symptoms__rows__source_info', 'symptom_groups__datastore_ref_types')
+		queryset = queryset.prefetch_related('symptom_groups', 'symptom_groups__datastore_ref_types', 'symptom_groups__datastore_ref_types__values')
+		return queryset
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
