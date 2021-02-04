@@ -93,7 +93,7 @@ class SectionSerializer(serializers.ModelSerializer):
 class SymptomGroupSerializer(serializers.ModelSerializer):
 	categories = SymptomCategorySerializer(read_only=True, many=True)
 	sections = SectionSerializer(read_only=True, many=True)
-	# datastore_ref_types = DataKeyStoreSerializer(read_only=True, many=True)
+	datastore_ref_types = DataKeyStoreSerializer(read_only=True, many=True)
 	def to_representation(self, instance):
 		result = super().to_representation(instance)
 		return OrderedDict([(key, result[key]) for key in result if result[key] is not None])
