@@ -10,26 +10,26 @@ SECRET_KEY = 'az+wv*ipy@gjfo=jpxn1dz&c@^9x-n-9m&yb579trh(7*im_!s'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'd2k0b436k14etr',
-#         'USER': 'ojllqbwycqqwoy',
-#         'PASSWORD': 'f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb',
-#         'HOST': 'ec2-75-101-232-85.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd9v89qak4p5fl8',
-        'USER': 'rkjgpgunvofpws',
-        'PASSWORD': '03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac',
-        'HOST': 'ec2-50-16-108-254.compute-1.amazonaws.com',
+        'NAME': 'd2k0b436k14etr',
+        'USER': 'ojllqbwycqqwoy',
+        'PASSWORD': 'f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb',
+        'HOST': 'ec2-75-101-232-85.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd9v89qak4p5fl8',
+#         'USER': 'rkjgpgunvofpws',
+#         'PASSWORD': '03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac',
+#         'HOST': 'ec2-50-16-108-254.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
