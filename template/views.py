@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from .serializers import SymptomGroupSerializer, SymptomCategorySerializer, DataKeyStoreSerializer
 from .models import SymptomGroup, SymptomCategory, DataKeyStore
 from rest_framework.response import Response
+from django_auto_prefetching import AutoPrefetchViewSetMixin
 # from .serializers import SnomedCodeSerializer, LogicalSymptomGroupSerializer, SymptomTemplateSerializer, SymptomCategorySerializer, SymptomGroupSerializer
 # from .models import SnomedCode, LogicalSymptopGroup, SymptomTemplate, SymptomCategory, SymptomGroup
 # Create your views here.
@@ -18,7 +19,7 @@ class DataKeyStoreView(viewsets.ModelViewSet):
 	queryset = DataKeyStore.objects.all()
 	serializer_class = DataKeyStoreSerializer
 	
-class SymptomGroupView(viewsets.ModelViewSet):
+class SymptomGroupView(AutoPrefetchViewSetMixin, viewsets.ModelViewSet):
 	serializer_class = SymptomGroupSerializer
 	queryset = SymptomGroup.objects.all()
 	def list(self, request, *args, **kwargs):
