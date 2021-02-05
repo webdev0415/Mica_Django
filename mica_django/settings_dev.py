@@ -10,16 +10,16 @@ SECRET_KEY = 'az+wv*ipy@gjfo=jpxn1dz&c@^9x-n-9m&yb579trh(7*im_!s'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd2k0b436k14etr',
-        'USER': 'ojllqbwycqqwoy',
-        'PASSWORD': 'f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb',
-        'HOST': 'ec2-75-101-232-85.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd2k0b436k14etr',
+#         'USER': 'ojllqbwycqqwoy',
+#         'PASSWORD': 'f21738c5889c44875f1afaf9ee3ffcb4ad705907af677041c4bddd8e91d3e3bb',
+#         'HOST': 'ec2-75-101-232-85.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
@@ -40,16 +40,16 @@ DATABASES = {
 #         'PORT': '5432',
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'oe2',
-#         'USER': 'root',
-#         'PASSWORD': 'aQfeW4D3',
-#         'HOST': 'st-writer-rds.advinow-dev.int',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'oe2',
+        'USER': 'root',
+        'PASSWORD': 'aQfeW4D3',
+        'HOST': 'st-writer-rds.advinow-dev.int',
+        'PORT': '5432',
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
