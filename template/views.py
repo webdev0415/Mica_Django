@@ -4,6 +4,10 @@ from .serializers import SymptomGroupSerializer, SymptomCategorySerializer, Data
 from .models import SymptomGroup, SymptomCategory, DataKeyStore
 from rest_framework.response import Response
 from django_auto_prefetching import AutoPrefetchViewSetMixin
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+from django.views.decorators.vary import vary_on_cookie
+from rest_framework.decorators import api_view
 # from .serializers import SnomedCodeSerializer, LogicalSymptomGroupSerializer, SymptomTemplateSerializer, SymptomCategorySerializer, SymptomGroupSerializer
 # from .models import SnomedCode, LogicalSymptopGroup, SymptomTemplate, SymptomCategory, SymptomGroup
 # Create your views here.
@@ -18,13 +22,16 @@ class SymptomCategoryView(viewsets.ModelViewSet):
 class DataKeyStoreView(viewsets.ModelViewSet):
 	queryset = DataKeyStore.objects.all()
 	serializer_class = DataKeyStoreSerializer
-	
+
 class SymptomGroupView(viewsets.ModelViewSet):
 	serializer_class = SymptomGroupSerializer
+	
 	def get_queryset(self):
 		qs = SymptomGroup.objects.all()
 		qs = self.get_serializer_class().setup_eager_loading(qs)
 		return qs
+	# @method_decorator(cache_page(60))
+	# @method_decorator(vary_on_cookie)
 	def list(self, request, *args, **kwargs):
 		qs = self.get_queryset()
 		serializer = self.get_serializer(qs, many=True)
