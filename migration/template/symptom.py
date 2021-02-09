@@ -1,25 +1,20 @@
 import psycopg2
-
-# try:
-#     connection = psycopg2.connect(host='st-writer-rds.advinow-dev.int',
-#                                          database='oe2',
-#                                          user='root',
-#                                          password='aQfeW4D3')
-# try:
-#     connection = psycopg2.connect(host='ec2-54-224-124-241.compute-1.amazonaws.com',
-#                                          database='d6m3jhsgo1lsed',
-#                                          user='qkxkflfqjvnlzr',
-#                                          password='433644d041ee0701bd60b800251da4ad9dcb07696ebb736e7837212538151370')
+try:
+    connection = psycopg2.connect(host='st-writer-rds.advinow-dev.int',
+                                         database='oe2',
+                                         user='root',
+                                         password='aQfeW4D3')
 # try:
 #     connection = psycopg2.connect(host='ec2-50-16-108-254.compute-1.amazonaws.com',
 #                                          database='d9v89qak4p5fl8',
 #                                          user='rkjgpgunvofpws',
 #                                          password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
-try:
-    connection = psycopg2.connect(host='localhost',
-                                         database='advi',
-                                         user='postgres',
-                                         password='BillGates94415')
+# try:
+#     connection = psycopg2.connect(host='localhost',
+#                                          database='advi',
+#                                          user='postgres',
+#                                          password='BillGates94415')
+
     postgreSql_insert_query = """INSERT INTO template_symptom (id, symtom_id, multiple_values, criticality, treatable, prior, question, es_question, antithesis, sub_groups, symptoms_model_id, pain_swelling_id, display_order, display_symptom, display_dr_app, gender_group, cardinality, logical_group_names, de_groups, symptom_type, time_type, icdrcode, bias, active, time_range_start, time_range_stop, create_date, update_date, datastore_templates) 
     VALUES 
 ('1', 'SYMPT0000001', 'Age', 1, false, 0.999242818, 'How old are you?', '¿Cuantos años tienes?', 0.20000000298023224, '{NULL}', 4, NULL, 771, false, false, NULL, false, NULL, NULL, 'List', 'STARTED', NULL, true, true, NULL, NULL, NULL, 1550250518369, '{"Importance","Likelihood","Age"}' ),

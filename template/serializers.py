@@ -56,6 +56,7 @@ class SymptomTmplSerializer(serializers.ModelSerializer):
 class SymptomSerializer(serializers.ModelSerializer):
 	symptoms_model = SymptomTmplSerializer()
 	rows = SymptomDataStoreSerializer(read_only=True, many=True)
+	@staticmethod
 	def setup_eager_loading(queryset):
 		queryset = queryset.select_related('symptoms_model')
 		queryset = queryset.prefetch_related('rows', 'rows__modifier_values', 'rows__source_info')

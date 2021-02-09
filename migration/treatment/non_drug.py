@@ -10,11 +10,12 @@ try:
 #                                          database='d9v89qak4p5fl8',
 #                                          user='rkjgpgunvofpws',
 #                                          password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
-try:
-    connection = psycopg2.connect(host='localhost',
-                                         database='advi',
-                                         user='postgres',
-                                         password='BillGates94415')
+# try:
+#     connection = psycopg2.connect(host='localhost',
+#                                          database='advi',
+#                                          user='postgres',
+#                                          password='BillGates94415')
+
 
     postgreSql_insert_query = """INSERT INTO treatment_nondrug (id, short_name, long_name, priority, type_desc_id, rank, description, notes, sources) 
                            VALUES 

@@ -30,26 +30,26 @@ ALLOWED_HOSTS = ['*']
 #         'PORT': '5432',
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'advi',
-#         'USER': 'postgres',
-#         'PASSWORD': 'BillGates94415',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'oe2',
-        'USER': 'root',
-        'PASSWORD': 'aQfeW4D3',
-        'HOST': 'st-writer-rds.advinow-dev.int',
+        'NAME': 'advi',
+        'USER': 'postgres',
+        'PASSWORD': 'BillGates94415',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'oe2',
+#         'USER': 'root',
+#         'PASSWORD': 'aQfeW4D3',
+#         'HOST': 'st-writer-rds.advinow-dev.int',
+#         'PORT': '5432',
+#     }
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
