@@ -8,6 +8,7 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
 from rest_framework.decorators import api_view
+from url_filter.integrations.drf import DjangoFilterBackend
 # from .serializers import SnomedCodeSerializer, LogicalSymptomGroupSerializer, SymptomTemplateSerializer, SymptomCategorySerializer, SymptomGroupSerializer
 # from .models import SnomedCode, LogicalSymptopGroup, SymptomTemplate, SymptomCategory, SymptomGroup
 # Create your views here.
@@ -25,11 +26,21 @@ class DataKeyStoreView(viewsets.ModelViewSet):
 
 class SymptomGroupView(viewsets.ModelViewSet):
 	serializer_class = SymptomGroupSerializer
-	
+	lookup_field = "group_id"
+	lookup_url_kwarg = "group_id"
+	lookup_value_regex = '[\w\.]+'
 	def get_queryset(self):
 		qs = SymptomGroup.objects.all()
 		qs = self.get_serializer_class().setup_eager_loading(qs)
+		if 'group_id' in self.kwargs:
+			return qs.filter(group_id=self.kwargs['group_id'])
+		else:
+			return qs
 		return qs
+	def retrieve(self, request, *args, **kwargs):
+		qs = self.get_queryset()
+		serializer = self.get_serializer(qs, many=True)
+		return Response(data=serializer.data)
 	# @method_decorator(cache_page(60))
 	# @method_decorator(vary_on_cookie)
 	def list(self, request, *args, **kwargs):

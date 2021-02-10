@@ -15,7 +15,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO template_symptom (id, symtom_id, multiple_values, criticality, treatable, prior, question, es_question, antithesis, sub_groups, symptoms_model_id, pain_swelling_id, display_order, display_symptom, display_dr_app, gender_group, cardinality, logical_group_names, de_groups, symptom_type, time_type, icdrcode, bias, active, time_range_start, time_range_stop, create_date, update_date, datastore_templates) 
+    postgreSql_insert_query = """INSERT INTO mica_template_symptom (id, symtom_id, multiple_values, criticality, treatable, prior, question, es_question, antithesis, sub_groups, symptoms_model_id, pain_swelling_id, display_order, display_symptom, display_dr_app, gender_group, cardinality, logical_group_names, de_groups, symptom_type, time_type, icdrcode, bias, active, time_range_start, time_range_stop, create_date, update_date, datastore_templates) 
     VALUES 
 ('1', 'SYMPT0000001', 'Age', 1, false, 0.999242818, 'How old are you?', '¿Cuantos años tienes?', 0.20000000298023224, '{NULL}', 4, NULL, 771, false, false, NULL, false, NULL, NULL, 'List', 'STARTED', NULL, true, true, NULL, NULL, NULL, 1550250518369, '{"Importance","Likelihood","Age"}' ),
 ('2', 'SYMPT0000002', 'Gender', 3, false, 0.752907393, 'What is your sex?', 'Cual es tu sexo', 0.5, '{NULL}', 4, NULL, 616, false, false, NULL, true, NULL, NULL, 'List', 'STARTED', NULL, true, true, NULL, NULL, NULL, 1539817768584, '{"Importance","Likelihood","Gender"}' ),

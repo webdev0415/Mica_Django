@@ -16,7 +16,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO treatment_treatmenttyperefmodel (id, name, active, type_id, tre_type) 
+    postgreSql_insert_query = """INSERT INTO mica_treatment_treatmenttyperefmodel (id, name, active, type_id, tre_type) 
                            VALUES 
 ('1', 'Physical Exam', false, 11, 'physicalexam'),
 ('2', 'OTC Drugs', true, 12, 'otcdrugs'),

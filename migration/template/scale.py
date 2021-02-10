@@ -16,7 +16,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO template_scale (id, time_frame) 
+    postgreSql_insert_query = """INSERT INTO mica_template_scale (id, time_frame) 
                            VALUES 
 ('1', 'Longer'),
 ('1', '1-3 Days'),

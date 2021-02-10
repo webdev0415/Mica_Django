@@ -15,7 +15,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO template_logicalsymptopgroup (id, group_flag, group_id) 
+    postgreSql_insert_query = """INSERT INTO mica_template_logicalsymptopgroup (id, group_flag, group_id) 
                            VALUES 
 ('1', 'N', 20),
 ('2', 'C', 19),

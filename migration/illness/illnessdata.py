@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO illness_illnessdata (id, icd10_code, cluster, criticality, active, dfstatus, source, groups_complete, version, prevalence, prior, name, mergedversions, state, created_at, updated_at) 
+    postgreSql_insert_query = """INSERT INTO mica_illness_illnessdata (id, icd10_code, cluster, criticality, active, dfstatus, source, groups_complete, version, prevalence, prior, name, mergedversions, state, created_at, updated_at) 
                            VALUES
 ('1', 'K60.3', 0, 5, true, 'APPROVED', 'MICA', '{"neurological","causes","general","physical","pain","measurements","behaviour","labs","nlp"}', 2, 0, 0, 'Anal fistula', NULL, 'APPROVED', NULL, NULL),
 ('2', 'R05', 0, NULL, true, NULL, 'MICA', '{"general","behaviour","neurological","physical","pain","measurements","labs"}', 2, 0, 0, 'Cough', NULL, 'READY-FOR-REVIEW', NULL, NULL),

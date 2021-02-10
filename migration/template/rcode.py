@@ -16,7 +16,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO template_rcodedatastore (id, code, ds_code, m_icd10_rcode) 
+    postgreSql_insert_query = """INSERT INTO mica_template_rcodedatastore (id, code, ds_code, m_icd10_rcode) 
                            VALUES 
 ('1', '', '', 'R42'),
 ('2', '', '', 'R26.81'),

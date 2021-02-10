@@ -16,7 +16,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO template_symptomcategory (id, name, parent, category_id, bodypart_code, es_name, cascade_up, cascade_down) 
+    postgreSql_insert_query = """INSERT INTO mica_template_symptomcategory (id, name, parent, category_id, bodypart_code, es_name, cascade_up, cascade_down) 
                            VALUES 
 ('1', 'Cheeks & Chin', 'PAIN_BODYPART02', 'PAIN_BODYPART25', 'BODYPART02', 'Mejillas y barbilla', NULL, NULL),
 ('2', 'Left Wrist', 'PAIN_BODYPART34', 'PAIN_BODYPART26', 'BODYPART12', 'Muñeca izquierda', NULL, NULL),

@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO template_symptomgroup (id, name, symptom_count, code, group_id, create_date, updated_date) 
+    postgreSql_insert_query = """INSERT INTO mica_template_symptomgroup (id, name, symptom_count, code, group_id, create_date, updated_date) 
                            VALUES 
 ('1', 'General', true, 'SG001', 'general', NULL, 1609796373579),
 ('2', 'Behaviour', true, 'SG002', 'behaviour', NULL, 1606232586755),

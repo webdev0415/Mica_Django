@@ -16,7 +16,7 @@ try:
 #                                          user='postgres',
 #                                          password='BillGates94415')
 
-    postgreSql_insert_query = """INSERT INTO illness_illnessdata_symptom_groups (id, illnessdata_id, symptomgroup_id) 
+    postgreSql_insert_query = """INSERT INTO mica_illness_illnessdata_symptom_groups (id, illnessdata_id, symptomgroup_id) 
                            VALUES 
 (1, 1, 1),
 (2, 1, 2),

@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO treatment_treatmenttyperefdesc (id, short_name, long_name, default_value, priority, typedesc_id, description, concept_id, cpt_code) 
+    postgreSql_insert_query = """INSERT INTO mica_treatment_treatmenttyperefdesc (id, short_name, long_name, default_value, priority, typedesc_id, description, concept_id, cpt_code) 
                            VALUES 
 ('1', 'Cortisol Level', 'Cortisol Level', false, NULL, 253, NULL, '{104605002,22820002,250655007,271535005,313401003,41829006,62037009,41449007}', '{82533}'),
 ('2', 'EYELID WASHING', 'WASH EYELIDS GENTLY and THOROUGHLY EVERY 4 HOURS', false, NULL, 817, NULL, '{41829006,2147483648,54500007}', '{NULL}'),

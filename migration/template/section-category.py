@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO template_section_categories (id, section_id, symptomcategory_id) 
+    postgreSql_insert_query = """INSERT INTO mica_template_section_categories (id, section_id, symptomcategory_id) 
                            VALUES 
 (1, 1, 237 ),
 (2, 1, 235 ),

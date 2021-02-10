@@ -15,10 +15,12 @@ class TreatmentTypeRefDesc(models.Model):
 	long_name = models.CharField(max_length=300, null = True, blank = True)
 	priority = models.IntegerField(blank=True, null=True)
 	typedesc_id = models.IntegerField(null=True, blank=True)
+	# class Meta:
+	# 	managed = False
 	# created_at = models.DateTimeField(auto_now_add=True, editable=False)
 	# updated_at = models.DateTimeField(auto_now=True)
-	def __str__(self):
-		return self.id
+	# def __str__(self):
+	# 	return self.id
 
 class TreatmentTypeRefModel(models.Model):
 	# code = models.CharField(max_length=300, null = True, blank = True)

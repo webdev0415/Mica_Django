@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO template_datakeystore (id, name, title, es_title, code) 
+    postgreSql_insert_query = """INSERT INTO mica_template_datakeystore (id, name, title, es_title, code) 
                            VALUES 
 ( 1, 'EarDischarge', 'Ear Discharge', 'Secreción del oído', 'DK071' ),
 ( 2, 'SubstanceExposure', 'Substance Exposure', 'Exposición a sustancias', 'DK072' ),

@@ -34,7 +34,8 @@ class IllnessDataView(viewsets.ModelViewSet):
 		qs = IllnessData.objects.all()
 		qs = self.get_serializer_class().setup_eager_loading(qs)
 		if 'icd10_code' in self.kwargs:
-			return qs.filter(icd10_code=self.kwargs['icd10_code'])
+			# return qs.filter(icd10_code=self.kwargs['icd10_code'])
+			return qs.filter(self.icd10_code.find(self.kwargs['icd10_code']) != -1)
 		else:
 			return qs
 

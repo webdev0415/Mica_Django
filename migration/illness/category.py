@@ -15,7 +15,7 @@ try:
 #                                          database='advi',
 #                                          user='postgres',
 #                                          password='BillGates94415')
-    postgreSql_insert_query = """INSERT INTO illness_category (id, code) 
+    postgreSql_insert_query = """INSERT INTO mica_illness_category (id, code) 
                            VALUES 
 ('1', 'SW_BODYPART08'),
 ('2', 'PAIN_BODYPART93'),

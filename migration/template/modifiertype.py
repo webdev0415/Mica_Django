@@ -15,7 +15,7 @@ try:
 #                                          database='advi',
 #                                          user='postgres',
 #                                          password='BillGates94415')
-    postgreSql_insert_query = """INSERT INTO template_datastoresources (id, time_frame) 
+    postgreSql_insert_query = """INSERT INTO mica_template_datastoresources (id, time_frame) 
                            VALUES 
 
 """

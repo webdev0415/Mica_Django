@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO template_symptomtmpl (id, symptom_id, bias, range_values, descriptors, descriptor_file, question_text, scaletime_limit, scaletime_limit_start, timeunit_default, scaleinfo_text, datastore_types, criticality, treatable, prior, es_question, antithesis, display_symptom, med_necessary, min_diag_criteria, display_dr_app, gender_group, time_type) 
+    postgreSql_insert_query = """INSERT INTO mica_template_symptomtmpl (id, symptom_id, bias, range_values, descriptors, descriptor_file, question_text, scaletime_limit, scaletime_limit_start, timeunit_default, scaleinfo_text, datastore_types, criticality, treatable, prior, es_question, antithesis, display_symptom, med_necessary, min_diag_criteria, display_dr_app, gender_group, time_type) 
                            VALUES 
 ('1', 'SYMPT0000001', true, NULL, NULL, NULL, 'How old are you?', NULL, NULL, NULL, NULL, '{"Importance","Likelihood","Age"}', 1, false, 0.999242818, '¿Cuantos años tienes?', 0.20000000298023224, false, NULL, NULL, false, NULL, 'STARTED' ),
 ('2', 'SYMPT0000002', true, NULL, NULL, NULL, 'What is your sex?', NULL, NULL, NULL, NULL, '{"Importance","Likelihood","Gender"}', 3, false, 0.752907393, 'Cual es tu sexo', 0.5, false, NULL, NULL, false, NULL, 'STARTED' ),

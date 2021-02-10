@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO template_section (id, name, section_id) 
+    postgreSql_insert_query = """INSERT INTO mica_template_section (id, name, section_id) 
                            VALUES 
 ('1', 'pain', 'SC001'),
 ('2', 'swelling', 'SC002')"""

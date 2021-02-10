@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO treatment_nondrug (id, short_name, long_name, priority, type_desc_id, rank, description, notes, sources) 
+    postgreSql_insert_query = """INSERT INTO mica_treatment_nondrug (id, short_name, long_name, priority, type_desc_id, rank, description, notes, sources) 
                            VALUES 
 ('1', NULL, NULL, NULL, 115, 1, NULL, NULL, '{24482,25818,407,5292,13767,15334,6147}'),
 ('2', NULL, NULL, NULL, 62, 1, NULL, NULL, '{}'),

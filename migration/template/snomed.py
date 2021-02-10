@@ -17,7 +17,7 @@ try:
 #                                          password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO template_snomedcode (id, code, name, concept_id, expression, list_valuecode, type) 
+    postgreSql_insert_query = """INSERT INTO mica_template_snomedcode (id, code, name, concept_id, expression, list_valuecode, type) 
                            VALUES 
 ('1', '', 'Family history of nephropathy', '{289916006}', '', 'DS1662', ''),
 ('2', '', 'Family history of renal artery stenosis', '{194783001,18233005,289916006}', '', 'DS1049', ''),

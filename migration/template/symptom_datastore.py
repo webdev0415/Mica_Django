@@ -18,7 +18,7 @@ try:
 
 
 
-    postgreSql_insert_query = """INSERT INTO template_symptomdatastore (id, bias, multiplier, multiplier_code, likelihood, likely_diseases, rule_out, must, min_diag_criteria, med_necessary) 
+    postgreSql_insert_query = """INSERT INTO mica_template_symptomdatastore (id, bias, multiplier, multiplier_code, likelihood, likely_diseases, rule_out, must, min_diag_criteria, med_necessary) 
                            VALUES 
 ('1', true, '{NULL}', NULL, 0.8, NULL, NULL, NULL, NULL, NULL),
 ('2', true, '{"Stress"}', NULL, NULL, NULL, NULL, NULL, NULL, NULL),

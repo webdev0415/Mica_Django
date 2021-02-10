@@ -1,23 +1,23 @@
 import psycopg2
 
-try:
-    connection = psycopg2.connect(host='st-writer-rds.advinow-dev.int',
-                                         database='oe2',
-                                         user='root',
-                                         password='aQfeW4D3')
+# try:
+#     connection = psycopg2.connect(host='st-writer-rds.advinow-dev.int',
+#                                          database='oe2',
+#                                          user='root',
+#                                          password='aQfeW4D3')
 # try:
 #     connection = psycopg2.connect(host='ec2-50-16-108-254.compute-1.amazonaws.com',
 #                                          database='d9v89qak4p5fl8',
 #                                          user='rkjgpgunvofpws',
 #                                          password='03cb1ce45185cb70077acf3b73fc0b4bae1f17937b0058ce9fa62254472570ac')
-# try:
-#     connection = psycopg2.connect(host='localhost',
-#                                          database='advi',
-#                                          user='postgres',
-#                                          password='BillGates94415')
+try:
+    connection = psycopg2.connect(host='localhost',
+                                         database='advi',
+                                         user='postgres',
+                                         password='BillGates94415')
 
 
-    postgreSql_insert_query = """INSERT INTO treatment_drug (id, name, rank, ingredient_rxcui, ingredient_rxcui_desc, rxcui, added_by, tty, product_id, sources) 
+    postgreSql_insert_query = """INSERT INTO mica_treatment_drug (id, name, rank, ingredient_rxcui, ingredient_rxcui_desc, rxcui, added_by, tty, product_id, sources) 
                            VALUES 
 ('1', 'Tylenol', 1, 161, NULL, 161, NULL, NULL, NULL, '{1,2,3}'),
 ('2', 'Tylenol', 3, 161, NULL, 161, NULL, NULL, NULL, '{1,2,3}'),

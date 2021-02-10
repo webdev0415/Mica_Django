@@ -18,7 +18,7 @@ try:
 
 
 
-    postgreSql_insert_query = """INSERT INTO template_valuestore (id, name, es_name, code, default_value, display_list_value, m_antithesis, m_icd10_rcode, count, display_order, old_name) 
+    postgreSql_insert_query = """INSERT INTO mica_template_valuestore (id, name, es_name, code, default_value, display_list_value, m_antithesis, m_icd10_rcode, count, display_order, old_name) 
                            VALUES 
 ( 1, 'Antibiotics', 'Antibióticos', 'DS071', NULL, true, 0.1, '', 24, NULL, NULL ),
 ( 2, 'Never', 'Nunca', 'DS072', NULL, true, 0.02, NULL, 0, NULL, NULL ),
